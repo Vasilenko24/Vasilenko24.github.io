@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body{
+    height: 100%; 
+}
+body{
+    overflow-x: hidden;
+    background-color: #f5f7fa;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}

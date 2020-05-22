@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+
+    <!-- Start Header -->
+    <div class="wrapper">
+        <div class="content">
+  <header class="header">
+      <div class="container">
+        <div class="navbar">
+            <div class="navbar-menu">
+              <button class="navbar-menu__button" type="button">Menu</button>
+              <a href="#" class="navbar-menu__logo">Doctors <span>Online</span></a>
+              <div class="navbar-menu__burger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+            </div>
+
+            <div class="navbar-flex">
+             <div class="navbar__search">
+                 <form>
+                    <input type="search" placeholder="Search for doctors by specialty, location or name">
+                    <input type="search" placeholder="Search in compedium">
+                 </form>
+             </div>
+            </div>
+          </div>
+          <div class="header__inner">
+              <div class="header__logo">
+                  <a href="#"><img src="images/icons/logo.png" alt=""></a>
+              </div>
+              <nav class="header__menu">
+                <ul>
+                    <li><a href="products.html">Doctors Store</a></li>
+                    <li><a href="online.html">Consultation</a></li>
+                    <li><a href="publications.html">Journal</a></li>
+                </ul>
+                </nav>
+              <a class="header__btn-log header__btn-log--off" href="#">Sign in</a>
+              <a class="header__btn-log header__btn-logout " href="#">Sign Out</a>
+              <div class="header__btn">
+                  <a class="home-btn icon-home" href="#"></a>
+                  <a class="list-btn icon-list-ul" href="#"></a>
+                  <div class="header__dropdown">
+                  <ul class="header__menu__list">
+                    <li><a href="#">Australia<span>0 doctors</span></a></li>
+                    <li><a href="#">Austria<span>10 doctors</span></a></li>
+                    <li><a href="#">Azerbaijan<span>0 doctors</span></a></li>
+                    <li><a href="#">Belarus<span>0 doctors</span></a></li>
+                    <li><a href="#">Belgium<span>2 doctors</span></a></li>
+                    <li><a href="#">Canada<span>0 doctors</span></a></li>
+                    <li><a href="#">Germany<span>0 doctors</span></a></li>
+                    <li><a href="#">Idia<span>0 doctors</span></a></li>
+                    <li><a href="#">Ireland<span>0 doctors</span></a></li>
+                    <li><a href="#">Liechtenstein<span>0 doctors</span></a></li>
+                    <li><a href="#">Malta<span>0 doctors</span></a></li>
+                    <li><a href="#">Russian Federation<span>121 doctors</span></a></li>
+                    <li><a href="#">Singapore<span>0 doctors</span></a></li>
+                    <li><a href="#">Switzerland<span>0 doctors</span></a></li>
+                    <li><a href="#">United Kingdom<span>7 doctors</span></a></li>
+                    <li><a href="#">United States of America<span>0 doctors</span></a></li>
+                </ul>
+             </div>
+              </div>
+          </div>
+      </div>
+  </header>
+<!-- End Header -->
+
+<!-- start profile TABS -->
+
+<section class="profile">
+    <div class="container">
+        <div class="tabs__inner">
+            <aside class="tab__nav">
+                <ul class="tab__nav-wrapper">
+                    <li class="circle icon-user"><a href="#" class="tab__link tab__link-current" data-id="#tab-id1">My page</a></li>
+                    <li class="circle icon-sphere"><a href="#" class="tab__link" data-id="#tab-id2">Compedium</a></li>
+                    <li class="circle icon-clock-o"><a href="#" class="tab__link" data-id="#tab-id3">Doctor's appointment<span>1</span></a></li>
+                    <li class="circle icon-bubbles2"><a href="#" class="tab__link" data-id="#tab-id4">Private consultations<span>1</span></a></li>
+                    <li class="circle icon-group"><a href="#" class="tab__link" data-id="#tab-id5">Opinions</a></li>
+                    <li class="circle icon-drivers-license-o"><a href="#" class="tab__link" data-id="#tab-id6">Certificates</a></li>
+                    <li class="circle icon-folder-download"><a href="#" class="tab__link" data-id="#tab-id7">Publications</a></li>
+                    <li class="circle icon-pencil1"><a href="#" class="tab__link" data-id="#tab-id8">Biography</a></li>
+                    <li class="circle icon-phone"><a href="#" class="tab__link" data-id="#tab-id9">Contact</a></li>
+                    <li class="circle icon-map-marker"><a href="#" class="tab__link" data-id="#tab-id10">Map</a></li>
+                    <li class="circle icon-cog"><a href="#" class="tab__link" data-id="#tab-id11">Settings</a></li>
+                </ul>
+            </aside>
+
+            <section class="tab__content">
+              <div class="tab__content-item current-tab" id="tab-id1">
+                <section class="anket anket-profile">
+                      
+                        <div class="anket__inner">
+                            <div class="anket__box">
+                              <a href="#" class="anket__box-img" style="background-image: url(images/content/user.png);"></a>
+                              <div class="anket__box-info">
+                                  <div class="anket__box-name">Dr. Nick Brown</div>
+                                  <div class="anket__box-loc">Germany, Berlin</div>
+                                  <div class="anket__box-medical">Medical center "Lorem inpsun"</div>
+                                  <div class="anket__box-prof">Cardiologist</div>
+                                  <div class="anket__box-lang">Linguistics:<span>German</span></div>
+                                  <div class="anket__box-contact">Contact:<span>684020721</span></div>
+                              </div>
+                            </div>
+                            <div class="anket__btn">
+                                <div class="anket__btn-left">
+                                    <button><a href="#">Recommend <span>(5)</span></a></button>
+                                    <button><a href="#">Reviews</a></button>
+                                    <button><a href="#">Address and Contacts</a></button>
+                                    <button><a href="#">Location on the map</a></button>
+                                </div>
+                                  <div class="anket__btn-right">
+                                    <button><a href="#">Online consultation</a></button>
+                                    <button><a href="#">Make an appointment</a></button>
+                                    <button><a href="#">Publications</a></button>
+                                    <button><a href="#">Certificates</a></button>
+                                  </div>
+                            </div>
+                        </div>
+                         
+                       <div class="biography__inner">
+                           <div class="biography__inner-title">Professional biography</div>
+                           <div class="biography__inner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit amet quo similique provident repellat! Placeat facilis tempora vero accusantium? Id, consequatur placeat? Quae quis nihil vel officia iusto. Cumque.
+                           Harum quam ex doloremque alias nulla, sunt sequi fugiat assumenda corporis velit corrupti nemo aut amet pariatur nesciunt laudantium. Inventore, distinctio corrupti ipsam molestias animi dolores quas explicabo repellat sequi?
+                           Dptatibus a adipisci. rerum error quasi ad.</div>
+                       </div>
+                
+                       <div class="biography__inner">
+                        <div class="biography__inner-title">Additional information</div>
+                        <div class="biography__inner-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur suscipit amet quo similique provident repellat! Placeat facilis tempora vero accusantium? Id, consequatur placeat? Quae quis nihil vel officia iusto. Cumque.
+                        Harum quam ex doloremque alias nventore rerum tur eligendi a sapiente libero rerum error quasi ad.</div>
+                    </div>
+                       
+                
+                        <div class="publications__title">Publications</div>
+                        <div class="publications__inner">
+                            <div class="publications__items">
+                            <div class="publications__item">
+                                <a href="#" class="publications__item-images" style="background-image: url(images/content/user.png); "></a>
+                                <div class="publications__item-info">
+                                    <div class="publications__item-name">
+                                    Nick Jackson
+                                </div>
+                                <div class="publications__item-prof">
+                                   Dentist
+                                </div>
+                                <div class="publications__item-date">
+                                    11.02.2020
+                                </div>
+                                </div>
+                                <div class="publications__item-btn">
+                               <button type="button" class="edit__menu icon-ellipsis-h"></button>
+                               <ul class="pub__drop">
+                                   <li>Edit</li>
+                                   <li>Delete</li>
+                               </ul>
+                                </div>
+                            </div>
+                                    <div class="publications__box-content">
+                                    <div class="publications__box-title">Lorem ipsum</div>
+                                    <div class="publications__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime quibusdam, laborum rerum deleniti dolore doloremque eos commodi ab qui? Hic cum mollitia deserunt cupiditate atque dolor, error perspiciatis? Voluptates!Velit commodi deserunt consectetur minima quasi excepturi rem nobis molestias rerum voluptatum voluptates, ea sint itaque iusto quos dolorum reprehenderit ab animi, saepe sed similique aspernatur! Autem quae cum praesentium.</div>
+                                 </div>
+                                 <div class="publications__info">
+                                     <div class="publications__info-view">5 views</div>
+                                     <div class="publications__info-btn">
+                                         <button class="icon-heart"></button>
+                                         <button class="icon-mail-forward" ></button>
+                                     </div>
+                                     <button class="show"><a href="#">Show in full</a></button>
+                                 </div>
+                            </div>
+                
+                            <div class="publications__items">
+                                <div class="publications__item">
+                                    <a href="#" class="publications__item-images" style="background-image: url(images/content/user.png); "></a>
+                                    <div class="publications__item-info">
+                                        <div class="publications__item-name">
+                                        Nick Jackson
+                                    </div>
+                                    <div class="publications__item-prof">
+                                       Dentist
+                                    </div>
+                                    <div class="publications__item-date">
+                                        11.02.2020
+                                    </div>
+                                    </div>
+                                    <div class="publications__item-btn">
+                                   <button type="button" class="edit__menu icon-ellipsis-h"></button>
+                                   <ul class="pub__drop">
+                                       <li>Edit</li>
+                                       <li>Delete</li>
+                                   </ul>
+                                    </div>
+                                </div>
+                                        <div class="publications__box-content">
+                                        <div class="publications__box-title">Lorem ipsum</div>
+                                        <div class="publications__box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident maxime quibusdam, laborum rerum deleniti dolore doloremque eos commodi ab qui? Hic cum mollitia deserunt cupiditate atque dolor, error perspiciatis? Voluptates!Velit commodi deserunt consectetur minima quasi excepturi rem nobis molestias rerum voluptatum voluptates, ea sint itaque iusto quos dolorum reprehenderit ab animi, saepe sed similique aspernatur! Autem quae cum praesentium.</div>
+                                     </div>
+                                     <div class="publications__info">
+                                         <div class="publications__info-view">5 views</div>
+                                         <div class="publications__info-btn">
+                                             <button class="icon-heart"></button>
+                                             <button class="icon-mail-forward" ></button>
+                                         </div>
+                                         <button class="show"><a href="">Show in full</a></button>
+                                     </div>
+                                </div>
+                </section>
+              </div>
+              <div class="tab__content-item" id="tab-id2">
+               <div class="compedium__box">
+                   <div class="compedium__form">
+                    <form>
+                        <input placeholder="Search in compedium">
+                       </form>
+                   </div>
+                   <div class="compedium__btn">
+                       <a href="#"><button type="submit">Add an article</button></a>
+                   </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                        <a href="#">Angiology</a>
+                    </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">Reanimation</a>
+                        </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">Cardiology</a>
+                        </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">Neurology</a>
+                        </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">Oncology</a>
+                        </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">ENT</a>
+                        </div>
+                    </div>
+                    <div class="compedium__category icon-medkit">
+                        <div class="compedium__category-wrapper">
+                            <a href="#">Urology</a>
+                        </div>
+                    </div>
+               </div>
+              </div>
+              <div class="tab__content-item" id="tab-id3">
+                <div class="appointment__item">
+                    <div class="appointment__head">
+                     <div class="appointment__head-date">11.02.2020</div>
+                     <div class="appointment__head-time">02.20 <span>PM</span></div>
+                     <div class="publications__item-btn">
+                         <button type="button" class="edit__menu active icon-ellipsis-h"></button>
+                         <ul class="pub__drop">
+                             <li>Delete</li>
+                         </ul>
+                     </div>
+                 </div>
+                 <div class="appointment__box">
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-patient appointment__left">Patient:</div>
+                         <div class="appointment__box-patient appointment__right"><span>Robert Nicholson</span></div>
+                     </div>
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-email appointment__left">Email:</div>
+                         <div class="appointment__box-email appointment__right"><span>name@gmail.com</span></div>
+                     </div>
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-phone appointment__left">Telephone:</div>
+                         <div class="appointment__box-phone appointment__right"><span>658423528</span></div>
+                     </div>
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-time appointment__left">Time:</div>
+                         <div class="appointment__box-time appointment__right"> <span>12:30 PM- 14:30pm</span></div>
+                     </div>
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-day appointment__left">Day:</div>
+                         <div class="appointment__box-day appointment__right"><span>12 January 2020</span></div>
+                     </div>
+                     <div class="appointment__box-item">
+                         <div class="appointment__box-propos appointment__left">Additional propositions:</div>
+                         <div class="appointment__box-propos appointment__right"><span>-</span></div>
+                     </div>
+                 </div>
+                 <div class="appointment__item-btn">
+                 <a href="#"><button class="confirm">Confirm</button></a>
+                 <a href="#"><button class="reject">Reject</button></a>
+                </div>
+         </div>
+         <div class="restore__inner">
+            <div class="restore__inner-text">
+                Reqest deleted.<a href="#">Restore</a>
+            </div>
+        </div>
+
+        <div class="appointment__item">
+            <div class="appointment__head">
+             <div class="appointment__head-date">11.02.2020</div>
+             <div class="appointment__head-time">02.20 <span>PM</span></div>
+             <div class="publications__item-btn">
+                 <button type="button" class="edit__menu active icon-ellipsis-h"></button>
+                 <ul class="pub__drop">
+                     <li>Delete</li>
+                 </ul>
+             </div>
+         </div>
+         <div class="appointment__box">
+             <div class="appointment__box-item">
+                 <div class="appointment__box-patient appointment__left">Patient:</div>
+                 <div class="appointment__box-patient appointment__right"><span>Robert Nicholson</span></div>
+             </div>
+             <div class="appointment__box-item">
+                 <div class="appointment__box-email appointment__left">Email:</div>
+                 <div class="appointment__box-email appointment__right"><span>name@gmail.com</span></div>
+             </div>
+             <div class="appointment__box-item">
+                 <div class="appointment__box-phone appointment__left">Telephone:</div>
+                 <div class="appointment__box-phone appointment__right"><span>658423528</span></div>
+             </div>
+             <div class="appointment__box-item">
+                 <div class="appointment__box-time appointment__left">Time:</div>
+                 <div class="appointment__box-time appointment__right"> <span>12:30 PM- 14:30pm</span></div>
+             </div>
+             <div class="appointment__box-item">
+                 <div class="appointment__box-day appointment__left">Day:</div>
+                 <div class="appointment__box-day appointment__right"><span>12 January 2020</span></div>
+             </div>
+             <div class="appointment__box-item">
+                 <div class="appointment__box-propos appointment__left">Additional propositions:</div>
+                 <div class="appointment__box-propos appointment__right"><span>-</span></div>
+             </div>
+         </div>
+         <div class="appointment__item-btn">
+         <a href="#"><button class="confirmed">Confirmed</button></a>
+         <a href="#"><button class="reject">Reject</button></a>
+        </div>
+ </div>
+
+ <div class="appointment__item">
+    <div class="appointment__head">
+     <div class="appointment__head-date">11.02.2020</div>
+     <div class="appointment__head-time">02.20 <span>PM</span></div>
+     <div class="publications__item-btn">
+         <button type="button" class="edit__menu active icon-ellipsis-h"></button>
+         <ul class="pub__drop">
+             <li>Delete</li>
+         </ul>
+     </div>
+ </div>
+ <div class="appointment__box">
+     <div class="appointment__box-item">
+         <div class="appointment__box-patient appointment__left">Patient:</div>
+         <div class="appointment__box-patient appointment__right"><span>Robert Nicholson</span></div>
+     </div>
+     <div class="appointment__box-item">
+         <div class="appointment__box-email appointment__left">Email:</div>
+         <div class="appointment__box-email appointment__right"><span>name@gmail.com</span></div>
+     </div>
+     <div class="appointment__box-item">
+         <div class="appointment__box-phone appointment__left">Telephone:</div>
+         <div class="appointment__box-phone appointment__right"><span>658423528</span></div>
+     </div>
+     <div class="appointment__box-item">
+         <div class="appointment__box-time appointment__left">Time:</div>
+         <div class="appointment__box-time appointment__right"> <span>12:30 PM- 14:30pm</span></div>
+     </div>
+     <div class="appointment__box-item">
+         <div class="appointment__box-day appointment__left">Day:</div>
+         <div class="appointment__box-day appointment__right"><span>12 January 2020</span></div>
+     </div>
+     <div class="appointment__box-item">
+         <div class="appointment__box-propos appointment__left">Additional propositions:</div>
+         <div class="appointment__box-propos appointment__right"><span>-</span></div>
+     </div>
+ </div>
+ <div class="appointment__item-btn">
+ <a href="#"><button class="confirm">Confirm</button></a>
+ <a href="#"><button class="rejected">Rejected</button></a>
+</div>
+</div>
+              </div>
+              <div class="tab__content-item" id="tab-id4">
+                  <div class="mixitup__wrapper">
+                  <div class="private__consultation-select">
+                      <select>
+                          <option>All questions</option>
+                          <option>Today questions</option>
+                          <option>Answered questions</option>
+                          <option>Pending questions</option>
+                      </select>
+                  </div>
+                <div class="private__consultation-inner">
+                <div class="opinion__item private__consultation">
+                    <div class="opinion__head">
+                        <div class="opinion__head-name">Nick Jackson</div>
+                        <div class="publications__item-btn">
+                            <button type="button" class="edit__menu active icon-ellipsis-h"></button>
+                            <ul class="pub__drop">
+                                <li>Delete</li>
+                            </ul>
+                             </div>
+                    </div>
+                    <div class="opinion__info">
+                        <div class="opinion__head-date">11.02.2020</div>
+                        <div class="opinion__head-time">11:12 <span>AM</span></div>
+                    </div>
+                    <div class="opinion__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odidei r dictaaliquid officiis voluptatum saepe, ex consequatur modi veritatis, ipsa ipsam ducimus magni. Non exercitationem libero earum at velit sapiente dicta odit. Repudiandae magnam facilis nemo deserunt deleniti? Amet, esse.</div>
+                    <div class="opinion__form">
+                        <form>
+                    <input placeholder="Write an answer" required>
+                    <a href="#" class="opinion__send-btn"><button type="submit">Send</button></a>
+                 </form>
+             </div>
+                </div>
+
+                <div class="opinion__item private__consultation">
+                    <div class="opinion__head">
+                        <div class="opinion__head-name">Nick Jackson</div>
+                        <div class="publications__item-btn">
+                            <button type="button" class="check icon-check"></button>
+                            <button type="button" class="edit__menu active icon-ellipsis-h"></button>
+                            <ul class="pub__drop">
+                                <li>Delete</li>
+                            </ul>
+                             </div>
+                    </div>
+                    <div class="opinion__info">
+                        <div class="opinion__head-date">11.02.2020</div>
+                        <div class="opinion__head-time">11:12 <span>AM</span></div>
+                    </div>
+                    <div class="opinion__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odidei r dictaaliquid officiis voluptatum saepe, ex consequatur modi veritatis, ipsa ipsam ducimus magni. Non exercitationem libero earum at velit sapiente dicta odit. Repudiandae magnam facilis nemo deserunt deleniti? Amet, esse.</div>
+                    <a href="#" class="opinion__send-btn"><button type="submit">Show in full</button></a>
+                </div>
+              </div>
+            </div>
+              </div>
+              <div class="tab__content-item" id="tab-id5">
+               <div class="opinion__inner">
+                   <div class="opinion__item">
+                       <div class="opinion__head">
+                           <div class="opinion__head-name">Nick Jackson</div>
+                           <div class="opinion__head-date">11.02.2020</div>
+                       </div>
+                       <div class="opinion__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odidei r dictaaliquid officiis voluptatum saepe, ex consequatur modi veritatis, ipsa ipsam ducimus magni. Non exercitationem libero earum at velit sapiente dicta odit. Repudiandae magnam facilis nemo deserunt deleniti? Amet, esse.</div>
+                       <div class="opinion__item-btn">
+                        <a href="#" class="icon-trash"></a>
+                        <a href="#" class="icon-heart">(100)</a>
+                        <a href="#" class="icon-mail-forward"></a>
+                       </div>
+                       <div class="opinion__form">
+                           <form>
+                       <input placeholder="Write an answer" required>
+                       <a href="#" class="opinion__send-btn"><button>Send</button></a>
+                    </form>
+                </div>
+                    </div>
+                    <div class="opinion__item">
+                        <div class="opinion__head">
+                            <div class="opinion__head-name">Nick Jackson</div>
+                            <div class="opinion__head-date">11.02.2020</div>
+                        </div>
+                        <div class="opinion__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odidei r dictaaliquid officiis voluptatum saepe, ex consequatur modi veritatis, ipsa ipsam ducimus magni. Non exercitationem libero earum at velit sapiente dicta odit. Repudiandae magnam facilis nemo deserunt deleniti? Amet, esse.</div>
+                        <div class="opinion__item-btn">
+                            <a href="#" class="icon-trash"></a>
+                            <a href="#" class="icon-heart">(100)</a>
+                            <a href="#" class="icon-mail-forward"></a>
+                        </div>
+                        <div class="opinion__form">
+                            <form>
+                        <input placeholder="Write an answer" required>
+                        <a href="#" class="opinion__send-btn"><button>Send</button></a>
+                     </form>
+                 </div>
+                     </div>
+                     <div class="opinion__item">
+                        <div class="opinion__head">
+                            <div class="opinion__head-name">Nick Jackson</div>
+                            <div class="opinion__head-date">11.02.2020</div>
+                        </div>
+                        <div class="opinion__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odidei r dictaaliquid officiis voluptatum saepe, ex consequatur modi veritatis, ipsa ipsam ducimus magni. Non exercitationem libero earum at velit sapiente dicta odit. Repudiandae magnam facilis nemo deserunt deleniti? Amet, esse.</div>
+                        <div class="opinion__item-btn">
+                            <a href="#" class="icon-trash"></a>
+                            <a href="#" class="icon-heart">(100)</a>
+                            <a href="#" class="icon-mail-forward"></a>
+                        </div>
+                        <div class="opinion__form">
+                            <form>
+                        <input placeholder="Write an answer" required>
+                        <a href="#" class="opinion__send-btn"><button>Send</button></a>
+                     </form>
+                 </div>
+                     </div>
+                </div>
+               </div>
+              <div class="tab__content-item" id="tab-id6">
+                <section class="swiper">
+                    <div class="swiper__box">
+                    <div class="swiper__head">
+                     <div class="swiper__head-title">
+                         Certificate of achivement
+                     </div>
+                     <div class="publications__item-btn">
+                        <button type="button" class="edit__menu active icon-ellipsis-v"></button>
+                        <ul class="pub__drop">
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                </div>
+                     <div class="swiper__inner">
+                        <div class="swiper__wrapper">
+                            <div class="swipe__images" style="background-image: url(images/slider-bg.jpg);"></div>
+                            <div class="swipe__images" style="background-image: url(images/slider-bg.jpg);"></div>
+                            <div class="swipe__images" style="background-image: url(images/slider-bg.jpg);"></div>
+                            <div class="swipe__images" style="background-image: url(images/slider-bg.jpg);"></div>
+                        </div>
+                        <div class="slider__btn">
+                         <div class="slider__right"></div>
+                         <div class="slider__left"></div>
+                    </div>
+                    <div class="swiper__btn">
+                         <a href="#"><button class="certificate">Add certificate</button></a>
+                        <a href="#"><button class="save">Save</button></a>
+                    </div>
+                    </div>
+                </div>
+                 </section>
+              </div>
+              <div class="tab__content-item" id="tab-id7">
+                  <div class="publication__wrapper">
+                <a class="publications__add">
+                    <button>Add a publication</button>
+                </a>
+                <div class="publications__inner">
+                    <div class="publications__items">
+                    <div class="publications__item">
+                        <a href="#" class="publications__item-images" style="background-image: url(images/content/user.png);"></a>
+                        <div class="publications__item-info">
+                            <div class="publications__item-name">
+                            Nick Jackson
+                        </div>
+                        <div class="publications__item-prof">
+                           Dentist
+                        </div>
+                        <div class="publications__item-date">
+                            11.02.2020
+                        </div>
+                        </div>
+                        <div class="publications__item-btn">
+                       <button type="button" class="edit__menu active icon-ellipsis-v"></button>
+                       <ul class="pub__drop">
+                           <li>Edit</li>
+                           <li>Delete</li>
+                       </ul>
+                        </div>
+                    </div>
+                            <div class="publications__box-content">
+                            <div class="publications__box-title">Lorem ipsum</div>
+                            <div class="publications__box-text">Lorem ipsum dolor sit amet, consectetur adipiitia deserunt cupiditate atque dolor, error perspiciatis? Voluptates!Velit commodi deserunt consectetur minima quasi excepturi rem nobis molestias rerum voluptatum voluptates, ea sint itaque iusto quos dolorum reprehenderit ab animi, saepe sed similique aspernatur! Autem quae cum praesentium.</div>
+                         </div>
+                         <div class="publications__info">
+                             <div class="publications__info-view">5 views</div>
+                             <div class="publications__info-btn">
+                                <a href="#" class="icon-heart">(100)</a>
+                                <a href="#" class="icon-mail-forward"></a>
+                             </div>
+                             <button class="show"><a href="#">Show in full</a></button>
+                         </div>
+                    </div>
+                    <div class="publication__deleted">
+                        <div class="publication__deleted-text">Publication deleted.</div>
+                        <a href="#">Restore.</a>
+                    </div>
+                    <div class="publications__items">
+                        <div class="publications__item">
+                            <a href="#" class="publications__item-images" style="background-image: url(images/content/user.png); "></a>
+                            <div class="publications__item-info">
+                                <div class="publications__item-name">
+                                Nick Jackson
+                            </div>
+                            <div class="publications__item-prof">
+                               Dentist
+                            </div>
+                            <div class="publications__item-date">
+                                11.02.2020
+                            </div>
+                            </div>
+                            <div class="publications__item-btn">
+                           <button type="button" class="edit__menu active icon-ellipsis-v"></button>
+                           <ul class="pub__drop">
+                               <li>Edit</li>
+                               <li>Delete</li>
+                           </ul>
+                            </div>
+                        </div>
+                                <div class="publications__box-content">
+                                <div class="publications__box-title">Lorem ipsum</div>
+                                <div class="publications__box-text">Lorem ipsum dolor sit ametorum rerue eos commodi ab qui? Hic cum mollitia deserunt cupiditate atque dolor, error perspiciatis? Voluptates!Velit commodi deserunt consectetur minima quasi excepturi rem nobis molestias rerum voluptatum voluptates, ea sint itaque iusto quos dolorum reprehenderit ab animi, saepe sed similique aspernatur! Autem quae cum praesentium.</div>
+                             </div>
+                             <div class="publications__info">
+                                 <div class="publications__info-view">5 views</div>
+                                 <div class="publications__info-btn">
+                                    <a href="#" class="icon-heart">(100)</a>
+                                    <a href="#" class="icon-mail-forward"></a>
+                                 </div>
+                                 <button class="show"><a href="">Show in full</a></button>
+                             </div>
+                        </div>
+                    </div>
+              </div>
+              </div>
+              <div class="tab__content-item" id="tab-id8">
+                <div class="biography">
+                    <div class="biography-title">
+                      your professional biography
+                    </div>
+                   <form>
+                       <textarea placeholder="Write your professional medical biography..."></textarea>
+                      <div class="biography-btn">
+                          <a href="#"><button type="submit">Save</button></a>
+                        </div>
+                   </form>
+                </div>
+              </div>
+              <div class="tab__content-item" id="tab-id9">
+                 <div class="details__box">
+                     <div class="details__title">Your contact details</div>
+                     <form>
+                         <select>
+                             <option>Кандидат медицинских наук (PhD.)</option>
+                             <option>Общий врач (Dr.)</option>
+                             <option>Профессор (Prof.)</option>
+                         </select>
+                         <div class="details__wrapper">
+                             <input type="text" placeholder="Лейла">
+                             <input type="text" placeholder="Дмитриева">
+                         </div>
+                         <input type="text" placeholder="Улица Малая Пироговская дом 13">
+                         <input type="text" placeholder="Частная клиника доктора Дмитриевой">
+                         <div class="details__wrapper">
+                            <input type="text" placeholder="Москва">
+                            <input type="text" placeholder="13357">
+                        </div>
+                        <div class="details__wrapper">
+                            <input type="text" placeholder="+7 926 317 35 02">
+                            <input type="text" placeholder="+7 495 311 11 13">
+                        </div>
+                        <div class="details__btn">
+                            <a href="#"><button>Save</button></a>
+                        </div>
+                     </form>
+                 </div>
+              </div>
+              <div class="tab__content-item" id="tab-id10">
+                <div class="tab__inner-maps">
+                    <div class="tab__inner-title">
+                        location on the map
+                    </div>
+                    <div class="tab__inner-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2963.685657429649!2d-88.06557239922832!3d42.02847536200084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDAxJzQyLjUiTiA4OMKwMDMnNTEuNCJX!5e0!3m2!1sru!2sua!4v1587933000944!5m2!1sru!2sua" width="750" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                </div>
+              </div>
+              <div class="tab__content-item" id="tab-id11">
+
+              </div>
+            </section>
+          </div>
+</div>
+</section>
+
+
+
+
+
+
+<!-- end profile TABS -->
+
+<!-- start footer -->
+</div>
+<footer class="footer">
+    <div class="footer__top">
+    <div class="container">
+    <div class="footer__top-inner">
+     <div class="footer__list">
+        <ul>
+            <li><a href="about.html">About the website</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="partnership.html">Partnership</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="advertising.html">Advertising</a></li>
+        </ul>
+    </div>
+    <div class="footer__flag">
+        <img src="images/icons/switzerland.png" alt="">
+    </div>
+   </div>
+   </div>
+</div>
+   <div class="footer__copy">
+       <div class="container">
+           <div class="footer__copy-inner">
+               <div class="footer__copy-bug">
+                   <ul>
+                    <li><a href="report.html">Report an error</a></li>
+                       <li><a href="support.html">Support</a></li>
+                   </ul>
+                </div>
+            <div class="footer__copy-text">
+                © 2020 DoctorsOnline.com
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- end footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="js/libs.min.js"></script> 
+   <script src="js/main.js"></script> 
+</body>
+</html>
