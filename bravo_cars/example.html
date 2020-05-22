@@ -26,11 +26,11 @@
       </div>
       <nav class="header-menu">
         <ul class="menu-list">
-          <li><a class="header-link" href="mainpage.html">Главная</a></li>
-          <li><a class="header-link" href="about.html">О нас</a></li>
-          <li><a class="header-link" href="example.html">Пример Работ</a></li>
-          <li><a class="header-link" href="blog.html">Блог</a></li>
-          <li><a class="header-link" href="contacts.html">Контакты</a></li>
+          <li class="header-link"><a class="header-links" href="mainpage.html">Главная</a></li>
+          <li class="header-link header-link__active"><a class="header-links" href="about.html">О нас</a></li>
+          <li class="header-link"><a class="header-links" href="example.html">Пример Работ</a></li>
+          <li class="header-link"><a class="header-links" href="blog.html">Блог</a></li>
+          <li class="header-link"><a class="header-links" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -38,44 +38,20 @@
 </header>
 
   <!-- WRITE CODE HERE -->
-<section class="contact">
-  <div class="container">
-    <div class="contact__title">Наши контакты</div>
-   <div class="contact__inner">
-    <div class="contact__items">
-      <div class="contact__item">
-        <div class="contact__item-title">Адрес</div>
-        <div class="contact__item-img"><img src="img/icons/address.svg" alt=""></div>
-        <div class="contact__item-info">г.Запорожье, ул.Брянская 10.</div>
-      </div>
-      <div class="contact__item">
-        <div class="contact__item-title">Телефон</div>
-        <div class="contact__item-img"><img src="img/icons/phone.svg" alt=""></div>
-        <a class="contact__item-info" href="tel:+380976981173">+380 97 698 11 73</a>
-      </div>
-      <div class="contact__item contact-box">
-        <div class="contact__item-title online-title">Написать нам <span>ONLINE</span></div>
-        <a href="#" class="contact__item-img"><img src="img/icons/viber.svg" alt=""></a>
-        <a href="https://www.instagram.com/bravo_cars_zp/" class="contact__item-img"><img src="img/icons/instagram.svg" alt=""></a>
-      </div>
+  <section class="example">
+    <div class="container">
+      <div class="test swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/content/slide1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/content/slide1.jpg" alt="">
+          </div>
+        </div>
       </div>
     </div>
-   </div>
-  </div>
-</section>
-<section class="map">
-    <div class="map__title">Координаты</div>
-    <div class="map-inner">
-    <div class="map__loc">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677.487685483381!2d35.14758631518286!3d47.84951757915941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDfCsDUwJzU4LjMiTiAzNcKwMDgnNTkuMiJF!5e0!3m2!1sru!2sua!4v1589233043349!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <div class="map-info">
-      <div class="info__title">Приезжайте в гости!</div>
-      <a class="map-link icon-phone" href="tel:380976981173">Телефон: +380976981173</a>
-      <div class="info__address">Бесплатная консультация и осмотр вашего авто</div>
-    </div>
-  </div>
-</section>
+  </section>
   <!-- STOP WRITE CODE -->
 </div>
   <footer class="footer">
@@ -106,6 +82,7 @@
     </div>
  </footer>
 </div>
+  
 <script src="js/particles.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
