@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>project 15.05.2020</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="fonts/Gilroy/stylesheet.css" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="headder-center">
+					<ul class="nav">
+						<li><a href="#">Автомобили</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Яхты</a></li>
+					</ul>
+					<div class="header-right">
+						<div class="registration">
+							<img src="img/header/man_copy.png" alt="icon" style="width: 16px;">
+							<a href="#">РЕГИСТРАЦИЯ</a>
+						</div>
+						<div class="login">
+							<div class="login-key">
+								<img src="img/header/key.png" alt="icon" style="width: 21px; height: 22px;">
+								<input type="text" placeholder="Логин">
+							</div>
+							<input type="password" placeholder="Пароль">
+						</div>
+						<input type="submit" class="button-login" value="Войти">
+						<div class="languages">
+							<a href="#" style="font-weight: 400;">Рус</a>
+							<div class="languages-line"></div>
+							<a href="#">Укр</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<input type="checkbox" id="phone-1" class="phone-input del">
+			<div class="header-phone">
+				<div class="header-phone-top">
+					<div class="registration">
+						<img src="img/header/man_copy.png" alt="icon">
+						<a href="#">РЕГИСТРАЦИЯ</a>
+					</div>
+					<div class="languages">
+						<a href="#" style="font-weight: 400;">Рус</a>
+						<div class="languages-line"></div>
+						<a href="#">Укр</a>
+					</div>
+					<label for="phone-1">+</label>
+				</div>
+				<div class="header-phone-menu">
+					<ul class="nav">
+						<li><a href="#">Автомобили</a></li>
+						<li><a href="#">Недвижимость</a></li>
+						<li><a href="#">Яхты</a></li>
+					</ul>
+				</div>
+				<div class="header-phone-login">
+					<div class="img-login">
+						<img src="img/header/key.png" alt="icon" style="width: 21px; height: 22px;">
+						<p>ВХОД</p>
+					</div>
+					<div class="login">
+						<div class="login-key">
+							<input type="text" placeholder="Логин">
+						</div>
+						<input type="password" placeholder="Пароль">
+					</div>
+					<input type="submit" class="button-login" value="Войти">
+				</div>
+				<div class="header-phone-net-block">
+					<div class="header-phone-net">
+						<a href="#"><img src="img/footer-icon/telegram.png" alt="telegram"></a>
+						<a href="#"><img src="img/footer-icon/logos.png" alt="phone"></a>
+						<a href="#"><img src="img/footer-icon/viber.png" alt="viber"></a>
+					</div>
+				</div>
+			</div>
+			<div class="banner">
+				<div class="header2">
+					<div class="header2-logo">
+						<a href="#"><img src="img/header2/logo.png" alt=""></a>
+						<div class="sub-logo">
+							<p>Сайт по продаже авто, яхт, недвижимости</p>
+						</div>
+						<label for="phone-1" class="menu-phone">
+							
+						</label>
+					</div>
+					<div class="header2-menu">
+						<ul class="header2-nav">
+							<li class="cars header2-menu-button header2-menu-button_active">
+								<a href="#">
+									<div class="b">
+										<img src="img/header2/car_logo.png" alt="car" style="width: 22px; height: 14px;">
+										<p>АВТО</p>
+									</div>
+								</a>
+							</li>
+							<li class="yachts header2-menu-button">
+								<a href="#">
+									<div class="b">
+										<img src="img/header2/boat_logo.png" alt="yachts" style="width: 20px; height: 16px;">
+										<p>ЯХТЫ</p>
+									</div>
+								</a>
+							</li>
+							<li class="property header2-menu-button">
+								<a href="#">
+									<div class="b">
+										<img src="img/header2/home_logo.png" alt="property" style="width: 21px; height: 17px;">
+										<p>НЕДВИЖИМОСТЬ</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="link">
+					<a href="#">Главная</a> > <a href="#"> Объявления</a>
+				</div>
+				<div class="add-announcement">
+					<p>ДОБАВЛЕНИЕ ОБЪЯВЛЕНИЯ <span>АВТО</span></p>
+				</div>
+				<div class="enter-information">
+					<p><span>Основная информация</span><br>укажите основную информацию о авто</p>
+				</div>
+			</div>
+			<div class="setting-announcement">
+				<div class="add-photo-block">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							1
+						</div>
+						<div class="text">
+							<h2>Добавьте фото</h2>
+						</div>
+					</div>
+					<div class="add-photo-content">
+						<div class="add-photos">
+							<input type="file" id="file1" class="del">
+							<label for="file1" class="add-photo">
+								<div class="add">+</div>
+								<p>ДОБАВИТЬ ФОТО</p>
+							</label>
+							<label for="file1" class="add-photo">
+								<div class="add">+</div>
+								<p>ДОБАВИТЬ ВИДЕО</p>
+							</label>
+						</div>
+						<div class="photos-block">
+							<div class="photo-one">
+								<div class="photo-checkbox-block">
+									<input type="radio" id="checkbox-one" name="photo-car" class="del" checked>
+									<label for="checkbox-one" id="label-one">Сделать главным</label>
+								</div>
+							</div>
+							<div class="photo-two">
+								<div class="photo-checkbox-block">
+									<input type="radio" id="checkbox-two" name="photo-car" class="del">
+									<label for="checkbox-two" id="label-two">Сделать главным</label>
+								</div>
+							</div>
+							<div class="photo-three">
+								<div class="photo-checkbox-block">
+									<input type="radio" name="photo-car" id="checkbox-three" class="del">
+									<label for="checkbox-three" id="label-three">Сделать главным</label>
+								</div>
+							</div>
+							<div class="photo-four">
+								<div class="photo-checkbox-block">
+									<input type="radio" name="photo-car" id="checkbox-four" class="del">
+									<label for="checkbox-four" id="label-four">Сделать главным</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="basic-information">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							2
+						</div>
+						<div class="text">
+							<h2>Основная информация</h2>
+							<p>нужно заполнить детальную информацио о авто</p>
+						</div>	
+					</div>
+					<div class="required-fields">
+						<h3>* Поля обязательные для заполнения</h3>
+					</div>
+					<div class="car-information">
+						<div class="type-text">
+							<p>Тип транспорта</p>
+							<p>Тип кузова</p>
+							<p>Марка авто</p>
+							<p>Модель авто</p>
+							<p>Год выпуска</p>
+							<p>Модификация</p>
+							<p>КПП</p>
+							<p>Пробег</p>
+						</div>
+						<div class="star">
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+						</div>
+						<div class="type-select_all">
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<input type="number" class="type-select type-input" placeholder="тыс. км">
+							</form>
+						</div>
+						<div class="type-text">
+							<p>Регион</p>
+							<p>Город</p>
+							<p>Объем</p>
+							<p>Мощность</p>
+							<p>Тип привода</p>
+							<p>Топливо</p>
+							<p>Состояние</p>
+							<p>Количество мест</p>
+						</div>
+						<div class="star">
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+							<p>*</p>
+						</div>
+						<div class="type-select_all">
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<input type="number" class="type-select type-input" placeholder="лош.сил">
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<select name="type-select" class="type-select car-inf-select">
+									<option value="Выбрать" selected>Выбрать</option>
+								</select>
+							</form>
+					
+							<form>
+								<input type="number" class="type-select type-seats" placeholder="От">
+								<input type="number" class="type-select type-seats" placeholder="До">
+								</select>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="cost-block">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							3
+						</div>
+						<div class="text">
+							<h2>Стоимость</h2>
+							<p>цена, валюта, торг, обмен</p>
+						</div>
+					</div>
+					<div class="cost-content">
+						<div class="cost-left">
+							<div class="cost">
+								<p>Цена</p>
+								<p>*</p>
+								<input type="number">
+								<form>
+									<select name="type-select" class="">
+										<option value="Выбрать" selected>$</option>
+										<option value="Выбрать">€</option>
+										<option value="Выбрать">₴</option>
+										<option value="Выбрать">₽</option>
+									</select>
+								</form>
+							</div>
+							<div class="cost-switchs">
+								<div class="cost-switch">
+									<input type="checkbox" id="switch-1" class="del">
+									<label for="switch-1">Возможен торг</label>
+									<input type="checkbox" id="switch-2" class="del">
+									<label for="switch-2">Возможны коментарии</label>
+								</div>
+								<div class="cost-text">
+									<p>*Включите эту функцию, если хотите договориться о цене с покупателем</p>
+									<p>*Эта функция позволяет общаться с потенциальными покупателями на странице объявления.</p>
+								</div>
+							</div>
+						</div>
+						<div class="cost-right">
+							<div class="cost-right-top">
+								<div class="cost-right-switch">
+									<input type="checkbox" id="switch-3" class="del">
+									<label for="switch-3">Нерастаможен</label>
+									<input type="checkbox" id="switch-4" class="del">
+									<label for="switch-4">Авто<br /> не в Украине </label>
+									<input type="checkbox" id="switch-5" class="del">
+									<label for="switch-5" style="width: 200px;">Возможны коментарии</label>
+								</div>
+							</div>
+							<div class="cost-right-bottom">
+								<div class="cost-right-bottom-switch">
+									<input type="checkbox" id="switch-6" class="del">
+									<label for="switch-6" style="width: 157.74px;">Возможен<br /> обмен на авто</label>
+									<input type="checkbox" id="switch-7" class="del">
+									<label for="switch-7">Возможен<br /> обмен на яхту </label>
+									<input type="checkbox" id="switch-8" class="del">
+									<label class="switch-8" for="switch-8" style="width: 230px;">Возможен<br /> обмен на недвижимость</label>
+								</div>
+								<div class="cost-text">
+									<p>*Включите эту функцию, если хотите обменять автомобиль </p>
+									<p>*Включите эту функцию, если хотите обменять автомобиль </p>
+									<p>*Включите эту функцию, если хотите обменять автомобиль </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="additional-features">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							4
+						</div>
+						<div class="text">
+							<h2>Дополнительные характеристики</h2>
+							<p>добавьте особые детали</p>
+						</div>
+					</div>
+					<div class="additional-features-content">
+						<div class="color">
+							<div class="colr">
+								<p>Цвет</p>
+								<div class="colr-swhich">
+									<form>
+										<select name="type-select" class="type-select car-inf-select">
+											<option value="Выбрать" selected>Выбрать</option>
+										</select>
+									</form>
+									<input type="checkbox" id="switch-9" class="del">
+									<label for="switch-9" class="colr-swch">Металлик</label>
+								</div>
+							</div>
+							<div class="block">
+								<div class="not-beaten">
+									<input type="checkbox" id="switch-10" class="del">
+									<label for="switch-10" class="not-beaten-swch">Не битая</label>
+									<input type="checkbox" id="switch-11" class="del">
+									<label for="switch-11" class="not-beaten-swch">Не на ходу</label>
+								</div>
+								<div class="beaten">
+									<input type="checkbox" id="switch-12" class="del">
+									<label for="switch-12" class="beaten-swch">Битая (после ДТП)</label>
+									<input type="checkbox" id="switch-13" class="del">
+									<label for="switch-13" class="beaten-swch">Некрашеная</label>
+								</div>
+							</div>
+						</div>
+						<div class="additional-features-swich">
+							<div class="titles">
+								<p>Комфорт</p>
+								<p>Мультимедия</p>
+								<p>Безопасность</p>
+							</div>
+							<div class="check swch-1">
+								<input type="checkbox" id="switch-14" class="del">
+								<label for="switch-14" class="beaten-swch">Круизный <br>контроль</label>
+								<input type="checkbox" id="switch-15" class="del">
+								<label for="switch-15" class="beaten-swch">CD</label>
+								<input type="checkbox" id="switch-16" class="del">
+								<label for="switch-16" class="beaten-swch">Замок <br> на КПП</label>
+							</div>
+							<div class="check swch-2">
+								<input type="checkbox" id="switch-17" class="del">
+								<label for="switch-17" class="beaten-swch">Кожаный <br>салон</label>
+								<input type="checkbox" id="switch-18" class="del">
+								<label for="switch-18" class="beaten-swch">MP3</label>
+								<input type="checkbox" id="switch-19" class="del">
+								<label for="switch-19" class="beaten-swch">Сигнализация</label>
+							</div>
+							<div class="check swch-3">
+								<input type="checkbox" id="switch-20" class="del">
+								<label for="switch-20" class="beaten-swch">Подогрев <br>зеркала</label>
+								<input type="checkbox" id="switch-21" class="del">
+								<label for="switch-21" class="beaten-swch">Магнитола</label>
+								<input type="checkbox" id="switch-22" class="del">
+								<label for="switch-22" class="beaten-swch">Центральный <br> замок</label>
+							</div>
+							<div class="check swch-4">
+								<input type="checkbox" id="switch-23" class="del">
+								<label for="switch-23" class="beaten-swch">Уселитель <br>руля</label>
+								<input type="checkbox" id="switch-24" class="del">
+								<label for="switch-24" class="beaten-swch">Акустика</label>
+								<input type="checkbox" id="switch-25" class="del">
+								<label for="switch-25" class="beaten-swch">ABS</label>
+							</div>
+							<div class="swch">
+								<form>
+									<select name="type-select" class="additional-features-select">
+										<option value="Выбрать" selected>Больше значений</option>
+									</select>
+								</form>
+
+								<form>
+									<select name="type-select" class="additional-features-select">
+										<option value="Выбрать" selected>Больше значений</option>
+									</select>
+								</form>
+
+								<form>
+									<select name="type-select" class="additional-features-select">
+										<option value="Выбрать" selected>Больше значений</option>
+									</select>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="seller-information">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							5
+						</div>
+						<div class="text">
+							<h2>Информация о продавце</h2>
+							<p>добавьте свои данные</p>
+						</div>
+					</div>
+					<div class="seller-info-content">
+						<div class="seller-number">
+							<p>Телефон 1</p>
+							<p>Телефон 2</p>
+							<p>Телефон 3</p>
+						</div>
+						<div class="seller-number-input">
+							<input type="number" class="number-input" placeholder="Телефон">
+							<input type="number" class="number-input" placeholder="Телефон">
+							<input type="number" class="number-input" placeholder="Телефон">
+						</div>
+						<div class="seller-checkbox">
+							<div class="seller-checkbox-content">
+								<input type="checkbox" id="switch-26" class="del">
+								<label for="switch-26" class="beaten-swch seller-checkbox-swch">имеется Viber</label>
+								<input type="checkbox" id="switch-28" class="del">
+								<label for="switch-28" class="beaten-swch seller-checkbox-swch">имеется Whatsapp</label>
+							</div>
+							<div class="seller-checkbox-content">
+								<input type="checkbox" id="switch-29" class="del">
+								<label for="switch-29" class="beaten-swch seller-checkbox-swch">имеется Viber</label>
+								<input type="checkbox" id="switch-31" class="del">
+								<label for="switch-31" class="beaten-swch seller-checkbox-swch">имеется Whatsapp</label>
+							</div>
+							<div class="seller-checkbox-content">
+								<input type="checkbox" id="switch-32" class="del">
+								<label for="switch-32" class="beaten-swch seller-checkbox-swch">имеется Viber</label>
+								<input type="checkbox" id="switch-33" class="del">
+								<label for="switch-33" class="beaten-swch seller-checkbox-swch">имеется Whatsapp</label>
+							</div>
+						</div>
+						<div class="seller-checkbox-content-col2">
+							<input type="checkbox" id="switch-34" class="del">
+							<label for="switch-34" class="beaten-swch seller-checkbox-swch">имеется Telegram</label>
+							<input type="checkbox" id="switch-35" class="del">
+							<label for="switch-35" class="beaten-swch seller-checkbox-swch">имеется Telegram</label>
+							<input type="checkbox" id="switch-36" class="del">
+							<label for="switch-36" class="beaten-swch seller-checkbox-swch">имеется Telegram</label>
+						</div>
+					</div>
+				</div>
+				<div class="car-description">
+					<div class="setting-announcement-item-top">
+						<div class="number">
+							6
+						</div>
+						<div class="text">
+							<h2>Описание автомобиля</h2>
+							<p>детальное описание характеристик авто</p>
+						</div>
+					</div>
+					<textarea data-mantext="20" data-maxtext="1700" class="car-description-content" placeholder="Описание сдесь" id="textarea"></textarea>
+					<p>*Доступно <b id="number-text">1700</b> символов</p>
+				</div>
+				<div class="ticks">
+					<div class="ticks-top">
+						<div class="tick-block">
+							<div class="tick-switch">
+								<input type="radio" name="tick-r" id="tick-1" class="del" checked>
+								<label for="tick-1" class="tick-swch"></label>
+								<p style="background-color: #868585; width: 205px; height: 36px;">ОБЫЧНОЕ ОБЬЯВЛЕНИЯ</p>
+							</div>
+							<div class="tick-text">
+								<p>*Бессплатная услуга на сайте</p>
+							</div>
+						</div>
+						<div class="tick-block">
+							<div class="tick-switch">
+								<input type="radio" name="tick-r" id="tick-2" class="del">
+								<label for="tick-2" class="tick-swch"></label>
+								<p style="background-color: #b82626; width: 155px; height: 36px;">ТОП = 30грн <strike style="font-weight: 400;">50грн</strike></p>
+							</div>
+							<div class="tick-text" style="height: 50px;">
+								<p style="margin-left: 40px;">*Платная услуга на сайте, которая  в 3 раза увеличивает вероятность продажи Вашего товара</p>
+							</div>
+						</div>
+						<div class="tick-block">
+							<div class="tick-switch">
+								<input type="radio" name="tick-r" id="tick-3" class="del">
+								<label for="tick-3" class="tick-swch"></label>
+								<p style="background-color: #066c06; width: 188px; height: 36px;">ТОП-ТОП = 50грн <strike style="font-weight: 400;">80грн</strike></p>
+							</div>
+							<div class="tick-text" style="height: 50px;">
+								<p style="margin-left: 40px;">*Платная услуга на сайте, которая  в 5 раза увеличивает вероятность продажи Вашего товара</p>
+							</div>
+						</div>
+					</div>
+					<div class="ticks-bottom">
+						<h2>Способы оплаты</h2>
+						<div class="ticks-cards">
+							<a href="#"><img src="img/content/master.png" alt="master card" style="width: 50px;"></a>
+							<a href="#"><img src="img/content/private.png" alt="private 24" style="width: 36px;"></a>
+							<a href="#"><img src="img/content/visa.png" alt="visa" style="width: 50px;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="agree">
+					<div class="agree-check">
+						<input type="checkbox" id="switch-37" class="del">
+						<label for="switch-37" class="beaten-swch">Я согласен(а) с условиями <br> интернет сайта</label>
+						<div class="data-processing">
+							<p>*Вы разрешаете доступ на обработку Ваших данних</p>
+						</div>
+					</div>
+					<div class="yes-no">
+						<div class="yes yes-no-text">
+							<input type="radio" name="yes-no" id="yes" class="del">
+							<label for="yes">Да</label>
+						</div>
+						<div class="no yes-no-text">
+							<input type="radio" name="yes-no" id="no" class="del">
+							<label for="no">Нет</label>
+						</div>
+					</div>
+					<div class="agree-text">
+						<p>Я согласен(а), чтобы <span>видио группа выехала и провела видеосъемку моего авто</span></p>
+						<p>*Вы разрешаете съемку Вашего авто. С Вами свяжутся и договорятся о встрече в любое удобное Вам время. 
+							<span>Эта услуга бессплатная</span></p>
+					</div>
+					<div class="agree-button">
+						<p>Разместить объявление</p>
+					</div>
+				</div>
+			</div>
+			<div class="net-block">
+				<div class="net-title">
+					<h2>присоединяйтесь к сообществу g2g.com.ua</h2>
+				</div>
+				<div class="net-video">
+					<iframe width="570" height="322" src="https://www.youtube.com/embed/07pt0d8Sa1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="nets">
+						<div class="nets-1">
+							<a href="#" class="facebook" style="background-color: #3c5a98;">
+								<img src="img/icons-net/facebook.png" alt="facebook">
+								<p>Facebook  G2g</p>
+							</a>
+							<a href="#" class="vkontakte" style="background-color: #0088cc;">
+								<img src="img/icons-net/vk.png" alt="vkontakte">
+								<p>vkontakte  G2g</p>
+							</a>
+							<a href="#" class="twitter" style="background-color: #21b1e3;">
+								<img src="img/icons-net/twitter.png" alt="twitter">
+								<p>twitter G2g</p>
+							</a>
+							<a href="#" class="instagram" style="background-image: linear-gradient(to top, #fd5392 0%, #f86f64 100%);">
+								<img src="img/icons-net/instagram.png" alt="instagram">
+								<p>instagram G2g</p>
+							</a>
+						</div>
+						<div class="nets-2">
+							<a href="#" class="telegram" style="border: 1px solid #b82626;">
+								<img src="img/icons-net/telegram.png" alt="telegram">
+								<p>Написать нам</p>
+							</a>
+							<a href="#" class="youtube" style="background-color: #ff0000;">
+								<img src="img/icons-net/youtube.png" alt="youtube">
+								<p>youtube G2g</p>
+							</a>
+							<a href="#" class="viber" style="border: 1px solid #b82626;">
+								<img src="img/icons-net/viber.png" alt="viber">
+								<p>Написать нам</p>
+							</a>
+							<a href="#" class="numberphone" style="border: 1px solid #b82626;">
+								<img src="img/icons-net/phone-number.png" alt="numberphone">
+								<p>Написать нам</p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-center">
+					<div class="footer-menu-block">
+						<div class="footer-menu">
+							<h3>МЕНЮ</h3>
+							<ul>
+								<li><a href="#">Автомобили</a></li>
+								<li><a href="#">Недвижимость</a></li>
+								<li><a href="#">Яхты</a></li>
+							</ul>
+						</div>
+						<div class="footer-contact">
+							<div class="mail-block">
+								<img src="img/icons-net/mail.png" alt="mail" style="width: 18px; height: 16px; margin-right: 5px;">
+								<p class="mail-cp">G2g.supp.@gmail.com</p>
+							</div>
+							<div class="kyivstar-block">
+								<img src="img/icons-net/Kyivstar_2015_logo_-_Brandmark_copy.png" alt="kyivstar" style="width: 17px; height: 15px; margin-right: 5px;">
+								<p class="phone-cp">+380 (98) 514-39-06</p>
+							</div>
+						</div>
+					</div>
+					<div class="footer-net">
+						<a href="#"><img img src="img/footer-icon/facebook.png" alt="facebook"></a>
+						<a href="#"><img img src="img/footer-icon/youtube.png" alt="youtube"></a>
+						<a href="#"><img src="img/footer-icon/instagram.png" alt="instagram"></a>
+						<a href="#"><img src="img/footer-icon/logotype.png" alt="vk"></a>
+						<a href="#"><img src="img/footer-icon/logotype_(2).png" alt="Twitter"></a>
+						<a href="#"><img src="img/footer-icon/telegram.png" alt="telegram"></a>
+						<a href="#"><img src="img/footer-icon/viber.png" alt="viber"></a>
+						<a href="#"><img src="img/footer-icon/logos.png" alt="phone"></a>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<p>Все права защищены 2020 </p>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
