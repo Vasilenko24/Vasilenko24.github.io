@@ -14,17 +14,18 @@ $(function(){
   $('.homeslider__inner, .carslider__inner, .yachtsslider__inner').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    speed: 1100,
+    speed: 800,
     pauseOnFocus: true,
     pauseOnDots: true,
     pauseOnHover: true,
+    focusOnSelect: false,
     });
   
     
     $('.offers__slider').slick({
       autoplay: true,
       autoplaySpeed: 2000,
-      speed: 1100,
+      speed: 800,
       slidesToShow: 3,
       arrows: true,
       slidesToScroll: 1,
