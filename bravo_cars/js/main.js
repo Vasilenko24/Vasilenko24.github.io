@@ -21,9 +21,6 @@ $('.homeslider__inner').slick({
   });
 
   
-  
-
-  
   $('.offers__slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
@@ -72,11 +69,7 @@ $(window).scroll(function (){
 });
 
 
-
-  
-
   $('input[type="file"], select').styler();
-
 
 
 });
