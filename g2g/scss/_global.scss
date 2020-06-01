@@ -1,0 +1,160 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  min-height: 100%;
+  position: relative;
+  font-family: 'Gilroy';
+  overflow-x: hidden;
+}
+
+
+.container{
+  max-width: 1175px;
+  margin: 0 auto ;
+  padding: 0 15px;
+
+
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+// btn up 
+.btn__up{
+  cursor: pointer;
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+  border: 2px solid #ccc;
+  background: $red;
+  z-index: 100;
+  outline: none;
+  transition: all .4s;
+  @media(max-width: 430px){
+    width: 28px;
+    height: 28px;
+  }
+  &::before{
+  content: '';
+    width: 10px;
+    height: 10px;
+    z-index: 101;
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+.btn__up{
+  &.active{
+      transition: all .4s;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0.7;
+      @media(max-width: 430px){
+        bottom: 40px;
+        right: 12px;
+      }
+      &:hover{
+          opacity: 1;
+      }
+  }
+}
+
+
+
+
+
+// .breadcrumbs{
+//   &__inner{
+//       padding: 45px 0 40px;
+//       overflow: hidden;
+//       width: 1020px;
+//   }
+//   &__list{
+//       li{
+//           display: inline-block;
+//           position: relative;
+//           & + li{
+//               padding-left: 24px;
+//               &::before{
+//                   content: "-";
+//                   color: $green;
+//                   position: absolute;
+//                   left: 8px;
+//               }
+//           }
+//           &:last-child{
+//               a,
+//               span{
+//                   color: $bg;
+//               }
+//           }
+//       }
+//       a{
+//           color: #b0bec5;
+//       }
+//   }
+// }
+
+
+// <div class="breadcrumbs">
+// <div class="container">
+//     <div class="breadcrumbs__inner">
+//         <ul class="breadcrumbs__list">
+//             <li><a href="#">1</a></li>
+//             <li><a href="#">42s</a></li>
+//         </ul>
+//     </div>
+// </div>
+// </div>
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:focus,
+input:focus {
+  outline: transparent;
+}
