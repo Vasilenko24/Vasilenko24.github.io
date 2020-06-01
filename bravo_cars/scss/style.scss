@@ -4,7 +4,7 @@
 
 
 body{
-	background-image: url(../img/content/bg.jpg);
+	background-image: url(../img/background/bg.jpg);
 	width: 100%;
 	height: 100%;
 }
@@ -984,6 +984,7 @@ display: none;
 	.slick-prev::before {
 		content: '';
 		display: none;
+		font-size: 0;
 	  }
 	  
 	.slick-next::before {
@@ -1002,6 +1003,7 @@ display: none;
 		border-right: 3px solid #525252;
 		z-index: 22;
 		transform: translate(-70%, -50%) rotate(45deg);
+		font-size: 0 !important;
 		@media(max-width: 1320px){
 			width: 10px;
 			height: 10px;
@@ -1016,6 +1018,8 @@ display: none;
 		top: 45%;
 	  width: 30px;
 	  height: 30px;
+	  font-size: 0;
+	  border: none;
 	  background: #888686;
 	  border-radius: 45px;
 	  z-index: 20;
@@ -1059,6 +1063,8 @@ display: none;
 		}
 	} 
 	  .slick-prev {
+		  font-size: 0;
+		  border: none;
 		  position: absolute;
 		  top: 45%;
 		  left: -40px;
@@ -1437,6 +1443,8 @@ display: none;
 		}
 	} 
 	  .slick-next{
+		font-size: 0;
+		border: none;
 		position: absolute;
 		right: -40px;
 		top: 45%;
@@ -1494,6 +1502,8 @@ display: none;
 		}
 	} 
 	  .slick-prev {
+		font-size: 0;
+		border: none;
 		  position: absolute;
 		  top: 45%;
 		  left: -45px;
@@ -1722,7 +1732,7 @@ display: none;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		background-image: url(../img/icons-net/facebook.jpg);
+		background-image: url(../img/icons-net/facebook.png);
 	}
 	}
 	.social__link-vkontakte{
