@@ -15,8 +15,6 @@ $(function(){
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 1000,
-    pauseOnFocus: true,
-    pauseOnDots: true,
     pauseOnHover: true,
     focusOnSelect: false,
     });
@@ -30,8 +28,6 @@ $(function(){
       slidesToShow: 3,
       arrows: true,
       slidesToScroll: 1,
-      pauseOnFocus: true,
-      pauseOnDots: true,
       pauseOnHover: true,
       
       responsive: [
