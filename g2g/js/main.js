@@ -12,9 +12,9 @@ $(function(){
   
   
   $('.homeslider__inner, .carslider__inner, .yachtsslider__inner').slick({
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 800,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    // speed: 800,
     pauseOnFocus: true,
     pauseOnDots: true,
     pauseOnHover: true,
