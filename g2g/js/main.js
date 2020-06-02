@@ -14,7 +14,7 @@ $(function(){
   $('.homeslider__inner, .carslider__inner, .yachtsslider__inner').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    speed: 1100,
+    speed: 1000,
     pauseOnFocus: true,
     pauseOnDots: true,
     pauseOnHover: true,
@@ -23,9 +23,10 @@ $(function(){
   
     
     $('.offers__slider').slick({
+      infinite: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      speed: 1200,
+      speed: 1600,
       slidesToShow: 3,
       arrows: true,
       slidesToScroll: 1,
@@ -44,6 +45,7 @@ $(function(){
               breakpoint: 861,
               settings: {
                 slidesToShow: 1,
+                speed: 1400,
               }
             },
       ]
