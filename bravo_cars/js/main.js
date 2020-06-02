@@ -26,7 +26,7 @@ $(function(){
       infinite: true,
       autoplay: true,
       autoplaySpeed: 2000,
-      speed: 1100,
+      speed: 1600,
       slidesToShow: 3,
       arrows: true,
       slidesToScroll: 2,
