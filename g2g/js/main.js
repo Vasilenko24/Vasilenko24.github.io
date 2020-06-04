@@ -51,6 +51,11 @@ $(function(){
     $(this).toggleClass('active');
     
     });
+
+  $('.room').on('click', function(){
+    $(this).toggleClass('active');
+    
+    });
   
   $('body').append('<button class="btn__up" />');
    

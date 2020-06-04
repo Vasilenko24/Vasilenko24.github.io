@@ -91,49 +91,32 @@ body {
 
 
 
-// .breadcrumbs{
-//   &__inner{
-//       padding: 45px 0 40px;
-//       overflow: hidden;
-//       width: 1020px;
-//   }
-//   &__list{
-//       li{
-//           display: inline-block;
-//           position: relative;
-//           & + li{
-//               padding-left: 24px;
-//               &::before{
-//                   content: "-";
-//                   color: $green;
-//                   position: absolute;
-//                   left: 8px;
-//               }
-//           }
-//           &:last-child{
-//               a,
-//               span{
-//                   color: $bg;
-//               }
-//           }
-//       }
-//       a{
-//           color: #b0bec5;
-//       }
-//   }
-// }
+.breadcrumbs{
+  &__inner{
+      overflow: hidden;
+      width: 1020px;
+  }
+  &__list{
+      li{
+          display: inline-block;
+          position: relative;
+          & + li{
+              margin-left: 8px;
+          }
+      }
+      a{
+          color: #fff;
+          font-size: 16px;
+          font-weight: 200;
+          span{
+            padding-left: 6px;
+          }
+      }
+  }
+}
 
 
-// <div class="breadcrumbs">
-// <div class="container">
-//     <div class="breadcrumbs__inner">
-//         <ul class="breadcrumbs__list">
-//             <li><a href="#">1</a></li>
-//             <li><a href="#">42s</a></li>
-//         </ul>
-//     </div>
-// </div>
-// </div>
+
 
 ul,
 ol,
