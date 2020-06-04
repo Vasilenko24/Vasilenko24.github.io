@@ -759,7 +759,12 @@ display: none;
 
 
 // start home/car/yachts section
-
+.home{
+	.jq-selectbox .jqselect{
+		width: 100% !important;
+		margin-bottom: 10px;
+	}
+}
 
 .home,
 .car,
@@ -1913,7 +1918,7 @@ display: none;
 		box-shadow: 0 2px 10px rgba(0,0,0,.2);
 	}
 
-
+    .home,
 	.car,
 	.yachts{
 		.jq-selectbox{
@@ -2101,6 +2106,122 @@ display: none;
 			}
 		}
 	}
+
+
+
+     .advanced__home-city{
+		 padding-top: 40px;
+		 margin-bottom: 55px;
+
+
+		 input[type="radio"] {
+			display: none;
+		}
+		
+		label{
+		   padding-left: 10px;
+		}
+		label::before{
+			content: '';
+			display: inline-block;
+		   width: 25px;
+		   height: 25px;
+		   border: 1px solid $red;
+		   border-radius: 5px;
+		   vertical-align: middle;
+		   margin-left: -10px;
+		   margin-right: 10px;
+		}
+		input[type="radio"]:checked + label::before{
+			content: '✓';
+			text-align: center;
+			background-color: #fff;
+			border: 1px solid $w;
+			color: $red;
+			font-weight: 600;
+			font-size: 20px;
+			font-family: 'Gilroy';
+		}
+
+
+
+ 
+      .advanced__location{
+		  display: flex;
+		  align-items: center;
+	  }
+	  .avanced__location-title{
+		font-size: 24px;
+		font-weight: bold;
+	}
+ 
+	.advanced__location-ukr{
+		margin-left: 20px;
+		font-weight: bold;
+		font-size: 18px;
+		
+	}
+
+	.advanced__location-input{
+		margin-left: 45px;
+		position: relative;
+		input{
+			width: 205px;
+			min-height: 35px;
+			border: none;
+			border-radius: 5px;
+			padding-left: 10px;
+			color: black;
+			font-size: 16px;
+		}
+		  .location-ico{
+			  cursor: pointer;
+			  position: absolute;
+			  right: 10px;
+			  top: 10px;
+			  background-image: url(../img/icons/exit-ico.png);
+			  width: 16px;
+			  height: 16px;
+		  }
+	}
+
+	.advanced__location-abroad{
+		margin-left: 100px;
+		font-weight: bold;
+        font-size: 18px;
+	}
+
+	.advanced__location-ukr.hidden{
+		label{
+			color: #868585;
+		}
+		label::before{
+			border: 1px solid #868585;
+		}
+	}
+
+	.advanced__location-abroad.hidden{
+		label{
+			color: #868585;
+		}
+		label::before{
+			border: 1px solid #868585;
+		}
+	}
+
+
+
+	 }
+
+
+
+
+
+
+
+
+
+	
 
 .advanced__info{
 	padding-top: 55px;
@@ -2761,6 +2882,7 @@ display: none;
 	height: 21px;
 	border: none;
 	background-image: url(../img/icons/search-btnblack.png);
+	background-repeat: no-repeat;
 }
 
 }

@@ -1,15 +1,42 @@
 
 $(function(){
 
+
+  // language drop down
     $('.header__lang').on('click', function(){
       $('.header__lang, .lang__more').toggleClass('active');
       });
+
+
+      // end language dropw down
+
+
+
+      // up btn
   
       $('.header__burger').on('click', function(){
         $('.header__burger, .header__menu-content').toggleClass('active');
         $('body').toggleClass('lock');
         });
+
+        // end up btn
+
+
+
+
+    // UKR hidden ABROD hidden
+      $('.advanced__location-abroad').on('click', function(){
+        $(this).removeClass('hidden');
+        $('.advanced__location-ukr').addClass('hidden');
+        });
   
+        $('.advanced__location-ukr').on('click', function(){
+          $(this).removeClass('hidden');
+          $('.advanced__location-abroad').addClass('hidden');
+          });
+    // end UKR HIDDEN ABROAD HIDDEN
+     
+    
   
   $('.homeslider__inner, .carslider__inner, .yachtsslider__inner').slick({
     autoplay: true,
