@@ -1681,7 +1681,7 @@ display: none;
 			margin-bottom: 10px;
 			@media(max-width: 420px){
 				font-size: 14px;
-				margin-bottom: 5;
+				margin-bottom: 5px;
 			}
 			span{
 				margin-left: 30px;
@@ -1868,7 +1868,7 @@ display: none;
 	align-items: center;
 		padding: 0;
 		border: none;
-		border-bottom-color: none;
+		border-bottom: 0px solid $w;
 		border-radius: 4px;
 		background: #fff;
 		box-shadow: none;
@@ -2234,7 +2234,31 @@ display: none;
 		}
 	}
 
-	.advanced__location-name.hidden{
+	.location__row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.location__column{
+		margin-left: 25px;
+		margin-bottom: 20px;
+		.advanced__sort-line{
+			width: 160px;
+		}
+	}
+	.location__name-abroad.hidden{
+		display: none;
+	}
+	.location__name-abroad{
+		padding-top: 55px;
+		.show__more-city{
+			margin-left: 25px;
+		}
+		.loc-main{
+			margin-left: 25px;
+		}
+	}
+
+	.location__name-ukr.hidden{
            display: none;
 	}
       .advanced__location-name{
@@ -2243,6 +2267,15 @@ display: none;
 		  margin: 0 auto;
 		  display: flex;
 		  justify-content: space-between;
+		  @media(max-width: 560px){
+			  display: block;
+		  }
+	  }
+	  .advanced__location-box{
+		  margin-right: 10px;
+		  @media(max-width: 560px){
+			margin-bottom: 20px;
+		}
 	  }
 	  .advanced__sort-line{
 		  margin-bottom: 13px;
@@ -2260,10 +2293,26 @@ display: none;
 	}
 
     .show__more-area{
-		cursor: pointer;
-		width: 200px;
-		min-height: 25px;
-		background-color: $red;
+		.jq-selectbox__select{
+			cursor: pointer;
+			width: 160px;
+			min-height: 30px;
+			background-color: #868585;
+			border-radius: 5px;
+			font-size: 14px;
+			color: $w;
+			font-weight: 400;
+		}
+		.jq-selectbox__trigger-arrow{
+			border-top: 8px solid $w;
+		}
+		.jq-selectbox__select:hover{
+			background: #868585;
+		}
+		.jq-selectbox__dropdown{
+			top: 35px !important;
+		}
+		
 	}
 
 

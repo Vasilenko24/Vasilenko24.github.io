@@ -27,22 +27,17 @@ $(function(){
     // UKR hidden ABROD hidden
       $('.advanced__location-abroad').on('click', function(){
         $(this).removeClass('hidden');
-        $('.advanced__location-ukr, .advanced__location-name, .street, .village').addClass('hidden');
+        $('.location__name-abroad').removeClass('hidden');
+        $('.advanced__location-ukr, .location__name-ukr, .street, .village').addClass('hidden');
         });
   
         $('.advanced__location-ukr').on('click', function(){
           $(this).removeClass('hidden');
-          $('.advanced__location-name').removeClass('hidden');
+          $('.location__name-ukr').removeClass('hidden');
           $('.advanced__location-abroad').addClass('hidden');
+          $('.location__name-abroad').addClass('hidden');
           });
 
-          $('.show__more-street').on('click', function(){
-            $('.street').slideToggle('hidden');
-            });
-
-          $('.show__more-village').on('click', function(){
-            $('.village').slideToggle('hidden');
-            });
 
 
     // end UKR HIDDEN ABROAD HIDDEN
