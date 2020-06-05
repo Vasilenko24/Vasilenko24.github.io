@@ -21,7 +21,15 @@ $(function(){
 
         // end up btn
 
-
+        
+        $('#checkbox').click(function(){
+          if ($(this).is(':checked')){
+            $('#controls input:checkbox').prop('checked', true);
+          } else {
+            $('#controls input:checkbox').prop('checked', false);
+          }
+        });
+       
 
 
     // UKR hidden ABROD hidden
