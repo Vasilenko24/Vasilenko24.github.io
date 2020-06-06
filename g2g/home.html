@@ -196,7 +196,7 @@
     
                      <div class="home__sort">
                         <h3 class="home__sort-title">Вся недвижимость</h3>
-    
+                         <form action="">
                         <div class="settings__line">
                                 <select>
                                     <option>Продажа домов</option>
@@ -217,12 +217,24 @@
                         <div class="home__sort-room">
     
                           <div class="room__title">Комнат</div>
-                          <div class="room__number">
-                               <button class="filter active">1</button>
-                               <button class="filter">2</button>
-                               <button class="filter">3</button>
-                               <button class="filter">4</button>
-                          </div>
+                          <div class="wrap-room">
+                            <label for="1">
+                                <input type="checkbox" id="1">
+                                <span class="check">1</span>
+                              </label>
+                                <label for="2">
+                                <input type="checkbox" id="2">
+                                <span class="check">2</span>
+                              </label>
+                                <label for="3">
+                                <input type="checkbox" id="3">
+                                <span class="check">3</span>
+                              </label>
+                                <label for="4">
+                                <input type="checkbox" id="4">
+                                <span class="check">4+</span>
+                              </label>
+                        </div>
                         </div>
     
                         <div class="home__sort-info">
@@ -236,9 +248,10 @@
                             </div>
                         </div>
                             <div class="home__btn">
-                                <button class="more__info" type="button"><a class="extended-btn" href="extended.html">Расширенный поиск</a></button>
-                                <button class="home__search" type="button">Поиск</button>
+                                <a class="extended-btn" href="extended.html"><button class="more__info" type="button">Расширенный поиск</button></a>
+                                <button class="home__search" type="submit">Поиск</button>
                             </div>
+                        </form>
                      </div>
     
                        <div class="home__slider">
@@ -331,7 +344,7 @@
      </div>
  </section>
 
-             <!-- ens more category -->
+             <!-- end more category -->
     
     
              <!-- start top offers -->

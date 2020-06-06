@@ -11,7 +11,6 @@ $(function(){
       // end language dropw down
 
 
-
       // up btn
   
       $('.header__burger').on('click', function(){
@@ -81,10 +80,6 @@ $(function(){
       ]
   });
   
-  $('.filter').on('click', function(){
-    $(this).toggleClass('active');
-    
-    });
 
 
 
@@ -113,16 +108,35 @@ $(function(){
     $('input[type="file"], select').styler();
   
   
-    const check = document.querySelector('#loc-1');
-
-    check.addEventListener("click", e => {
-        const checkbox = document.querySelectorAll('.checkbox');
-        checkbox.forEach(checkbox => {
-            checkbox.disabled = e.target.checked
-        })
-    })
+    const centrUkr = document.querySelector('#ukr-1');
+    const centrUkr2 = document.querySelector('#ukr-10');
+    const centrUkr3 = document.querySelector('#ukr-19');
+    const centrUkr4 = document.querySelector('#ukr-25');
+    const centrAbr = document.querySelector('#abr-1');
+    const all = document.querySelector('#trade-36');
+    
+    const disabledCheckbox = e => {
+      const checkbox = document.querySelectorAll('.checkbox');
+      checkbox.forEach(checkbox => {
+          if(checkbox.name === e.target.name) {
+              checkbox.disabled = e.target.checked;
+              checkbox.checked = false;
+          }
+        });
+     };
+    
+    centrUkr.addEventListener('click', disabledCheckbox);
+    centrUkr2.addEventListener('click', disabledCheckbox);
+    centrUkr3.addEventListener('click', disabledCheckbox);
+    centrUkr4.addEventListener('click', disabledCheckbox);
+    centrAbr.addEventListener('click', disabledCheckbox);
+    all.addEventListener('click', disabledCheckbox);
+    
+    
     
     
   });
+
+
 
   
