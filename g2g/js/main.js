@@ -22,14 +22,7 @@ $(function(){
         // end up btn
 
         
-        $('#checkbox').click(function(){
-          if ($(this).is(':checked')){
-            $('#controls input:checkbox').prop('checked', true);
-          } else {
-            $('#controls input:checkbox').prop('checked', false);
-          }
-        });
-       
+
 
 
     // UKR hidden ABROD hidden
@@ -93,6 +86,9 @@ $(function(){
     
     });
 
+
+
+    
   $('.room').on('click', function(){
     $(this).toggleClass('active');
     
@@ -117,4 +113,16 @@ $(function(){
     $('input[type="file"], select').styler();
   
   
+    const check = document.querySelector('#loc-1');
+
+    check.addEventListener("click", e => {
+        const checkbox = document.querySelectorAll('.checkbox');
+        checkbox.forEach(checkbox => {
+            checkbox.disabled = e.target.checked
+        })
+    })
+    
+    
   });
+
+  

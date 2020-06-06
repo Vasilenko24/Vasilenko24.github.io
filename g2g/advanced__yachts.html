@@ -210,33 +210,33 @@
     <!-- start advanced search -->
     <div class="advanced">
         <div class="container">
-        <div class="advanced__title">Расширенный поиск <span>недвижимости</span></div>
+        <div class="advanced__title">Расширенный поиск <span>Яхты</span></div>
         <div class="advanced__box">
             <form>
             <div class="advanced__box-sorting">
 
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="allhome" name="home">
-                    <label for="allhome">Вся недвижимость</label>
+                    <input type="checkbox" id="allyachts" name="yachts">
+                    <label for="allyachts">Все яхты</label>
                 </div>
 
                     <div class="advanced__sort-line advanced__sort-line--wrap">
-                        <input type="checkbox" id="newhome" name="home">
+                        <input type="checkbox" id="newhome" name="yachts">
                         <label for="newhome">Новые</label>
                     </div>
     
                     <div class="advanced__sort-line advanced__sort-line--wrap">
-                        <input type="checkbox" id="onlyWphoto" name="home">
+                        <input type="checkbox" id="onlyWphoto" name="yachts">
                         <label for="onlyWphoto">Только с фото</label>
                     </div>
     
                     <div class="advanced__sort-line advanced__sort-line--wrap">
-                        <input type="checkbox" id="onlyWvideo" name="home">
+                        <input type="checkbox" id="onlyWvideo" name="yachts">
                         <label for="onlyWvideo">Только с видео</label>
                     </div>
     
                     <div class="advanced__sort-line advanced__sort-line--wrap">
-                        <input type="checkbox" id="onlyWvideoG2g" name="home">
+                        <input type="checkbox" id="onlyWvideoG2g" name="yachts">
                         <label for="onlyWvideoG2g" class="video__logo-g2g">Только с видео</label>
                     </div>
 
@@ -244,11 +244,95 @@
             </div>
 
             <div class="advanced__search">
-                <label>Я ищу</label>
+                <label>Тип</label>
                 <select name="homesearch">
-                    <option>Продажа квартиры</option>
-                    <option>Продажа Домов</option>
+                    <option>Лодка</option>
+                    <option>Яхта</option>
                 </select>
+            </div>
+
+            <div class="advanced__yachts-items">
+
+                <div class="advanced__yachts-item">
+        
+                    <div class="setting__left">
+                        <label>Брэнд</label>
+                        <Select>
+                            <option>Выбрать</option>
+                            <option>Выбрать</option>
+                        </Select>
+                    </div>
+                </div>
+            
+                <div class="advanced__yachts-item">
+             
+                    <div class="yacht__info-row">
+                        <label>Длинна (м)</label>
+                         <div class="yachts__info-inp">
+                             <input type="number" placeholder="От">
+                             <input type="number" placeholder="До">
+                         </div>
+                    </div>
+                    
+                    
+
+                </div>
+            
+                <div class="advanced__yachts-item">
+             
+                    <div class="setting__right">
+                        <label>Материал корпуса</label>
+                        <Select>
+                            <option>Выбрать</option>
+                            <option>Выбрать</option>
+                        </Select>
+                    </div>
+                    
+
+                </div>
+            
+            </div>
+            
+            <div class="advanced__yachts-items">
+
+                <div class="advanced__yachts-item">
+        
+                    <div class="setting__left">
+                        <label>Год постройки</label>
+                        <Select>
+                            <option>Выбрать</option>
+                            <option>Выбрать</option>
+                        </Select>
+                    </div>
+                </div>
+            
+                <div class="advanced__yachts-item">
+             
+                    <div class="yacht__info-row">
+                        <label>Ширина (м)</label>
+                         <div class="yachts__info-inp">
+                             <input type="number" placeholder="От">
+                             <input type="number" placeholder="До">
+                         </div>
+                    </div>
+                    
+                    
+
+                </div>
+            
+                <div class="advanced__yachts-item">
+             
+                    <div class="setting__right">
+                        <label>Топливо</label>
+                        <Select>
+                            <option>Выбрать</option>
+                            <option>Выбрать</option>
+                        </Select>
+                    </div>
+                    
+
+                </div>
+            
             </div>
 
 
@@ -259,7 +343,7 @@
          <div class="avanced__location-title">Местоположение</div>
 
          <div class="advanced__location-ukr">
-            <input type="radio" id="ukr" name="home" checked="checked">
+            <input type="radio" id="ukr" name="yachts" checked="checked">
             <label for="ukr">Украина</label>
          </div>
 
@@ -269,7 +353,7 @@
          </div>
 
          <div class="advanced__location-abroad hidden">
-            <input type="radio" id="abrd" name="home">
+            <input type="radio" id="abrd" name="yachts">
             <label for="abrd">Заграница</label>
          </div>
 
@@ -281,42 +365,49 @@
 
           <div class="advanced__sort-line loc-main">
 
-              <input type="checkbox" id="loc-1" name="home">
-              <label for="loc-1">Район</label>
+              <input type="checkbox" id="ukr-1" name="yachts">
+              <label for="ukr-1">Центральная Украина</label>
           </div>
 
           <div class="advanced__sort-line">
-              <input type="checkbox" id="loc-2" name="home">
-              <label for="loc-2">1-я гор.больница</label>
+              <input type="checkbox" id="ukr-2" name="yachts">
+              <label for="ukr-2">Киевская</label>
           </div>
 
           <div class="advanced__sort-line">
-              <input type="checkbox" id="loc-3" name="home">
-              <label for="loc-3">5-я школа</label>
+              <input type="checkbox" id="ukr-3" name="yachts">
+              <label for="ukr-3">Винницкая</label>
           </div>
 
           <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-4" name="home">
-            <label for="loc-4">Авиягородок</label>
+            <input type="checkbox" id="ukr-4" name="yachts">
+            <label for="ukr-4">Житомирская</label>
         </div>
 
         <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-5" name="home">
-            <label for="loc-5">автовокзал</label>
+            <input type="checkbox" id="ukr-5" name="yachts">
+            <label for="ukr-5">Кировоградская</label>
         </div>
 
         <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-6" name="home">
-            <label for="loc-6">Алмазный</label>
+            <input type="checkbox" id="ukr-6" name="yachts">
+            <label for="ukr-6">Полтавская</label>
         </div>
 
+        <div class="advanced__sort-line">
+            <input type="checkbox" id="ukr-7" name="yachts">
+            <label for="ukr-7">Сумская</label>
+        </div>
 
-        <select class="show__more-area show__more-street">
-            <option>Больше значений</option>
-            <option>2-ая городская</option>
-            <option>5-ая городская</option>
-            <option>4-ая городская</option>
-        </select>
+        <div class="advanced__sort-line">
+            <input type="checkbox" id="ukr-8" name="yachts">
+            <label for="ukr-8">Черкасская</label>
+        </div>
+
+        <div class="advanced__sort-line">
+            <input type="checkbox" id="ukr-9" name="yachts">
+            <label for="ukr-9">Черниговская</label>
+        </div>
           
         </div>
 
@@ -324,18 +415,42 @@
             
             <div  class="advanced__sort-line loc-main">
 
-                <input type="checkbox" id="loc-7" name="home">
-                <label for="loc-7">Пригород</label>
+                <input type="checkbox" id="ukr-10" name="yachts">
+                <label for="ukr-10">Западная Украина</label>
             </div>
   
             <div class="advanced__sort-line">
-                <input type="checkbox" id="loc-8" name="home">
-                <label for="loc-8">Рыбцы</label>
+                <input type="checkbox" id="ukr-11" name="yachts">
+                <label for="ukr-11">Львовская</label>
             </div>
   
             <div class="advanced__sort-line">
-                <input type="checkbox" id="loc-9" name="home">
-                <label for="loc-9">Яковцы</label>
+                <input type="checkbox" id="ukr-12" name="yachts">
+                <label for="ukr-12">Волынская</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-13" name="yachts">
+                <label for="ukr-13">Закарпатская</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-14" name="yachts">
+                <label for="ukr-14">Ивано-Франковская</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-15" name="yachts">
+                <label for="ukr-15">Ровенская</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-16" name="yachts">
+                <label for="ukr-16">Тернопольская</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-17" name="yachts">
+                <label for="ukr-17">Хмельницкая</label>
+            </div>
+            <div class="advanced__sort-line">
+                <input type="checkbox" id="ukr-18" name="yachts">
+                <label for="ukr-18">Черниговская</label>
             </div>
   
 
@@ -346,54 +461,57 @@
 
         <div class="advanced__sort-line loc-main">
 
-            <input type="checkbox" id="loc-10" name="home">
-            <label for="loc-10">Село</label>
+            <input type="checkbox" id="ukr-19" name="yachts">
+            <label for="ukr-19">Восточная Украина</label>
         </div>
 
         <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-11" name="home">
-            <label for="loc-11">Абазовка</label>
+            <input type="checkbox" id="ukr-20" name="yachts">
+            <label for="ukr-20">Днепропетровская</label>
         </div>
 
         <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-12" name="home">
-            <label for="loc-12">Андреевка</label>
+            <input type="checkbox" id="ukr-21" name="yachts">
+            <label for="ukr-21">Харьковская</label>
         </div>
 
         <div class="advanced__sort-line">
-          <input type="checkbox" id="loc-13" name="home">
-          <label for="loc-13">Безручки</label>
+          <input type="checkbox" id="ukr-22" name="yachts">
+          <label for="ukr-22">Донецкая</label>
       </div>
 
       <div class="advanced__sort-line">
-          <input type="checkbox" id="loc-14" name="home">
-          <label for="loc-14">Березовка</label>
+          <input type="checkbox" id="ukr-23" name="yachts">
+          <label for="ukr-23">Луганская</label>
       </div>
 
       <div class="advanced__sort-line">
-          <input type="checkbox" id="loc-15" name="home">
-          <label for="loc-15">Биологическое</label>
+          <input type="checkbox" id="ukr-24" name="yachts">
+          <label for="ukr-24">Запорожская</label>
       </div>
 
-      <div class="advanced__location-more village hidden ">
-        <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-16" name="home">
-            <label for="loc-16">Березовка</label>
-        </div>
 
-        <div class="advanced__sort-line">
-            <input type="checkbox" id="loc-17" name="home">
-            <label for="loc-17">Абазовка</label>
-        </div>
+      <div class="advanced__sort-line loc-main sort__line-margin">
+
+        <input type="checkbox" id="ukr-25" name="yachts">
+        <label for="ukr-25">Южная Украина</label>
     </div>
 
+    <div class="advanced__sort-line">
+        <input type="checkbox" id="ukr-26" name="yachts">
+        <label for="ukr-26">Херсонская</label>
+    </div>
 
-      <select class="show__more-area show__more-village">
-          <option>Больше значений</option>
-          <option>Березовка</option>
-          <option>Макеевка</option>
-          <option>Федоровка</option>
-      </select>
+    <div class="advanced__sort-line">
+        <input type="checkbox" id="ukr-27" name="yachts">
+        <label for="ukr-27">Николаевская</label>
+    </div>
+
+    <div class="advanced__sort-line">
+      <input type="checkbox" id="ukr-28" name="yachts">
+      <label for="ukr-28">Одесская</label>
+  </div>
+
       </div>
 
 
@@ -408,7 +526,7 @@
 
           <div class="advanced__sort-line loc-main">
 
-              <input type="checkbox" id="abr-1" name="home">
+              <input type="checkbox" id="abr-1" name="yachts">
               <label for="abr-1">Вся Европа</label>
           </div>
          
@@ -416,27 +534,27 @@
 
             <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-2" name="home">
+                    <input type="checkbox" id="abr-2" name="yachts">
                     <label for="abr-2">Австрия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-3" name="home">
+                    <input type="checkbox" id="abr-3" name="yachts">
                     <label for="abr-3">Бельгия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-4" name="home">
+                  <input type="checkbox" id="abr-4" name="yachts">
                   <label for="abr-4">Великобритания</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-5" name="home">
+                  <input type="checkbox" id="abr-5" name="yachts">
                   <label for="abr-5">Германия</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-6" name="home">
+                  <input type="checkbox" id="abr-6" name="yachts">
                   <label for="abr-6">Ирландия</label>
               </div>
                 
@@ -444,27 +562,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-7" name="home">
+                    <input type="checkbox" id="abr-7" name="yachts">
                     <label for="abr-7">Лихтенштейн</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-8" name="home">
+                    <input type="checkbox" id="abr-8" name="yachts">
                     <label for="abr-8">Люксембург</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-9" name="home">
+                  <input type="checkbox" id="abr-9" name="yachts">
                   <label for="abr-9">Монако</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-10" name="home">
+                  <input type="checkbox" id="abr-10" name="yachts">
                   <label for="abr-10">Нидерланды</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-11" name="home">
+                  <input type="checkbox" id="abr-11" name="yachts">
                   <label for="abr-11">Франция</label>
               </div>
                 
@@ -472,27 +590,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-12" name="home">
+                    <input type="checkbox" id="abr-12" name="yachts">
                     <label for="abr-12">Швейцария</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-13" name="home">
+                    <input type="checkbox" id="abr-13" name="yachts">
                     <label for="abr-13">Белоруссия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-14" name="home">
+                  <input type="checkbox" id="abr-14" name="yachts">
                   <label for="abr-14">Болгария</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-15" name="home">
+                  <input type="checkbox" id="abr-15" name="yachts">
                   <label for="abr-15">Венгрия</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-16" name="home">
+                  <input type="checkbox" id="abr-16" name="yachts">
                   <label for="abr-16">Молдовия</label>
               </div>
                 
@@ -500,27 +618,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-17" name="home">
+                    <input type="checkbox" id="abr-17" name="yachts">
                     <label for="abr-17">Польша</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-18" name="home">
+                    <input type="checkbox" id="abr-18" name="yachts">
                     <label for="abr-18">Россия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-19" name="home">
+                  <input type="checkbox" id="abr-19" name="yachts">
                   <label for="abr-19">Румыния</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-20" name="home">
+                  <input type="checkbox" id="abr-20" name="yachts">
                   <label for="abr-20">Словакия</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-21" name="home">
+                  <input type="checkbox" id="abr-21" name="yachts">
                   <label for="abr-21">Чехия</label>
               </div>
                 
@@ -528,27 +646,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-22" name="home">
+                    <input type="checkbox" id="abr-22" name="yachts">
                     <label for="abr-22">Лания</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-23" name="home">
+                    <input type="checkbox" id="abr-23" name="yachts">
                     <label for="abr-23">Исландия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-24" name="home">
+                  <input type="checkbox" id="abr-24" name="yachts">
                   <label for="abr-24">Латвия</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-25" name="home">
+                  <input type="checkbox" id="abr-25" name="yachts">
                   <label for="abr-25">Литва</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-26" name="home">
+                  <input type="checkbox" id="abr-26" name="yachts">
                   <label for="abr-26">Черногория</label>
               </div>
                 
@@ -556,27 +674,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-27" name="home">
+                    <input type="checkbox" id="abr-27" name="yachts">
                     <label for="abr-27">Норвегия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-28" name="home">
+                    <input type="checkbox" id="abr-28" name="yachts">
                     <label for="abr-28">Финляндия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-29" name="home">
+                  <input type="checkbox" id="abr-29" name="yachts">
                   <label for="abr-29">Эстония</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-30" name="home">
+                  <input type="checkbox" id="abr-30" name="yachts">
                   <label for="abr-30">Венгрия</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-31" name="home">
+                  <input type="checkbox" id="abr-31" name="yachts">
                   <label for="abr-31">Швеция</label>
               </div>
                 
@@ -584,27 +702,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-40" name="home">
+                    <input type="checkbox" id="abr-40" name="yachts">
                     <label for="abr-40">Албания</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-41" name="home">
+                    <input type="checkbox" id="abr-41" name="yachts">
                     <label for="abr-41">Андорра</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-42" name="home">
+                  <input type="checkbox" id="abr-42" name="yachts">
                   <label for="abr-42">Босния и Герцеговина</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-43" name="home">
+                  <input type="checkbox" id="abr-43" name="yachts">
                   <label for="abr-43">Ватикан</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-44" name="home">
+                  <input type="checkbox" id="abr-44" name="yachts">
                   <label for="abr-44">Греция</label>
               </div>
                 
@@ -612,27 +730,27 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-32" name="home">
+                    <input type="checkbox" id="abr-32" name="yachts">
                     <label for="abr-32">Испания</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-33" name="home">
+                    <input type="checkbox" id="abr-33" name="yachts">
                     <label for="abr-33">Италия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-34" name="home">
+                  <input type="checkbox" id="abr-34" name="yachts">
                   <label for="abr-34">Северная Македония</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-35" name="home">
+                  <input type="checkbox" id="abr-35" name="yachts">
                   <label for="abr-35">Мальта</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-36" name="home">
+                  <input type="checkbox" id="abr-36" name="yachts">
                   <label for="abr-36">Португалия</label>
               </div>
                 
@@ -640,22 +758,22 @@
 
               <div class="location__column">
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-37" name="home">
+                    <input type="checkbox" id="abr-37" name="yachts">
                     <label for="abr-37">Сан-Марино</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                    <input type="checkbox" id="abr-38" name="home">
+                    <input type="checkbox" id="abr-38" name="yachts">
                     <label for="abr-38">Сербия</label>
                 </div>
       
                 <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-39" name="home">
+                  <input type="checkbox" id="abr-39" name="yachts">
                   <label for="abr-39">Словения</label>
               </div>
       
               <div class="advanced__sort-line">
-                  <input type="checkbox" id="abr-45" name="home">
+                  <input type="checkbox" id="abr-45" name="yachts">
                   <label for="abr-45">Хорватия</label>
               </div>
                 
@@ -680,72 +798,16 @@
 
 
 
-<div class="advanced__info">
+<div class="advanced__info advanced__info-padding">
 <div class="advanced__info-title">Параметры объекта</div>
 <div class="advanced__info-inner">
 
     <div class="advanced__info-left">
 
 
-        <fieldset>
-        <div class="advanced__info-line">
-            <legend class="advanced__line-title main-title">Комнат</legend>
-            <div class="advanced__line-info">
-                <div class="wrap-room">
-                    <label for="1">
-                        <input type="checkbox" id="1">
-                        <span class="check">1</span>
-                      </label>
-                        <label for="2">
-                        <input type="checkbox" id="2">
-                        <span class="check">2</span>
-                      </label>
-                        <label for="3">
-                        <input type="checkbox" id="3">
-                        <span class="check">3</span>
-                      </label>
-                        <label for="4">
-                        <input type="checkbox" id="4">
-                        <span class="check">4</span>
-                      </label>
-                </div>
-                    
-                
-                 <div class="room-info room-info__stage">
-                    <input type="checkbox" id="trade-20" name="home">
-                    <label for="trade-20">двухуровневая</label>
-              </div>
-            </div>
-        </div>
-    </fieldset>
-
-        <div class="advanced__info-line">
-            <div class="advanced__line-title">Тип</div>
-            <div class="advanced__line-info">
-                 <div class="room-info">
-                    <input type="checkbox" id="trade-21" name="home">
-                    <label for="trade-21">Вторичное</label>
-              </div>
-              <div class="room-info">
-                <input type="checkbox" id="trade-22" name="home">
-                <label for="trade-22">Первичное</label>
-          </div>
-            </div>
-        </div>
-
-
-        <div class="advanced__info-line">
-            <div class="advanced__line-title">Тип стен</div>
-            <div class="advanced__line-info">
-                  <select>
-                      <option>Выбрать</option>
-                  </select>
-            </div>
-        </div>
-
         
         <div class="advanced__info-line">
-            <div class="advanced__line-title">Площадь, м<sup><small>2</small></sup> </div>
+            <div class="advanced__line-title">Высота борта (м)</div>
             <div class="advanced__line-info">
                 <div class="advanced__sorting-input">
                     <input type="number" placeholder="От">
@@ -755,18 +817,7 @@
         </div>
 
         <div class="advanced__info-line">
-            <div class="advanced__line-title">Жилая, м<sup><small>2</small></sup> </div>
-            <div class="advanced__line-info">
-                <div class="advanced__sorting-input">
-                    <input type="number" placeholder="От">
-                    <input class="sort__price-wrap" type="number" placeholder="До">
-                </div>
-            </div>
-        </div>
-
-
-        <div class="advanced__info-line">
-            <div class="advanced__line-title">Кухня, м<sup><small>2</small></sup> </div>
+            <div class="advanced__line-title">Осадка (м)</div>
             <div class="advanced__line-info">
                 <div class="advanced__sorting-input">
                     <input type="number" placeholder="От">
@@ -777,7 +828,58 @@
 
 
         <div class="advanced__info-line">
-            <div class="advanced__line-title">Участок, м<sup><small>2</small></sup> </div>
+            <div class="advanced__line-title">Каюты</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Мощность</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Скорость (уз)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Скорость крейсерская(уз)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Площадь паруссов (м<sup><small>2</small></sup>)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Грузоподъемность (т)</div>
             <div class="advanced__line-info">
                 <div class="advanced__sorting-input">
                     <input type="number" placeholder="От">
@@ -787,62 +889,82 @@
         </div>
 
             <div class="advanced__info-location">
-                <div class="advanced__info-title">Рядом</div>
+                <div class="advanced__info-title">Есть</div>
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-23" name="home">
-                    <label for="trade-23">магазин</label>
-                    <input type="checkbox" id="trade-24" name="home">
-                    <label for="trade-24">больница</label>
+                    <input type="checkbox" id="yachts-1" name="yachts">
+                    <label for="yachts-1">АИС</label>
+                    <input type="checkbox" id="yachts-2" name="yachts">
+                    <label class="width-mini" for="yachts-2">опреснитель</label>
                 </div>
             </div>
 
+            <div class="yachts-info-wrapper">
+                <div class="advanced__line-mini">
+                    <input type="checkbox" id="yachts-3" name="yachts">
+                    <label for="yachts-3">VHF</label>
+                    <input type="checkbox" id="yachts-4" name="yachts">
+                    <label class="width-mini" for="yachts-4">элекрическая лебедка</label>
+                </div>
+            </div>
+
+            <div class="yachts-info-wrapper">
+                <div class="advanced__line-mini">
+                    <input type="checkbox" id="yachts-5" name="yachts">
+                    <label for="yachts-5">gps</label>
+                    <input type="checkbox" id="yachts-6" name="yachts">
+                    <label class="width-mini" for="yachts-6">спасательный плот</label>
+                </div>
+            </div>
             
-            <div class="advanced__info-location advanced__info-location--wrap">
+            <div class="yachts-info-wrapper">
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-25" name="home">
-                    <label for="trade-25">школа</label>
-                    <input type="checkbox" id="trade-26" name="home">
-                    <label class="width-mini" for="trade-26">торговый центр</label>
+                    <input type="checkbox" id="yachts-8" name="yachts">
+                    <label for="yachts-8">электронные карты</label>
+                    <input type="checkbox" id="yachts-9" name="yachts">
+                    <label class="width-mini" for="yachts-9">шлюпка</label>
                 </div>
             </div>
-            <div class="advanced__info-location advanced__info-location--wrap">
+
+            <div class="yachts-info-wrapper">
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-27" name="home">
-                    <label for="trade-27">метро</label>
-                    <input type="checkbox" id="trade-28" name="home">
-                    <label class="width-mini" for="trade-28">автобусная остановка</label>
+                    <input type="checkbox" id="yachts-10" name="yachts">
+                    <label for="yachts-10">радар</label>
+                    <input type="checkbox" id="yachts-11" name="yachts">
+                    <label class="width-mini" for="yachts-11">авторулевой</label>
                 </div>
             </div>
-            <div class="advanced__info-location advanced__info-location--wrap">
+
+            <div class="yachts-info-wrapper">
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-29" name="home">
-                    <label for="trade-29">заправка</label>
-                    <input type="checkbox" id="trade-30" name="home">
-                    <label class="width-mini" for="trade-30">железная дорога</label>
+                    <input type="checkbox" id="yachts-12" name="yachts">
+                    <label for="yachts-12">эхолот</label>
+                    <input type="checkbox" id="yachts-13" name="yachts">
+                    <label class="width-mini" for="yachts-13">туалет</label>
                 </div>
             </div>
-            <div class="advanced__info-location advanced__info-location--wrap">
+            <div class="yachts-info-wrapper">
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-31" name="home">
-                    <label for="trade-31">паркинг</label>
-                    <input type="checkbox" id="trade-32" name="home">
-                    <label class="width-mini" for="trade-32">детская площадка</label>
+                    <input type="checkbox" id="yachts-14" name="yachts">
+                    <label for="yachts-14">gmdss</label>
+                    <input type="checkbox" id="yachts-15" name="yachts">
+                    <label class="width-mini" for="yachts-15">душ</label>
                 </div>
             </div>
-            <div class="advanced__info-location advanced__info-location--wrap">
+            <div class="yachts-info-wrapper">
                 <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-33" name="home">
-                    <label for="trade-33">метро</label>
-                    <input type="checkbox" id="trade-34" name="home">
-                    <label class="width-mini" for="trade-34">детский садик</label>
+                    <input type="checkbox" id="yachts-16" name="yachts">
+                    <label class="width-mini" for="yachts-16">камбуз</label>
                 </div>
             </div>
-            <div class="advanced__info-location advanced__info-location--wrap">
-                <div class="advanced__line-mini">
-                    <input type="checkbox" id="trade-35" name="home">
-                    <label class="width-mini" for="trade-35">университет</label>
-                </div>
-            </div>
+
+
+            
+
+
+
+
+
+
 
     </div>
 
@@ -850,7 +972,7 @@
     <div class="advanced__info-right">
 
         <div class="advanced__info-line">
-            <div class="advanced__line-title">Этаж</div>
+            <div class="advanced__line-title">Водоизмещение(т)</div>
             <div class="advanced__line-info">
                 <div class="advanced__sorting-input">
                     <input type="number" placeholder="От">
@@ -859,30 +981,9 @@
             </div>
         </div>
 
-        <div class="advanced__info-line">
-            <div class="advanced__line-title">Этажность</div>
-            <div class="advanced__line-info">
-                <div class="advanced__sorting-input">
-                    <input type="number" placeholder="От">
-                    <input class="sort__price-wrap" type="number" placeholder="До">
-                </div>
-            </div>
-        </div>
-
-        <div class="room__stage">
-            <input type="checkbox" id="trade-50" name="home">
-            <label for="trade-50">Не последний этаж</label>
-        </div>
-
-        <div class="room__stage">
-            <input type="checkbox" id="trade-51" name="home">
-            <label for="trade-51">Не первый этаж</label>
-        </div>
-
-
 
         <div class="advanced__info-line">
-            <div class="advanced__line-title">Год постройки</div>
+            <div class="advanced__line-title">Новая или б/у лодка</div>
             <div class="advanced__line-info">
                   <select>
                       <option>Выбрать</option>
@@ -890,85 +991,85 @@
             </div>
         </div>
 
-        <div class="advanced__info-location">
-            <div class="advanced__info-title">Отопление</div>
-            <div class="advanced__line-mini mini-wrapper">
-                <input type="checkbox" id="trade-47" name="home">
-                <label class="width-mini" for="trade-47">центролизованное</label>
-            </div>
-        </div>
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-48" name="home">
-                <label class="width-mini" for="trade-48">индивидуальное</label>
-            </div>
-        </div>
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-49" name="home">
-                <label class="width-mini" for="trade-49">без отопления</label>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Состояние</div>
+            <div class="advanced__line-info">
+                  <select>
+                      <option>Выбрать</option>
+                  </select>
             </div>
         </div>
 
-
-
-
-
-        <div class="advanced__info-location">
-            <div class="advanced__info-title">Комуникации<br>(есть)</div>
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-36" name="home">
-                <label for="trade-36">все</label>
-                <input type="checkbox" id="trade-37" name="home">
-                <label for="trade-37">свет</label>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Топливный бак (л)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
             </div>
         </div>
 
-        
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-38" name="home">
-                <label for="trade-38">вода</label>
-                <input type="checkbox" id="trade-39" name="home">
-                <label for="trade-39">газ</label>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Вес лодки (кг)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
             </div>
         </div>
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-40" name="home">
-                <label class="width-mini" for="trade-40">подключение газа (возможно)</label>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Вес балласта (кг)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Запасы пресной воды (л)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
+            </div>
+        </div>
+        <div class="advanced__info-line">
+            <div class="advanced__line-title">Запасы топлива (л)</div>
+            <div class="advanced__line-info">
+                <div class="advanced__sorting-input">
+                    <input type="number" placeholder="От">
+                    <input class="sort__price-wrap" type="number" placeholder="До">
+                </div>
             </div>
         </div>
 
-        <div class="advanced__info-location">
-            <div class="advanced__info-title city-wrap">Удаленность от<br>города</div>
+
+
+
+
+
+
+        <div class="yachts__dop-info">
             <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-41" name="home">
-                <label for="trade-41">1км</label>
-                <input type="checkbox" id="trade-42" name="home">
-                <label for="trade-42">25км</label>
+                <input type="checkbox" id="yachts-17" name="yachts">
+                <label for="yachts-17">штурвал</label>
+                <input type="checkbox" id="yachts-18" name="yachts">
+                <label for="yachts-18">без флайбриджа</label>
             </div>
         </div>
 
-        
-        <div class="advanced__info-location--wrap">
+        <div class="yachts__dop-info">
             <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-43" name="home">
-                <label for="trade-43">5км</label>
-                <input type="checkbox" id="trade-44" name="home">
-                <label for="trade-44">50км</label>
+                <input type="checkbox" id="yachts-19" name="yachts">
+                <label for="yachts-19">румпел</label>
+                <input type="checkbox" id="yachts-20" name="yachts">
+                <label for="yachts-20">флайбридж</label>
             </div>
-        </div>  
-
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-45" name="home">
-                <label for="trade-45">10км</label>
-                <input type="checkbox" id="trade-46" name="home">
-                <label for="trade-46">100км+</label>
-            </div>
-        </div>  
-
+        </div>
 
 
 
@@ -1013,18 +1114,23 @@
          </div>
 
 
-         <div class="content__top-right">
+         <div class="right__content">
 
-            <label>Комнат</label>
 
-            <select name="homesearch">
-                <option>за обьект</option>
-                <option>за обьект</option>
-            </select>
+                <div class="advanced__trade-row">
+                  <input type="checkbox" id="yachts-21" name="yachts">
+                  <label for="yachts-21">возможен торг</label>
 
-            <div class="advanced__sort-line">
-                <input type="checkbox" id="dealing" name="home">
-                <label for="dealing">возможен торг</label>
+
+                  <input type="checkbox" id="yachts-22" name="yachts">
+                  <label for="yachts-22">возможна рассрочка</label>
+              </div>
+
+              
+              <div class="advanced__trade-row">
+                <input type="checkbox" id="yachts-23" name="yachts">
+                <label for="yachts-23">возможен кредит</label>
+
             </div>
  
 
@@ -1039,65 +1145,28 @@
           <div class="advanced__trade-lines">
               <div class="advaned__left-trade">
                 <div class="advanced__trade-line">
-                    <input type="checkbox" id="trade-1" name="home">
+                    <input type="checkbox" id="trade-1" name="yachts">
                     <label for="trade-1">на авто</label>
               </div>
               
               <div class="advanced__trade-line">
-                    <input type="checkbox" id="trade-2" name="home">
+                    <input type="checkbox" id="trade-2" name="yachts">
                     <label for="trade-2">на недвижимости</label>
               </div>
 
               <div class="advanced__trade-line">
-                <input type="checkbox" id="trade-3" name="home">
+                <input type="checkbox" id="trade-3" name="yachts">
                 <label for="trade-3">на яхту</label>
           </div>
 
           <div class="advanced__trade-line">
-            <input type="checkbox" id="trade-4" name="home">
+            <input type="checkbox" id="trade-4" name="yachts">
             <label for="trade-4">на недвижимости заграницей</label>
       </div>
               </div>
 
-
-      <div class="advanced__right-trade">
-      <div class="advanced__trade-line">
-        <input type="checkbox" id="trade-6" name="home">
-        <label for="trade-6">возможен кредит</label>
-    </div>
-    
-    <div class="advanced__trade-line">
-        <input type="checkbox" id="trade-7" name="home">
-        <label for="trade-7">возможна рассрочка</label>
-    </div>
-      </div>
-
               
           </div>
-      </div>
-
-      <div class="advanced__type">
-
-        <div class="advanced__type-box">
-            <div class="advanced__type-title">Тип предложения</div>
-            <select name="homesearch">
-                <option>от посредника</option>
-                <option>от посредника</option>
-            </select>
-        </div>
-   
-        <div class="advanced__trade-line">
-            <input type="checkbox" id="trade-8" name="home">
-            <label for="trade-8"> имеются все необходимые документы<br>
-               <span>(полный покет документов на руках)</span> </label>
-        </div>
-
-        <div class="advanced__trade-line">
-            <input type="checkbox" id="trade-9" name="home">
-            <label for="trade-9"> имеются все необходимые документы<br>
-                <span>для ПЕРЕОФОРМЛЕНИЯ</span></label>
-        </div>
-
       </div>
 
 
@@ -1127,22 +1196,22 @@
               <div class="search__item-title">Сортировка</div>
 
               <div class="advanced__sort-line">
-                <input type="checkbox" id="homenew-1" name="sorting">
+                <input type="checkbox" id="homenew-1" name="yachts">
                 <label for="homenew-1">Самый новые</label>
             </div>
 
             <div class="advanced__sort-line">
-                <input type="checkbox" id="homesimple-1" name="sorting">
+                <input type="checkbox" id="homesimple-1" name="yachts">
                 <label for="homesimple-1">Обычная</label>
             </div>
 
             <div class="advanced__sort-line">
-                <input type="checkbox" id="homecheap-1" name="sorting">
+                <input type="checkbox" id="homecheap-1" name="yachts">
                 <label for="homecheap-1">От дешевых к дорогим</label>
             </div>
 
             <div class="advanced__sort-line">
-                <input type="checkbox" id="homerich-1" name="sorting">
+                <input type="checkbox" id="homerich-1" name="yachts">
                 <label for="homerich-1">От дорогих к дешевым</label>
             </div>
 
@@ -1153,22 +1222,22 @@
             <div class="search__item-title">Показывать</div>
 
             <div class="advanced__sort-line">
-              <input type="checkbox" id="showfor-1" name="sorting">
+              <input type="checkbox" id="showfor-1" name="yachts">
               <label for="showfor-1">По 10</label>
           </div>
 
           <div class="advanced__sort-line">
-              <input type="checkbox" id="showfor-2" name="sorting">
+              <input type="checkbox" id="showfor-2" name="yachts">
               <label for="showfor-2">По 20</label>
           </div>
 
           <div class="advanced__sort-line">
-              <input type="checkbox" id="showfor-3" name="sorting">
+              <input type="checkbox" id="showfor-3" name="yachts">
               <label for="showfor-3">По 30</label>
           </div>
 
           <div class="advanced__sort-line">
-              <input type="checkbox" id="showfor-4" name="sorting">
+              <input type="checkbox" id="showfor-4" name="yachts">
               <label for="showfor-4">По 40</label>
           </div>
 
@@ -1207,7 +1276,7 @@
                <p>Вы ищите</p>
                <div class="selected__filters">
                 <button class="selected-btn">
-                    Квартиры
+                    Яхты
                 </button>
                 <button class="selected-btn">
                     Возможен торг
