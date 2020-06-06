@@ -2522,6 +2522,7 @@ display: none;
 		}
 	}
 	.room-info{
+		width: 150px;
 		margin-right: 30px;
 		@media(max-width: 485px){
 			padding-top: 10px;
@@ -2531,7 +2532,7 @@ display: none;
 		}
 		
 		label{
-		   padding-left: 10px;
+		   padding-left: 0px;
 		}
 		label::before{
 			content: '';
@@ -2610,9 +2611,8 @@ display: none;
 	}
 	.width-mini{
 		width: 200px;
-		@media(max-width: 360px){
-			width: 100%;
-			margin-left: 5px;
+		@media(max-width: 420px){
+			width: 50%;
 		}
 	}
 	input[type="checkbox"] {
@@ -2827,7 +2827,7 @@ display: none;
 				 display: block;
 			 }
   
-			label{
+			 .content__top-right--title{
 				font-size: 18px;
 				font-weight: bold;
 				@media(max-width: 580px){
