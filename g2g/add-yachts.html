@@ -275,24 +275,57 @@
 
                 </div>
 
-                <div class="advanced__home-city">
 
-                    <div class="advanced__location-ukr">
-                       <input type="radio" id="ukr" name="yachts" checked="checked">
-                       <label for="ukr">Украина</label>
-                    </div>
-           
-                    <div class="advanced__location-abroad hidden">
-                       <input type="radio" id="abrd" name="yachts">
-                       <label for="abrd">Заграница</label>
-                    </div>
-           
-               
-           </div>
+          <div class="advanced__yachts-category">
+            <div class="circle__title">
+                <div class="circle__title-number">2</div>
+                <div class="circle__title-text">Категории <span>*</span>
+                <div class="circle__title-subtext">нужно выбрать нужную категорию</div>
+                <div class="circle__title-notification">* Поля обязательные для заполнения</div>
 
-            <div class="advanced__search">
+                </div>
+            </div>
+
+            <div class="advanced__category-location">
+
+
+                <div class="advanced__city-area">
+                    <div class="city-area__title">Область</div>
+                    <div class="city-area__select">            
+                    <select class="star">
+                       <option>Выбрать</option>
+                   </select></div>
+       
+                </div>
+       
+                <div class="advanced__city-area">
+                   <div class="city-area__title">Город</div>
+                   <div class="city-area__select">            
+                   <select class="star">
+                      <option>Выбрать</option>
+                  </select></div>
+       
+               </div>
+       
+       
+               <div class="advanced__home-city">
+                   <div class="advanced__location-ukr">
+                      <input type="radio" id="ukr" name="yachts" checked="checked">
+                      <label for="ukr">Украина</label>
+                   </div>
+          
+                   <div class="advanced__location-abroad hidden">
+                      <input type="radio" id="abrd" name="yachts">
+                      <label for="abrd">Заграница</label>
+                   </div>
+               </div>
+       
+              </div>
+
+
+              <div class="advanced__search">
                 <label>Тип</label>
-                <select name="homesearch">
+                <select class="star" name="homesearch">
                     <option>Лодка</option>
                     <option>Яхта</option>
                 </select>
@@ -304,7 +337,7 @@
         
                     <div class="setting__left">
                         <label>Брэнд</label>
-                        <Select>
+                        <Select class="star">
                             <option>Выбрать</option>
                             <option>Выбрать</option>
                         </Select>
@@ -316,8 +349,8 @@
                     <div class="yacht__info-row">
                         <label>Длинна (м)</label>
                          <div class="yachts__info-inp">
-                             <input type="number" placeholder="От">
-                             <input type="number" placeholder="До">
+                            <label class="star"></label>
+                             <input type="number" placeholder="написать">
                          </div>
                     </div>
                     
@@ -329,7 +362,7 @@
              
                     <div class="setting__right">
                         <label>Материал корпуса</label>
-                        <Select>
+                        <Select class="star">
                             <option>Выбрать</option>
                             <option>Выбрать</option>
                         </Select>
@@ -339,14 +372,16 @@
                 </div>
             
             </div>
-            
+
+
+                        
             <div class="advanced__yachts-items">
 
                 <div class="advanced__yachts-item">
         
                     <div class="setting__left">
                         <label>Год постройки</label>
-                        <Select>
+                        <Select class="star">
                             <option>Выбрать</option>
                             <option>Выбрать</option>
                         </Select>
@@ -358,8 +393,8 @@
                     <div class="yacht__info-row">
                         <label>Ширина (м)</label>
                          <div class="yachts__info-inp">
-                             <input type="number" placeholder="От">
-                             <input type="number" placeholder="До">
+                            <label class="star"></label>
+                             <input type="number" placeholder="написать">
                          </div>
                     </div>
                     
@@ -371,7 +406,7 @@
              
                     <div class="setting__right">
                         <label>Топливо</label>
-                        <Select>
+                        <Select class="star">
                             <option>Выбрать</option>
                             <option>Выбрать</option>
                         </Select>
@@ -381,6 +416,9 @@
                 </div>
             
             </div>
+
+          </div>
+
 
 
 <div class="advanced__info advanced__info-padding">
@@ -638,6 +676,316 @@
 
 
 </div>
+</div>
+
+<div class="advanced__value">
+    <div class="circle__title">
+        <div class="circle__title-number">4</div>
+        <div class="circle__title-text">Стоимость
+        <div class="circle__title-subtext">цена, валюта, торг, обмен</div>
+        </div>
+    </div>
+
+
+    <div class="value__top">
+        
+     <div class="value__top-left">
+ 
+        <div class="value__title">Цена</div>
+        <div class="value__price">
+
+         <div class="value__inp">
+          <label class="star"></label>
+          <input type="text">
+         </div>
+         <div class="value__sel">
+         <select>
+             <option>$</option>
+         </select>
+         </div>
+        </div>
+
+     </div>
+     <div class="value__top-right">
+        
+        <div class="value__checkbox">
+            <input type="checkbox" id="bid">
+            <label for="bid">Возможен торг</label>
+            <p>Включите эту функцию если хотите договориться о цене с покупателем</p>
+        </div>
+
+        <div class="value__checkbox">
+            <input type="checkbox" id="comment-true">
+            <label for="comment-true">Разрешить комментировать</label>
+            <p>*эта функция позволяет общаться с потенциальными покупателями на странице обьявления</p>
+        </div>
+
+     </div>
+
+    </div>
+
+
+
+    <div class="value__bottom">
+
+     <div class="value__bottom-left">
+     
+        <div class="bottom-left__title">Возможен обмен</div>
+         <div class="bottom__left-items">
+           <div class="bottom__left-item">
+
+            <div class="value__checkbox">
+                <input type="checkbox" id="bid1">
+                <label for="bid1">на авто</label>
+            </div>
+
+            <div class="value__checkbox">
+                <input type="checkbox" id="bid2">
+                <label for="bid2">на недвижимость</label>
+            </div>
+
+           </div>
+           <div class="bottom__left-item">
+
+            <div class="value__checkbox">
+                <input type="checkbox" id="bid3">
+                <label for="bid3">на яхту</label>
+            </div>
+            
+            <div class="value__checkbox">
+                <input type="checkbox" id="bid4">
+                <label for="bid4">на недвижимость заграницей</label>
+            </div>
+
+           </div>
+         </div>
+     </div>
+
+
+     <div class="value__bottom-right">
+
+        <div class="bottom-right__top">
+            <div class="value__checkbox">
+                <input type="checkbox" id="bid5">
+                <label for="bid5">В кредит</label>
+            </div>
+            <input type="text" placeholder="10% годовых" disabled>
+        </div>
+
+        <div class="value__checkbox">
+            <input type="checkbox" id="bid6">
+            <label for="bid6">Возможна рассрочка</label>
+        </div>
+
+     </div>
+
+    </div>
+</div>
+
+
+<div class="advanced__phone">
+    <div class="circle__title">
+        <div class="circle__title-number">5</div>
+        <div class="circle__title-text">Информация о продавце
+        <div class="circle__title-subtext">добавьте свои данные</div>
+        </div>
+    </div>
+ 
+       <div class="phone__box">
+
+           <div class="phone__box-left">
+              <div class="phone__box-title">Телефон</div>
+              <div class="phone__box-inp">
+                  <label class="star"></label>
+                  <input type="number" placeholder="Телефон">
+              </div>
+           </div>
+           <div class="phone__box-right">
+           <div class="phone__box-item">
+            <div class="value__checkbox">
+                <input type="checkbox" id="phone1">
+                <label for="phone1">Имеется Viber</label>
+            </div>
+
+            <div class="value__checkbox">
+                <input type="checkbox" id="phone2">
+                <label for="phone2">Имеется Telegram</label>
+            </div>
+           </div>
+           <div class="phone__box-item">
+            <div class="value__checkbox">
+                <input type="checkbox" id="phone3">
+                <label for="phone3">Имеется Whatsapp</label>
+            </div>
+            </div>
+           </div>
+
+           </div>
+
+
+
+           <div class="phone__box">
+
+            <div class="phone__box-left">
+               <div class="phone__box-title">Телефон 2</div>
+               <div class="phone__box-inp">
+                   <input type="number" placeholder="Телефон">
+               </div>
+            </div>
+            <div class="phone__box-right">
+            <div class="phone__box-item">
+             <div class="value__checkbox">
+                <input type="checkbox" id="phone4">
+                <label for="phone4">Имеется Viber</label>
+             </div>
+ 
+             <div class="value__checkbox">
+                <input type="checkbox" id="phone5">
+                <label for="phone5">Имеется Telegram</label>
+             </div>
+            </div>
+            <div class="phone__box-item">
+             <div class="value__checkbox">
+                <input type="checkbox" id="phone6">
+                <label for="phone6">Имеется Whatsapp</label>
+             </div>
+             </div>
+            </div>
+ 
+            </div>
+
+
+
+
+            <div class="phone__box">
+
+                <div class="phone__box-left">
+                   <div class="phone__box-title">Телефон 3</div>
+                   <div class="phone__box-inp">
+                       <input type="number" placeholder="Телефон">
+                   </div>
+                </div>
+                <div class="phone__box-right">
+                <div class="phone__box-item">
+                 <div class="value__checkbox">
+                     <input type="checkbox" id="phone7">
+                     <label for="phone7">Имеется Viber</label>
+                 </div>
+     
+                 <div class="value__checkbox">
+                     <input type="checkbox" id="phone8">
+                     <label for="phone8">Имеется Telegram</label>
+                 </div>
+                </div>
+                <div class="phone__box-item">
+                 <div class="value__checkbox">
+                     <input type="checkbox" id="phone9">
+                     <label for="phone9">Имеется Whatsapp</label>
+                 </div>
+                 </div>
+                </div>
+     
+                </div>
+
+
+
+
+
+       </div>
+
+
+       <div class="advanced__descr">
+        <div class="circle__title">
+            <div class="circle__title-number">6</div>
+            <div class="circle__title-text">Описание недвижимости
+            <div class="circle__title-subtext">детальное описание характеристик недвижимости</div>
+            </div>
+        </div>
+
+             <div class="description__wrap">
+                <textarea class="description" placeholder="Описание сдесь"></textarea>
+
+                <p class="symbol__descr">* Доступно 1700 символов</p>
+             </div>
+
+       </div>
+
+
+       <div class="advertising">
+
+        <div class="value__radio">
+            <input type="radio" id="top0" name="advertising">
+            <label class="simple" for="top0">Обычное размещение</label>
+            <p>* Бесплатная услуга на сайте</p>
+        </div>
+
+        <div class="value__radio">
+            <input type="radio" id="top1" name="advertising">
+            <label class="top" for="top1">ТОП = 100грн <span class="sale"> 150грн </span></label>
+            <p>* Платная услуга на сайте, которая  в 3 раза увеличивает вероятность продажи Вашего товара</p>
+        </div>
+
+        <div class="value__radio">
+            <input type="radio" id="top2" name="advertising">
+            <label class="top-top" for="top2">ТОП-ТОП = 250грн <span class="sale"> 280грн </span></label>
+            <p>*Платная услуга на сайте, которая  в 5 раза увеличивает вероятность продажи Вашего товара</p>
+        </div>
+
+       </div>
+
+
+       <div class="payment">
+           <div class="payment__title">Способ оплаты</div>
+           <div class="payment__links">
+               <a href=""><img src="img/icons/privat24.png" alt=""></a>
+               <a href=""><img src="img/icons/visa.png" alt=""></a>
+               <a href=""><img src="img/icons/qiwi.png" alt=""></a>
+           </div>
+           
+        
+       </div>
+
+       <div class="agreement">
+        <div class="agreement__checkbox">
+            <input type="checkbox" id="agreement">
+            <label for="agreement">Я согласен(а) с условиями интернет сайта</label>
+            <p>*Вы разрешаете доступ на обработку Ваших данних</p>
+        </div>
+
+
+          <div class="agreement__box">
+            <div class="agreement-btn">
+                <div class="yes-btn">
+                    <input type="radio" id="yes-btn" name="agreement-btn">
+                    <label for="yes-btn"></label>
+                </div>
+            </div>
+   
+            <div class="agreement-btn">
+               <div class="no-btn">
+                   <input type="radio" id="no-btn" name="agreement-btn">
+                   <label for="no-btn"></label>
+               </div>
+           </div>
+            <div class="agreement__text">Я согласен(а), чтобы<span>видео группа выехала и провела видеосъемку моего авто</span>
+            <p>Вы разрешаете съемку Вашей недвижимости. С Вами свяжутся и договорятся о встрече в любое удобное Вам время. <span>Эта услуга бессплатная</span></p></div>
+          </div>
+
+
+        <button class="add__announcement-btn" type="submit">Разместить объявление</button>
+       </div>
+
+
+       
+
+
+
+
+
+
+
+
+
 </div>
 
 
