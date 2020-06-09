@@ -1989,6 +1989,12 @@ display: none;
 		color: $w;
 		text-transform: uppercase;
 		margin-bottom: 35px;
+		@media(max-width: 520px){
+			font-size: 24px;
+		}
+		@media(max-width: 360px){
+			font-size: 20px;
+		}
 		span{
 			color: $red;
 		}
@@ -3371,12 +3377,20 @@ display: none;
 
 }
 .advanced__subtitle{
-	
 	padding-top: 20px;
 	font-size: 16px;
+	@media(max-width: 520px){
+		font-size: 18px;
+	}
+	@media(max-width: 380px){
+		font-size: 15px;
+	}
 	p{
 font-size: 14px;
-font-weight: 400;;
+font-weight: 400;
+@media(max-width: 380px){
+	font-size: 12px;
+}
 	}
 
 }
