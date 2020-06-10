@@ -1,1155 +1,1246 @@
-
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>project 15.05.2020</title>
-            <link rel="stylesheet" href="css/libs.min.css">
-            <link rel="stylesheet" href="css/style.min.css">
-        </head>
-        <body>
-            <header class="header">
-                <div class="container">
-                         
-            
-    
-                    <div class="header__top">
-    
-                        <a href="" class="decor__logo"><img src="img/icons/logo-min.png" alt="logo"></a>
-    
-                       
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 15.05.2020</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+
+
+
+            <div class="header__top">
+
+                <a href="" class="decor__logo"><img src="img/icons/logo-min.png" alt="logo"></a>
+
+
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a class="header__link" href="">Автомобили</a></li>
+                        <li><a class="header__link" href="">Недвижимости</a></li>
+                        <li><a class="header__link" href="">Яхты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header__menu-content">
+                    <a class="registration__btn" href="">Регистрация</a>
+
+                    <div class="header__login">
+
+                        <Form class="registration__items">
+                            <label class="login">
+                                <input type="text" placeholder="Логин" required>
+                            </label>
+                            <input class="password" type="password" placeholder="Пароль" required>
+                            <button class="enter" type="submit">Войти</button>
+                        </Form>
+
+                    </div>
+
+                </div>
+
+                <a class="add__auto" href=""><img src="img/icons/plus.png" alt=""></a>
+
+                <div class="header__lang">
+                    <ul>
+                        <li><a class="rus"></a></li>
+                    </ul>
+                    <ul class="lang__more">
+                        <li><a class="ukr" href="index-ua.html"></a></li>
+                        <li><a class="ger" href="index-gr.html"></a></li>
+                        <li><a class="ita" href="index-it.html"></a></li>
+                        <li><a class="fra" href="index-fr.html"></a></li>
+                        <li><a class="spa" href="index-sp.html"></a></li>
+                        <li><a class="net" href="index-nt.html"></a></li>
+                        <li><a class="usa" href="index-us.html"></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="header__burger">
+                    <span></span>
+                </div>
+
+
+            </div>
+
+            <div class="header__down">
+
+                <div class="header__down-pc">
+
+                    <div class="logo__inner">
+                        <a class="logo__top" href="">
+                            <img src="img/icons/big-logo.png" alt="">
+                        </a>
+                        <div class="logo__text">Сайт по продаже авто, яхт, недвижимости</div>
+                    </div>
+
+
+                    <div class="header__down-category">
+
+                        <div class="mobile__inner">
+
+                            <a class="mobile__item" href="car.html">
+                                <div class="mobile__item-images icosvg-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px"
+                                        viewBox="0 0 48.997 48.998" style="enable-background:new 0 0 48.997 48.998;"
+                                        xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M45.961,18.702c-0.033-0.038-0.061-0.075-0.1-0.112l-1.717-1.657c1.424-0.323,2.957-1.516,2.957-2.74   c0-1.426-1.979-1.932-3.668-1.932c-1.766,0-1.971,1.21-1.992,2.065l-4.43-4.271c-0.9-0.891-2.607-1.592-3.883-1.592H24.5h-0.002   h-8.63c-1.275,0-2.981,0.701-3.882,1.592l-4.429,4.271c-0.023-0.855-0.228-2.065-1.992-2.065c-1.691,0-3.669,0.506-3.669,1.932   c0,1.224,1.534,2.417,2.958,2.74l-1.717,1.657c-0.039,0.037-0.066,0.074-0.1,0.112C1.2,20.272,0,23.184,0,25.297v6.279   c0,1.524,0.601,2.907,1.572,3.938v2.435c0,1.424,1.192,2.585,2.658,2.585h3.214c1.466,0,2.657-1.159,2.657-2.585v-0.623h14.397   H24.5h14.396v0.623c0,1.426,1.19,2.585,2.658,2.585h3.213c1.467,0,2.657-1.161,2.657-2.585v-2.435   c0.972-1.031,1.572-2.414,1.572-3.938v-6.279C48.998,23.184,47.798,20.272,45.961,18.702z M13.613,11.953   c0.623-0.519,1.712-0.913,2.255-0.913h8.63H24.5h8.63c0.543,0,1.632,0.394,2.255,0.913l5.809,5.63H24.5h-0.002H7.805L13.613,11.953   z M1.993,24.347c0-1.546,1.21-2.801,2.704-2.801c1.493,0,6.372,2.864,6.372,4.41s-4.879,1.188-6.372,1.188   C3.203,27.144,1.993,25.894,1.993,24.347z M10.102,34.573H9.587H9.072l-3.055,0.005c-0.848-0.264-1.446-0.572-1.869-0.903   c-0.214-0.167-0.378-0.341-0.506-0.514c-0.129-0.175-0.223-0.347-0.284-0.519c-0.38-1.074,0.405-2.061,0.405-2.061h5.214   l3.476,3.99L10.102,34.573L10.102,34.573z M31.996,34.575H24.5h-0.002h-7.496c-1.563,0-2.832-1.269-2.832-2.831h10.328H24.5h10.328   C34.828,33.308,33.559,34.575,31.996,34.575z M32.654,29.812H24.5h-0.002h-8.154c-1.7,0-3.08-2.096-3.08-4.681h11.234H24.5h11.234   C35.734,27.717,34.354,29.812,32.654,29.812z M45.641,32.644c-0.062,0.172-0.156,0.344-0.285,0.518   c-0.127,0.173-0.291,0.347-0.506,0.514c-0.422,0.331-1.021,0.641-1.869,0.903l-3.055-0.005h-0.515h-0.515h-2.353l3.478-3.99h5.213   C45.234,30.583,46.02,31.568,45.641,32.644z M44.301,27.144c-1.492,0-6.371,0.356-6.371-1.188s4.879-4.41,6.371-4.41   c1.494,0,2.704,1.255,2.704,2.801C47.005,25.892,45.795,27.144,44.301,27.144z"
+                                                    data-original="#000000" class="active-path" data-old_color="#000000"
+                                                    fill="#b82626" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Авто</span>
+                            </a>
+
+                            <a class="mobile__item" href="yachts.html">
+                                <div class="mobile__item-images icosvg-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 477.518 477.518"
+                                        style="enable-background:new 0 0 477.518 477.518;" xml:space="preserve"
+                                        width="512px" height="512px">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M129.045,243.457l105.535-75.755c2.392-1.518,5.445-1.518,7.837,0l106.057,75.755v-90.384     c0.58-12.394-8.997-22.911-21.39-23.491c-0.184-0.009-0.368-0.015-0.553-0.019H150.988     c-12.404,0.275-22.237,10.553-21.962,22.958c0.004,0.184,0.01,0.368,0.019,0.552V243.457z"
+                                                            data-original="#000000" class="active-path"
+                                                            data-old_color="#000000" fill="#b82626" />
+                                                        <rect x="212.637" y="51.196" width="52.245" height="62.694"
+                                                            data-original="#000000" class="active-path"
+                                                            data-old_color="#000000" fill="#b82626" />
+                                                        <path
+                                                            d="M469.682,384.518c-15.445-0.153-30.508,4.807-42.841,14.106c-9.763,7.863-21.946,12.109-34.482,12.016     c-8.694,0.08-17.285-1.889-25.078-5.747l32.392-107.102l-45.453-31.869l-3.135-1.567l-107.102-74.71v220.473h-5.747l-9.927-0.522     V189.645L76.278,297.791l33.437,106.58c-7.599,4.418-16.294,6.592-25.078,6.269c-16.718,0-24.555-5.747-33.959-11.494     c-12.145-9.708-27.294-14.881-42.841-14.629c-4.328,0-7.837,3.509-7.837,7.837s3.509,7.837,7.837,7.837     c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106c15.547,0.253,30.695-4.92,42.841-14.629     c9.404-5.747,17.241-11.494,33.959-11.494c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106     c15.547,0.253,30.695-4.92,42.841-14.629c9.404-5.747,17.241-11.494,33.959-11.494c12.536-0.092,24.718,4.153,34.482,12.016     c25.463,18.811,60.219,18.811,85.682,0c9.763-7.863,21.946-12.109,34.482-12.016c4.328,0,7.837-3.509,7.837-7.837     S474.01,384.518,469.682,384.518z"
+                                                            data-original="#000000" class="active-path"
+                                                            data-old_color="#000000" fill="#b82626" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>Яхты</span>
+                            </a>
+
+                            <a class="mobile__item mobile__item-page" href="home.html">
+                                <div class="mobile__item-images icosvg-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Capa_3" x="0px" y="0px" width="512px" height="512px"
+                                        viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;"
+                                        xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z"
+                                                        data-original="#000000" class="active-path"
+                                                        data-old_color="#000000" fill="#fff" />
+                                                    <path
+                                                        d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"
+                                                        data-original="#000000" class="active-path"
+                                                        data-old_color="#000000" fill="#fff" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <span>недвижимости</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <a class="header__down-announcement" href="">
+                        <span class="button__text">
+                            <span>Добавить обьявление</span>
+                        </span></a>
+
+                </div>
+
+                <div class="header__down-mobile">
+
+                    <div class="mobile__inner">
+
+                        <a class="mobile__item" href="car.html">
+                            <div class="mobile__item-images icosvg-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_4" x="0px" y="0px" width="512px" height="512px"
+                                    viewBox="0 0 48.997 48.998" style="enable-background:new 0 0 48.997 48.998;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path
+                                                d="M45.961,18.702c-0.033-0.038-0.061-0.075-0.1-0.112l-1.717-1.657c1.424-0.323,2.957-1.516,2.957-2.74   c0-1.426-1.979-1.932-3.668-1.932c-1.766,0-1.971,1.21-1.992,2.065l-4.43-4.271c-0.9-0.891-2.607-1.592-3.883-1.592H24.5h-0.002   h-8.63c-1.275,0-2.981,0.701-3.882,1.592l-4.429,4.271c-0.023-0.855-0.228-2.065-1.992-2.065c-1.691,0-3.669,0.506-3.669,1.932   c0,1.224,1.534,2.417,2.958,2.74l-1.717,1.657c-0.039,0.037-0.066,0.074-0.1,0.112C1.2,20.272,0,23.184,0,25.297v6.279   c0,1.524,0.601,2.907,1.572,3.938v2.435c0,1.424,1.192,2.585,2.658,2.585h3.214c1.466,0,2.657-1.159,2.657-2.585v-0.623h14.397   H24.5h14.396v0.623c0,1.426,1.19,2.585,2.658,2.585h3.213c1.467,0,2.657-1.161,2.657-2.585v-2.435   c0.972-1.031,1.572-2.414,1.572-3.938v-6.279C48.998,23.184,47.798,20.272,45.961,18.702z M13.613,11.953   c0.623-0.519,1.712-0.913,2.255-0.913h8.63H24.5h8.63c0.543,0,1.632,0.394,2.255,0.913l5.809,5.63H24.5h-0.002H7.805L13.613,11.953   z M1.993,24.347c0-1.546,1.21-2.801,2.704-2.801c1.493,0,6.372,2.864,6.372,4.41s-4.879,1.188-6.372,1.188   C3.203,27.144,1.993,25.894,1.993,24.347z M10.102,34.573H9.587H9.072l-3.055,0.005c-0.848-0.264-1.446-0.572-1.869-0.903   c-0.214-0.167-0.378-0.341-0.506-0.514c-0.129-0.175-0.223-0.347-0.284-0.519c-0.38-1.074,0.405-2.061,0.405-2.061h5.214   l3.476,3.99L10.102,34.573L10.102,34.573z M31.996,34.575H24.5h-0.002h-7.496c-1.563,0-2.832-1.269-2.832-2.831h10.328H24.5h10.328   C34.828,33.308,33.559,34.575,31.996,34.575z M32.654,29.812H24.5h-0.002h-8.154c-1.7,0-3.08-2.096-3.08-4.681h11.234H24.5h11.234   C35.734,27.717,34.354,29.812,32.654,29.812z M45.641,32.644c-0.062,0.172-0.156,0.344-0.285,0.518   c-0.127,0.173-0.291,0.347-0.506,0.514c-0.422,0.331-1.021,0.641-1.869,0.903l-3.055-0.005h-0.515h-0.515h-2.353l3.478-3.99h5.213   C45.234,30.583,46.02,31.568,45.641,32.644z M44.301,27.144c-1.492,0-6.371,0.356-6.371-1.188s4.879-4.41,6.371-4.41   c1.494,0,2.704,1.255,2.704,2.801C47.005,25.892,45.795,27.144,44.301,27.144z"
+                                                data-original="#000000" class="active-path" data-old_color="#000000"
+                                                fill="#b82626" />
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <a class="mobile__item" href="yachts.html">
+                            <div class="mobile__item-images icosvg-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_5" x="0px" y="0px" viewBox="0 0 477.518 477.518"
+                                    style="enable-background:new 0 0 477.518 477.518;" xml:space="preserve"
+                                    width="512px" height="512px">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M129.045,243.457l105.535-75.755c2.392-1.518,5.445-1.518,7.837,0l106.057,75.755v-90.384     c0.58-12.394-8.997-22.911-21.39-23.491c-0.184-0.009-0.368-0.015-0.553-0.019H150.988     c-12.404,0.275-22.237,10.553-21.962,22.958c0.004,0.184,0.01,0.368,0.019,0.552V243.457z"
+                                                        data-original="#000000" class="active-path"
+                                                        data-old_color="#000000" fill="#b82626" />
+                                                    <rect x="212.637" y="51.196" width="52.245" height="62.694"
+                                                        data-original="#000000" class="active-path"
+                                                        data-old_color="#000000" fill="#b82626" />
+                                                    <path
+                                                        d="M469.682,384.518c-15.445-0.153-30.508,4.807-42.841,14.106c-9.763,7.863-21.946,12.109-34.482,12.016     c-8.694,0.08-17.285-1.889-25.078-5.747l32.392-107.102l-45.453-31.869l-3.135-1.567l-107.102-74.71v220.473h-5.747l-9.927-0.522     V189.645L76.278,297.791l33.437,106.58c-7.599,4.418-16.294,6.592-25.078,6.269c-16.718,0-24.555-5.747-33.959-11.494     c-12.145-9.708-27.294-14.881-42.841-14.629c-4.328,0-7.837,3.509-7.837,7.837s3.509,7.837,7.837,7.837     c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106c15.547,0.253,30.695-4.92,42.841-14.629     c9.404-5.747,17.241-11.494,33.959-11.494c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106     c15.547,0.253,30.695-4.92,42.841-14.629c9.404-5.747,17.241-11.494,33.959-11.494c12.536-0.092,24.718,4.153,34.482,12.016     c25.463,18.811,60.219,18.811,85.682,0c9.763-7.863,21.946-12.109,34.482-12.016c4.328,0,7.837-3.509,7.837-7.837     S474.01,384.518,469.682,384.518z"
+                                                        data-original="#000000" class="active-path"
+                                                        data-old_color="#000000" fill="#b82626" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+
+                        <a class="mobile__item mobile__item-page" href="home.html">
+                            <div class="mobile__item-images icosvg-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Capa_6" x="0px" y="0px" width="512px" height="512px"
+                                    viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z"
+                                                    data-original="#000000" class="active-path" data-old_color="#000000"
+                                                    fill="#fff" />
+                                                <path
+                                                    d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"
+                                                    data-original="#000000" class="active-path" data-old_color="#000000"
+                                                    fill="#fff" />
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__inner">
+                <ul class="breadcrumbs__list">
+                    <li><a href="car.html">Главная<span>></span></a></li>
+                    <li><a href="advanced.html">Обьявления</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="advanced add__yacht">
+        <div class="container"></div>
+            <div class="advanced__title">Добавления Обьявления <span>Недвижимости</span>
+                <div class="advanced__subtitle">Основная информация
+                    <p>укажите основную информацию о яхте</p>
+                </div>
+            </div>
+            <div class="advanced__box">
+                <form>
+
+                    <div class="circle__title">
+                        <div class="circle__title-number">1</div>
+                        <div class="circle__title-text">Добавьте фото</div>
+                    </div>
+
+                    <div class="add__box">
+
+                        <div class="add__box-photo">
+                            <input type="file" id="photo1">
+                            <label class="add-photo" for="photo1">
+                                <b class="add">+</b>
+                                <span>Добавить фото</span>
+                            </label>
+
+                            <div class="added__photo-wrapper">
+                                <div class="added__photo">
+                                    <div class="added__photo-new"
+                                        style="background-image: url(img/content/new-photo-1.png);">
+                                        <div class="added__photo-main">
+                                            <input type="radio" id="phot-1" name="newphoto" checked>
+                                            <label for="phot-1">Главное фото</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="added__photo">
+                                    <div class="added__photo-new"
+                                        style="background-image: url(img/content/new-photo-1.png);">
+                                        <div class="added__photo-main">
+                                            <input type="radio" id="phot-2" name="newphoto">
+                                            <label for="phot-2">Сделать главным</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="added__photo-wrapper">
+                                <div class="added__photo">
+                                    <div class="added__photo-new"
+                                        style="background-image: url(img/content/new-photo-1.png);">
+                                        <div class="added__photo-main">
+                                            <input type="radio" id="phot-3" name="newphoto">
+                                            <label for="phot-3">Сделать главным</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="added__photo">
+                                    <div class="added__photo-new"
+                                        style="background-image: url(img/content/new-photo-1.png);">
+                                        <div class="added__photo-main">
+                                            <input type="radio" id="phot-4" name="newphoto">
+                                            <label for="phot-4">Сделать главным</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="add__box-video">
+                            <input type="file" id="video1">
+                            <label class="add-photo" for="video1">
+                                <b class="add">+</b>
+                                <span>Добавить видео</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+
+                    <div class="advanced__yachts-category">
+                        <div class="circle__title">
+                            <div class="circle__title-number">2</div>
+                            <div class="circle__title-text">Категории <span>*</span>
+                                <div class="circle__title-subtext">нужно выбрать нужную категорию</div>
+                                <div class="circle__title-notification">* Поля обязательные для заполнения</div>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="advanced__flat-category">
+
+
+                            <div class="advanced__flat-inner">
+
+                                <div class="flat__items-1">
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it1" name="flat_items1">
+                                        <label for="flat__it1">Квартиры</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it2" name="flat_items1">
+                                        <label for="flat__it2">Дома</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it3" name="flat_items1">
+                                        <label for="flat__it3">Комерческая недвижимость</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it4" name="flat_items1">
+                                        <label for="flat__it4">Офисы</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it5" name="flat_items1">
+                                        <label for="flat__it5">Земельные участки</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it6" name="flat_items1">
+                                        <label for="flat__it6">Гаражи</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat__it7" name="flat_items1">
+                                        <label for="flat__it7">Паркинг</label>
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="flat__items-2">
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat2-it1" name="flat_items2">
+                                        <label for="flat2-it1">Квартира</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat2-it2" name="flat_items2">
+                                        <label for="flat2-it2">Дома</label>
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="flat__items-3">
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat3-it1" name="flat_items3">
+                                        <label for="flat3-it1">Продажа</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat3-it2" name="flat_items3">
+                                        <label for="flat3-it2">Долгосрочная аренда</label>
+                                    </div>
+
+                                    <div class="flat__item">
+                                        <input type="radio" id="flat3-it3" name="flat_items3">
+                                        <label for="flat3-it3">Аренда посуточная</label>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="advanced__category-location">
+
+
+                            <div class="advanced__city-area">
+                                <div class="city-area__title">Область</div>
+                                <div class="city-area__select">
+                                    <select class="star">
+                                        <option>Выбрать</option>
+                                    </select></div>
+
+                            </div>
+
+                            <div class="advanced__city-area">
+                                <div class="city-area__title">Город</div>
+                                <div class="city-area__select">
+                                    <select class="star">
+                                        <option>Выбрать</option>
+                                    </select></div>
+
+                            </div>
+
+
+                            <div class="advanced__home-city">
+                                <div class="advanced__location-ukr">
+                                    <input type="radio" id="ukr" name="yachts" checked="checked">
+                                    <label for="ukr">Украина</label>
+                                </div>
+
+                                <div class="advanced__location-abroad hidden">
+                                    <input type="radio" id="abrd" name="yachts">
+                                    <label for="abrd">Заграница</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div class="advanced__info advanced__info-padding">
+                        <div class="circle__title">
+                            <div class="circle__title-number">3</div>
+                            <div class="circle__title-text">Параметры обьекта
+                                <div class="circle__title-subtext">нужно заполнить детальную информацию</div>
+                            </div>
+                        </div>
+
+                        <div class="advanced__info-inner">
+
+                            <div class="advanced__info-left">
+
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title main-title">Комнат</div>
+                                    <div class="advanced__line-info">
+                                        <select class="star">
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Тип</div>
+                                    <div class="advanced__line-info">
+                                        <div class="room-info">
+                                            <input type="radio" id="trade-21" name="home">
+                                            <label for="trade-21">Вторичное</label>
+                                        </div>
+                                        <div class="room-info">
+                                            <input type="radio" id="trade-22" name="home">
+                                            <label for="trade-22">Первичное</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Тип стен</div>
+                                    <div class="advanced__line-info">
+                                        <select class="star">
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Площадь, м<sup><small>2</small></sup> </div>
+                                    <div class="advanced__line-info">
+                                        <label class="star"></label>
+                                        <input type="number" placeholder="м²">
+                                    </div>
+                                </div>
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Жилая, м<sup><small>2</small></sup> </div>
+                                    <div class="advanced__line-info">
+                                        <label class="star"></label>
+                                        <input type="number" placeholder="м²">
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Кухня, м<sup><small>2</small></sup> </div>
+                                    <div class="advanced__line-info">
+                                        <label class="star"></label>
+                                        <input type="number" placeholder="м²">
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Участок, м<sup><small>2</small></sup> </div>
+                                    <div class="advanced__line-info">
+                                        <label class="star"></label>
+                                        <input type="number" placeholder="м²">
+                                    </div>
+                                </div>
+
+                                <div class="advanced__info-location">
+                                    <div class="advanced__info-title">Рядом</div>
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-23" name="home">
+                                        <label for="trade-23">магазин</label>
+                                        <input type="checkbox" id="trade-24" name="home">
+                                        <label for="trade-24">больница</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-25" name="home">
+                                        <label for="trade-25">школа</label>
+                                        <input type="checkbox" id="trade-26" name="home">
+                                        <label class="width-mini" for="trade-26">торговый центр</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-27" name="home">
+                                        <label for="trade-27">метро</label>
+                                        <input type="checkbox" id="trade-28" name="home">
+                                        <label class="width-mini" for="trade-28">автобусная остановка</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-29" name="home">
+                                        <label for="trade-29">заправка</label>
+                                        <input type="checkbox" id="trade-30" name="home">
+                                        <label class="width-mini" for="trade-30">железная дорога</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-31" name="home">
+                                        <label for="trade-31">паркинг</label>
+                                        <input type="checkbox" id="trade-32" name="home">
+                                        <label class="width-mini" for="trade-32">детская площадка</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-33" name="home">
+                                        <label for="trade-33">метро</label>
+                                        <input type="checkbox" id="trade-34" name="home">
+                                        <label class="width-mini" for="trade-34">детский садик</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-35" name="home">
+                                        <label class="width-mini" for="trade-35">университет</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="advanced__info-right">
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Этаж</div>
+                                    <div class="advanced__line-info">
+                                        <select class="star">
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Этажность</div>
+                                    <div class="advanced__line-info">
+                                        <select class="star">
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Год постройки</div>
+                                    <div class="advanced__line-info">
+                                        <select>
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="advanced__info-location">
+                                    <div class="advanced__info-title">Отопление</div>
+                                    <div class="advanced__line-mini mini-wrapper">
+                                        <input type="radio" id="trade-47" name="home">
+                                        <label class="width-mini" for="trade-47">центролизованное</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="radio" id="trade-48" name="home">
+                                        <label class="width-mini" for="trade-48">индивидуальное</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input type="radio" id="trade-49" name="home">
+                                        <label class="width-mini" for="trade-49">без отопления</label>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="advanced__info-location comunication__info">
+                                    <div class="advanced__info-title">Комуникации<br>(есть)</div>
+                                    <div class="advanced__line-mini">
+                                        <input type="checkbox" id="trade-136" name="alls">
+                                        <label for="trade-136">все</label>
+                                        <input class="checkbox" type="checkbox" id="trade-137" name="alls">
+                                        <label for="trade-137">свет</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input class="checkbox" type="checkbox" id="trade-138" name="alls">
+                                        <label for="trade-138">вода</label>
+                                        <input class="checkbox" type="checkbox" id="trade-139" name="alls">
+                                        <label for="trade-139">газ</label>
+                                    </div>
+                                </div>
+                                <div class="advanced__info-location--wrap">
+                                    <div class="advanced__line-mini">
+                                        <input class="checkbox" type="checkbox" id="trade-140" name="alls">
+                                        <label class="width-mini" for="trade-140">подключение газа (возможно)</label>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="advanced__info-line">
+                                    <div class="advanced__line-title">Удаленность от города</div>
+                                    <div class="advanced__line-info">
+                                        <select>
+                                            <option>Выбрать</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="advanced__value">
+                        <div class="circle__title">
+                            <div class="circle__title-number">4</div>
+                            <div class="circle__title-text">Стоимость
+                                <div class="circle__title-subtext">цена, валюта, торг, обмен</div>
+                            </div>
+                        </div>
+
+
+                        <div class="value__top">
+
+                            <div class="value__top-left">
+
+                                <div class="value__title">Цена</div>
+                                <div class="value__price">
+
+                                    <div class="value__inp">
+                                        <label class="star"></label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="value__sel">
+                                        <select>
+                                            <option>$</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="value__right-side">
+
+                                <div class="top-right">
+                                    <div class="top-right__box-title">Комнат</div>
+
+                                    <div class="top-right__box">
+
+                                        <div class="text__radio">
+                                            <input type="radio" id="flat1" name="flat">
+                                            <label for="flat1">за объект</label>
+                                        </div>
+
+
+                                        <div class="text__radio">
+                                            <input type="radio" id="flat2" name="flat">
+                                            <label for="flat2">за кв.м</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="top-right--wrapper">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="bid">
+                                        <label for="bid">Возможен торг</label>
+                                        <p>Включите эту функцию если хотите договориться о цене с покупателем</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="value__bottom">
+
+                            <div class="value__bottom-left">
+
+                                <div class="bottom-left__title">Возможен обмен</div>
+                                <div class="bottom__left-items">
+                                    <div class="bottom__left-item">
+
+                                        <div class="value__checkbox">
+                                            <input type="checkbox" id="bid1">
+                                            <label for="bid1">на авто</label>
+                                        </div>
+
+                                        <div class="value__checkbox">
+                                            <input type="checkbox" id="bid2">
+                                            <label for="bid2">на недвижимость</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="bottom__left-item">
+
+                                        <div class="value__checkbox">
+                                            <input type="checkbox" id="bid3">
+                                            <label for="bid3">на яхту</label>
+                                        </div>
+
+                                        <div class="value__checkbox">
+                                            <input type="checkbox" id="bid4">
+                                            <label for="bid4">на недвижимость заграницей</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="value__bottom-right">
+
+                                <div class="bottom-right__top">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="bid5">
+                                        <label for="bid5">В кредит</label>
+                                    </div>
+                                    <input type="text" placeholder="(%) годовых">
+                                </div>
+
+                                <div class="value__checkbox">
+                                    <input type="checkbox" id="bid6">
+                                    <label for="bid6">Возможна рассрочка</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="value__type">
+
+                            <div class="value__type-items">
+
+                                <div class="type__item-left">
+                                    <div class="type__item-title">Тип предложения</div>
+                                    <div class="type__item">
+                                        <div class="text__radio">
+                                            <input type="radio" id="type1" name="type__item">
+                                            <label for="type1">от посредника</label>
+                                        </div>
+                                        <div class="text__radio">
+                                            <input type="radio" id="type2" name="type__item">
+                                            <label for="type2">от представителя хозяина (без комиссионых)</label>
+                                        </div>
+                                        <div class="text__radio">
+                                            <input type="radio" id="type3" name="type__item">
+                                            <label for="type3">от представителя застройщика</label>
+                                        </div>
+                                        <div class="text__radio">
+                                            <input type="radio" id="type4" name="type__item">
+                                            <label for="type4">от собственника</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="type__item-right">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="comment-true">
+                                        <label for="comment-true">Разрешить комментировать</label>
+                                        <p>*эта функция позволяет общаться с потенциальными покупателями на странице
+                                            обьявления</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="value__checkbox value__document">
+                                <input type="checkbox" id="doc1">
+                                <label for="doc1">имеются все необходимые документы для ПЕРЕОФОРМЛЕНИЯ</label>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="advanced__phone">
+                        <div class="circle__title">
+                            <div class="circle__title-number">5</div>
+                            <div class="circle__title-text">Информация о продавце
+                                <div class="circle__title-subtext">добавьте свои данные</div>
+                            </div>
+                        </div>
+
+                        <div class="phone__box">
+
+                            <div class="phone__box-left">
+                                <div class="phone__box-title">Телефон</div>
+                                <div class="phone__box-inp">
+                                    <label class="star"></label>
+                                    <input type="number" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="phone__box-right">
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone1">
+                                        <label for="phone1">Имеется Viber</label>
+                                    </div>
+
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone2">
+                                        <label for="phone2">Имеется Telegram</label>
+                                    </div>
+                                </div>
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone3">
+                                        <label for="phone3">Имеется Whatsapp</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="phone__box">
+
+                            <div class="phone__box-left">
+                                <div class="phone__box-title">Телефон 2</div>
+                                <div class="phone__box-inp">
+                                    <input type="number" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="phone__box-right">
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone4">
+                                        <label for="phone4">Имеется Viber</label>
+                                    </div>
+
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone5">
+                                        <label for="phone5">Имеется Telegram</label>
+                                    </div>
+                                </div>
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone6">
+                                        <label for="phone6">Имеется Whatsapp</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="phone__box">
+
+                            <div class="phone__box-left">
+                                <div class="phone__box-title">Телефон 3</div>
+                                <div class="phone__box-inp">
+                                    <input type="number" placeholder="Телефон">
+                                </div>
+                            </div>
+                            <div class="phone__box-right">
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone7">
+                                        <label for="phone7">Имеется Viber</label>
+                                    </div>
+
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone8">
+                                        <label for="phone8">Имеется Telegram</label>
+                                    </div>
+                                </div>
+                                <div class="phone__box-item">
+                                    <div class="value__checkbox">
+                                        <input type="checkbox" id="phone9">
+                                        <label for="phone9">Имеется Whatsapp</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                    <div class="advanced__descr">
+                        <div class="circle__title">
+                            <div class="circle__title-number">6</div>
+                            <div class="circle__title-text">Описание недвижимости
+                                <div class="circle__title-subtext">детальное описание характеристик недвижимости</div>
+                            </div>
+                        </div>
+
+                        <div class="description__wrap">
+                            <textarea class="description" placeholder="Описание сдесь"></textarea>
+
+                            <p class="symbol__descr">* Доступно 1700 символов</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="advertising">
+
+                        <div class="value__radio">
+                            <input type="radio" id="top0" name="advertising">
+                            <label class="simple" for="top0">Обычное размещение</label>
+                            <p>* Бесплатная услуга на сайте</p>
+                        </div>
+
+                        <div class="value__radio">
+                            <input type="radio" id="top1" name="advertising">
+                            <label class="top" for="top1">ТОП = 100грн <span class="sale"> 150грн </span></label>
+                            <p>* Платная услуга на сайте, которая в 3 раза увеличивает вероятность продажи Вашего товара
+                            </p>
+                        </div>
+
+                        <div class="value__radio">
+                            <input type="radio" id="top2" name="advertising">
+                            <label class="top-top" for="top2">ТОП-ТОП = 250грн <span class="sale"> 280грн
+                                </span></label>
+                            <p>*Платная услуга на сайте, которая в 5 раза увеличивает вероятность продажи Вашего товара
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="payment">
+                        <div class="payment__title">Способ оплаты</div>
+                        <div class="payment__links">
+                            <a href=""><img src="img/icons/privat24.png" alt=""></a>
+                            <a href=""><img src="img/icons/visa.png" alt=""></a>
+                            <a href=""><img src="img/icons/qiwi.png" alt=""></a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="agreement">
+                        <div class="agreement__checkbox">
+                            <input type="checkbox" id="agreement">
+                            <label for="agreement">Я согласен(а) с условиями интернет сайта</label>
+                            <p>*Вы разрешаете доступ на обработку Ваших данних</p>
+                        </div>
+
+
+                        <div class="agreement__box">
+                            <div class="agreement-btn">
+                                <div class="yes-btn">
+                                    <input type="radio" id="yes-btn" name="agreement-btn">
+                                    <label for="yes-btn"></label>
+                                </div>
+                            </div>
+
+                            <div class="agreement-btn">
+                                <div class="no-btn">
+                                    <input type="radio" id="no-btn" name="agreement-btn">
+                                    <label for="no-btn"></label>
+                                </div>
+                            </div>
+                            <div class="agreement__text">Я согласен(а), чтобы<span>видео группа выехала и провела
+                                    видеосъемку моей недвижимости</span>
+                                <p>Вы разрешаете съемку Вашей недвижимость. С Вами свяжутся и договорятся о встрече в
+                                    любое удобное для Вас время. <span>Эта услуга бессплатная</span></p>
+                            </div>
+                        </div>
+
+
+                        <button class="add__announcement-btn" type="submit">Разместить объявление</button>
+                    </div>
+
+
+                </form>
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- start footer -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__title">присоединяйтесь к сообществу G2g.com.ua</div>
+
+
+            <div class="footer__top-inner">
+
+                <div class="footer__video">
+                    <iframe width="570" height="322" src="https://www.youtube.com/embed/07pt0d8Sa1o" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="footer__social-links">
+
+                    <div class="footer__social-links--top">
+                        <a class="social__link social__link-facebook" href="#">Facebook <span>G2g</span></a>
+                        <a class="social__link social__link-vkontakte" href="#">Vkontakte <span>G2g</span></a>
+                        <a class="social__link social__link-twitter" href="#">Twitter <span>G2g</span></a>
+                        <a class="social__link social__link-instagram" href="#">instagram <span>G2g</span></a>
+                    </div>
+
+                    <div class="footer__social-links--down">
+                        <a class="social__link social__link-telegram" href="#">Написать нам</a>
+                        <a class="social__link social__link-youtube" href="#">youtube <span>G2g</span></a>
+                        <a class="social__link social__link-viber" href="#">написать нам</a>
+                        <a class="social__link social__link-wats" href="#">написать нам</a>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer__down-inner">
+            <div class="container">
+
+                <div class="footer__down-wrap">
+
+                    <div class="footer__menu">
+
                         <nav class="header__menu">
+                            <h3>МЕНЮ</h3>
                             <ul class="header__list">
                                 <li><a class="header__link" href="">Автомобили</a></li>
                                 <li><a class="header__link" href="">Недвижимости</a></li>
                                 <li><a class="header__link" href="">Яхты</a></li>
                             </ul>
                         </nav>
-                        
-                          <div class="header__menu-content">
-                            <a class="registration__btn" href="">Регистрация</a>
-    
-                            <div class="header__login">
-    
-                                <Form class="registration__items">
-                                    <label class="login">
-                                        <input type="text" placeholder="Логин" required>	
-                                        </label>
-                                  <input class="password" type="password"  placeholder="Пароль" required>
-                                    <button class="enter" type="submit">Войти</button>
-                                </Form>
-                            
+                        <div class="footer__menu-contacts">
+                            <a class="contact__mail" href="mailto:G2g@gmail.com">G2g@gmail.com</a>
+                            <a class="contact__phone kyivstar" href="tel:380945912956">+380 (94) 591-29-56</a>
                         </div>
-    
-                          </div>
-    
-                           <a class="add__auto" href=""><img src="img/icons/plus.png" alt=""></a>
-    
-                          <div class="header__lang">
-                            <ul>
-                                <li><a class="rus"></a></li>
-                            </ul>
-                            <ul class="lang__more">
-                                <li><a class="ukr" href="index-ua.html"></a></li>
-                                <li><a class="ger" href="index-gr.html"></a></li>
-                                <li><a class="ita" href="index-it.html"></a></li>
-                                <li><a class="fra" href="index-fr.html"></a></li>
-                                <li><a class="spa" href="index-sp.html"></a></li>
-                                <li><a class="net" href="index-nt.html"></a></li>
-                                <li><a class="usa" href="index-us.html"></a></li>
-                            </ul>
+
+                    </div>
+
+                    <div class="footer__social">
+                        <div class="footer__social-wrap">
+                            <a href=""><img src="img/footer-icon/youtube.jpg" alt="" class="footer__social-img"></a>
+                            <a href=""><img src="img/footer-icon/facebook.jpg" alt="" class="footer__social-img"></a>
                         </div>
-    
-    
-                        <div class="header__burger">
-                            <span></span>
+
+                        <div class="footer__social-wrap">
+                            <a href=""><img src="img/footer-icon/instagram.jpg" alt="" class="footer__social-img"></a>
+                            <a href=""><img src="img/footer-icon/logotype.jpg" alt="" class="footer__social-img"></a>
                         </div>
-    
-    
-                    </div>
-    
-                    <div class="header__down">
-    
-                    <div class="header__down-pc">
-                      
-                        <div class="logo__inner">
-                            <a class="logo__top" href="">
-                                <img src="img/icons/big-logo.png" alt="">
-                            </a>
-                            <div class="logo__text">Сайт по продаже авто, яхт, недвижимости</div>
+
+                        <div class="footer__social-wrap">
+                            <a href=""><img src="img/footer-icon/viber.jpg" alt="" class="footer__social-img"></a>
+                            <a href=""><img src="img/footer-icon/telegram.jpg" alt="" class="footer__social-img"></a>
                         </div>
-    
-    
-                        <div class="header__down-category">
-                          
-                            <div class="mobile__inner">
- 
-                                <a class="mobile__item" href="car.html">
-                                    <div class="mobile__item-images icosvg-1">
-                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 48.997 48.998" style="enable-background:new 0 0 48.997 48.998;" xml:space="preserve"><g><g>
-                                         <path d="M45.961,18.702c-0.033-0.038-0.061-0.075-0.1-0.112l-1.717-1.657c1.424-0.323,2.957-1.516,2.957-2.74   c0-1.426-1.979-1.932-3.668-1.932c-1.766,0-1.971,1.21-1.992,2.065l-4.43-4.271c-0.9-0.891-2.607-1.592-3.883-1.592H24.5h-0.002   h-8.63c-1.275,0-2.981,0.701-3.882,1.592l-4.429,4.271c-0.023-0.855-0.228-2.065-1.992-2.065c-1.691,0-3.669,0.506-3.669,1.932   c0,1.224,1.534,2.417,2.958,2.74l-1.717,1.657c-0.039,0.037-0.066,0.074-0.1,0.112C1.2,20.272,0,23.184,0,25.297v6.279   c0,1.524,0.601,2.907,1.572,3.938v2.435c0,1.424,1.192,2.585,2.658,2.585h3.214c1.466,0,2.657-1.159,2.657-2.585v-0.623h14.397   H24.5h14.396v0.623c0,1.426,1.19,2.585,2.658,2.585h3.213c1.467,0,2.657-1.161,2.657-2.585v-2.435   c0.972-1.031,1.572-2.414,1.572-3.938v-6.279C48.998,23.184,47.798,20.272,45.961,18.702z M13.613,11.953   c0.623-0.519,1.712-0.913,2.255-0.913h8.63H24.5h8.63c0.543,0,1.632,0.394,2.255,0.913l5.809,5.63H24.5h-0.002H7.805L13.613,11.953   z M1.993,24.347c0-1.546,1.21-2.801,2.704-2.801c1.493,0,6.372,2.864,6.372,4.41s-4.879,1.188-6.372,1.188   C3.203,27.144,1.993,25.894,1.993,24.347z M10.102,34.573H9.587H9.072l-3.055,0.005c-0.848-0.264-1.446-0.572-1.869-0.903   c-0.214-0.167-0.378-0.341-0.506-0.514c-0.129-0.175-0.223-0.347-0.284-0.519c-0.38-1.074,0.405-2.061,0.405-2.061h5.214   l3.476,3.99L10.102,34.573L10.102,34.573z M31.996,34.575H24.5h-0.002h-7.496c-1.563,0-2.832-1.269-2.832-2.831h10.328H24.5h10.328   C34.828,33.308,33.559,34.575,31.996,34.575z M32.654,29.812H24.5h-0.002h-8.154c-1.7,0-3.08-2.096-3.08-4.681h11.234H24.5h11.234   C35.734,27.717,34.354,29.812,32.654,29.812z M45.641,32.644c-0.062,0.172-0.156,0.344-0.285,0.518   c-0.127,0.173-0.291,0.347-0.506,0.514c-0.422,0.331-1.021,0.641-1.869,0.903l-3.055-0.005h-0.515h-0.515h-2.353l3.478-3.99h5.213   C45.234,30.583,46.02,31.568,45.641,32.644z M44.301,27.144c-1.492,0-6.371,0.356-6.371-1.188s4.879-4.41,6.371-4.41   c1.494,0,2.704,1.255,2.704,2.801C47.005,25.892,45.795,27.144,44.301,27.144z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                     </g></g> </svg>
-                                    </div>
-                                    <span>Авто</span> 
-                                 </a>
-     
-                                <a class="mobile__item" href="yachts.html">
-                                 <div class="mobile__item-images icosvg-2">
-                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_2" x="0px" y="0px" viewBox="0 0 477.518 477.518" style="enable-background:new 0 0 477.518 477.518;" xml:space="preserve" width="512px" height="512px"><g><g>
-                                         <g>
-                                             <g>
-                                                 <path d="M129.045,243.457l105.535-75.755c2.392-1.518,5.445-1.518,7.837,0l106.057,75.755v-90.384     c0.58-12.394-8.997-22.911-21.39-23.491c-0.184-0.009-0.368-0.015-0.553-0.019H150.988     c-12.404,0.275-22.237,10.553-21.962,22.958c0.004,0.184,0.01,0.368,0.019,0.552V243.457z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                                 <rect x="212.637" y="51.196" width="52.245" height="62.694" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                                 <path d="M469.682,384.518c-15.445-0.153-30.508,4.807-42.841,14.106c-9.763,7.863-21.946,12.109-34.482,12.016     c-8.694,0.08-17.285-1.889-25.078-5.747l32.392-107.102l-45.453-31.869l-3.135-1.567l-107.102-74.71v220.473h-5.747l-9.927-0.522     V189.645L76.278,297.791l33.437,106.58c-7.599,4.418-16.294,6.592-25.078,6.269c-16.718,0-24.555-5.747-33.959-11.494     c-12.145-9.708-27.294-14.881-42.841-14.629c-4.328,0-7.837,3.509-7.837,7.837s3.509,7.837,7.837,7.837     c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106c15.547,0.253,30.695-4.92,42.841-14.629     c9.404-5.747,17.241-11.494,33.959-11.494c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106     c15.547,0.253,30.695-4.92,42.841-14.629c9.404-5.747,17.241-11.494,33.959-11.494c12.536-0.092,24.718,4.153,34.482,12.016     c25.463,18.811,60.219,18.811,85.682,0c9.763-7.863,21.946-12.109,34.482-12.016c4.328,0,7.837-3.509,7.837-7.837     S474.01,384.518,469.682,384.518z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                             </g>
-                                         </g> 
-                                     </g></g> </svg>
-                                 </div>
-                                <span>Яхты</span> 
-                             </a>
-     
-                             <a class="mobile__item mobile__item-page" href="home.html">
-                                 <div class="mobile__item-images icosvg-3">
-                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve"><g><g>
-                                         <g>
-                                             <path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#fff"/>
-                                             <path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#fff"/>
-                                         </g>
-                                     </g></g> </svg>
-                                 </div>
-                                 <span>недвижимости</span> 
-                             </a>
-     
-                            </div>
-                            
+
+                        <div class="footer__social-wrap">
+                            <a href=""><img src="img/footer-icon/twitter.jpg" alt="" class="footer__social-img"></a>
+                            <a href=""><img src="img/footer-icon/wats.jpg" alt="" class="footer__social-img"></a>
                         </div>
-    
-                        <a class="header__down-announcement" href="">
-                            <span class="button__text">
-                                <span>Добавить обьявление</span>
-                              </span></a>
-    
-                    </div>
-    
-                    <div class="header__down-mobile">
-    
-                        <div class="mobile__inner">
- 
-                            <a class="mobile__item" href="car.html">
-                                <div class="mobile__item-images icosvg-1">
-                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_4" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 48.997 48.998" style="enable-background:new 0 0 48.997 48.998;" xml:space="preserve"><g><g>
-                                     <path d="M45.961,18.702c-0.033-0.038-0.061-0.075-0.1-0.112l-1.717-1.657c1.424-0.323,2.957-1.516,2.957-2.74   c0-1.426-1.979-1.932-3.668-1.932c-1.766,0-1.971,1.21-1.992,2.065l-4.43-4.271c-0.9-0.891-2.607-1.592-3.883-1.592H24.5h-0.002   h-8.63c-1.275,0-2.981,0.701-3.882,1.592l-4.429,4.271c-0.023-0.855-0.228-2.065-1.992-2.065c-1.691,0-3.669,0.506-3.669,1.932   c0,1.224,1.534,2.417,2.958,2.74l-1.717,1.657c-0.039,0.037-0.066,0.074-0.1,0.112C1.2,20.272,0,23.184,0,25.297v6.279   c0,1.524,0.601,2.907,1.572,3.938v2.435c0,1.424,1.192,2.585,2.658,2.585h3.214c1.466,0,2.657-1.159,2.657-2.585v-0.623h14.397   H24.5h14.396v0.623c0,1.426,1.19,2.585,2.658,2.585h3.213c1.467,0,2.657-1.161,2.657-2.585v-2.435   c0.972-1.031,1.572-2.414,1.572-3.938v-6.279C48.998,23.184,47.798,20.272,45.961,18.702z M13.613,11.953   c0.623-0.519,1.712-0.913,2.255-0.913h8.63H24.5h8.63c0.543,0,1.632,0.394,2.255,0.913l5.809,5.63H24.5h-0.002H7.805L13.613,11.953   z M1.993,24.347c0-1.546,1.21-2.801,2.704-2.801c1.493,0,6.372,2.864,6.372,4.41s-4.879,1.188-6.372,1.188   C3.203,27.144,1.993,25.894,1.993,24.347z M10.102,34.573H9.587H9.072l-3.055,0.005c-0.848-0.264-1.446-0.572-1.869-0.903   c-0.214-0.167-0.378-0.341-0.506-0.514c-0.129-0.175-0.223-0.347-0.284-0.519c-0.38-1.074,0.405-2.061,0.405-2.061h5.214   l3.476,3.99L10.102,34.573L10.102,34.573z M31.996,34.575H24.5h-0.002h-7.496c-1.563,0-2.832-1.269-2.832-2.831h10.328H24.5h10.328   C34.828,33.308,33.559,34.575,31.996,34.575z M32.654,29.812H24.5h-0.002h-8.154c-1.7,0-3.08-2.096-3.08-4.681h11.234H24.5h11.234   C35.734,27.717,34.354,29.812,32.654,29.812z M45.641,32.644c-0.062,0.172-0.156,0.344-0.285,0.518   c-0.127,0.173-0.291,0.347-0.506,0.514c-0.422,0.331-1.021,0.641-1.869,0.903l-3.055-0.005h-0.515h-0.515h-2.353l3.478-3.99h5.213   C45.234,30.583,46.02,31.568,45.641,32.644z M44.301,27.144c-1.492,0-6.371,0.356-6.371-1.188s4.879-4.41,6.371-4.41   c1.494,0,2.704,1.255,2.704,2.801C47.005,25.892,45.795,27.144,44.301,27.144z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                 </g></g> </svg>
-                                </div>
-                             </a>
- 
-                            <a class="mobile__item" href="yachts.html">
-                             <div class="mobile__item-images icosvg-2">
-                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_5" x="0px" y="0px" viewBox="0 0 477.518 477.518" style="enable-background:new 0 0 477.518 477.518;" xml:space="preserve" width="512px" height="512px"><g><g>
-                                     <g>
-                                         <g>
-                                             <path d="M129.045,243.457l105.535-75.755c2.392-1.518,5.445-1.518,7.837,0l106.057,75.755v-90.384     c0.58-12.394-8.997-22.911-21.39-23.491c-0.184-0.009-0.368-0.015-0.553-0.019H150.988     c-12.404,0.275-22.237,10.553-21.962,22.958c0.004,0.184,0.01,0.368,0.019,0.552V243.457z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                             <rect x="212.637" y="51.196" width="52.245" height="62.694" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                             <path d="M469.682,384.518c-15.445-0.153-30.508,4.807-42.841,14.106c-9.763,7.863-21.946,12.109-34.482,12.016     c-8.694,0.08-17.285-1.889-25.078-5.747l32.392-107.102l-45.453-31.869l-3.135-1.567l-107.102-74.71v220.473h-5.747l-9.927-0.522     V189.645L76.278,297.791l33.437,106.58c-7.599,4.418-16.294,6.592-25.078,6.269c-16.718,0-24.555-5.747-33.959-11.494     c-12.145-9.708-27.294-14.881-42.841-14.629c-4.328,0-7.837,3.509-7.837,7.837s3.509,7.837,7.837,7.837     c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106c15.547,0.253,30.695-4.92,42.841-14.629     c9.404-5.747,17.241-11.494,33.959-11.494c12.55-0.18,24.762,4.075,34.482,12.016c12.172,9.225,27.045,14.183,42.318,14.106     c15.547,0.253,30.695-4.92,42.841-14.629c9.404-5.747,17.241-11.494,33.959-11.494c12.536-0.092,24.718,4.153,34.482,12.016     c25.463,18.811,60.219,18.811,85.682,0c9.763-7.863,21.946-12.109,34.482-12.016c4.328,0,7.837-3.509,7.837-7.837     S474.01,384.518,469.682,384.518z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#b82626"/>
-                                         </g>
-                                     </g> 
-                                 </g></g> </svg>
-                             </div>
-                         </a>
- 
-                         <a class="mobile__item mobile__item-page" href="home.html">
-                             <div class="mobile__item-images icosvg-3">
-                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_6" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 460.298 460.297" style="enable-background:new 0 0 460.298 460.297;" xml:space="preserve"><g><g>
-                                     <g>
-                                         <path d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041    c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629    c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939    z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#fff"/>
-                                         <path d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816    c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245    c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136    c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998    L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125    c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#fff"/>
-                                     </g>
-                                 </g></g> </svg>
-                             </div>
-                         </a>
- 
-                        </div>
-                         
-                     </div>
-    
-    
-                    </div>
-    
-    
-                </div>
-            </header>
-            
-    
-    
-            <div class="breadcrumbs">
-                <div class="container">
-                    <div class="breadcrumbs__inner">
-                        <ul class="breadcrumbs__list">
-                            <li><a href="car.html">Главная<span>></span></a></li>
-                            <li><a href="advanced.html">Обьявления</a></li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-    
-    
 
-    <section class="advanced add__yacht">
-      <div class="container">
-             <div class="advanced__title">Добавления Обьявления <span>Недвижимости</span>
-            <div class="advanced__subtitle">Основная информация
-                <p>укажите основную информацию о яхте</p>
-            </div>
-             </div>
-            <div class="advanced__box">
-            <form>
 
-                <div class="circle__title">
-                    <div class="circle__title-number">1</div>
-                    <div class="circle__title-text">Добавьте фото</div>
-                </div>
-
-                <div class="add__box">
-
-                    <div class="add__box-photo">
-                        <input type="file" id="photo1">
-                        <label class="add-photo" for="photo1">
-                            <b class="add">+</b>
-                            <span>Добавить фото</span>
-                        </label>
-
-                        <div class="added__photo-wrapper">
-                        <div class="added__photo">
-                            <div class="added__photo-new" style="background-image: url(img/content/new-photo-1.png);">
-                                <div class="added__photo-main">
-                                    <input type="radio" id="phot-1" name="newphoto" checked>
-                                    <label for="phot-1">Главное фото</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="added__photo">
-                            <div class="added__photo-new" style="background-image: url(img/content/new-photo-1.png);">
-                                <div class="added__photo-main">
-                                    <input type="radio" id="phot-2" name="newphoto">
-                                    <label for="phot-2">Сделать главным</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="added__photo-wrapper">
-                        <div class="added__photo">
-                            <div class="added__photo-new" style="background-image: url(img/content/new-photo-1.png);">
-                                <div class="added__photo-main">
-                                    <input type="radio" id="phot-3" name="newphoto">
-                                    <label for="phot-3">Сделать главным</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="added__photo">
-                            <div class="added__photo-new" style="background-image: url(img/content/new-photo-1.png);">
-                                <div class="added__photo-main">
-                                    <input type="radio" id="phot-4" name="newphoto">
-                                    <label for="phot-4">Сделать главным</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                        
-
-                    </div>
-
-                    <div class="add__box-video">
-                        <input type="file" id="video1">
-                        <label class="add-photo" for="video1">
-                            <div class="add">+</div>
-                            <span>Добавить видео</span>
-                        </label>
                     </div>
 
                 </div>
 
-
-          <div class="advanced__yachts-category">
-            <div class="circle__title">
-                <div class="circle__title-number">2</div>
-                <div class="circle__title-text">Категории <span>*</span>
-                <div class="circle__title-subtext">нужно выбрать нужную категорию</div>
-                <div class="circle__title-notification">* Поля обязательные для заполнения</div>
-
-                </div>
-            </div>
-
-
-
-            <div class="advanced__flat-category">
-
-
-            <div class="advanced__flat-inner">
-
-            <div class="flat__items-1">
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it1" name="flat_items1">
-                <label for="flat__it1">Квартиры</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it2" name="flat_items1">
-                <label for="flat__it2">Дома</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it3" name="flat_items1">
-                <label for="flat__it3">Комерческая недвижимость</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it4" name="flat_items1">
-                <label for="flat__it4">Офисы</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it5" name="flat_items1">
-                <label for="flat__it5">Земельные участки</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it6" name="flat_items1">
-                <label for="flat__it6">Гаражи</label>
-            </div>
-
-            <div class="flat__item">
-                <input type="radio" id="flat__it7" name="flat_items1">
-                <label for="flat__it7">Паркинг</label>
-            </div>
-
-           
-            </div>
-
-
-            <div class="flat__items-2">
-
-                <div class="flat__item">
-                    <input type="radio" id="flat2-it1" name="flat_items2">
-                    <label for="flat2-it1">Квартира</label>
-                </div>
-    
-                <div class="flat__item">
-                    <input type="radio" id="flat2-it2" name="flat_items2">
-                    <label for="flat2-it2">Дома</label>
-                </div>
-               
-                </div>
-
-                
-
-            <div class="flat__items-3">
-
-                <div class="flat__item">
-                    <input type="radio" id="flat3-it1" name="flat_items3">
-                    <label for="flat3-it1">Продажа</label>
-                </div>
-    
-                <div class="flat__item">
-                    <input type="radio" id="flat3-it2" name="flat_items3">
-                    <label for="flat3-it2">Долгосрочная аренда</label>
-                </div>
-
-                <div class="flat__item">
-                    <input type="radio" id="flat3-it3" name="flat_items3">
-                    <label for="flat3-it3">Аренда посуточная</label>
-                </div>
-               
-                </div>
-
-
-
-
-
-            </div>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <div class="advanced__category-location">
-
-
-                <div class="advanced__city-area">
-                    <div class="city-area__title">Область</div>
-                    <div class="city-area__select">            
-                    <select class="star">
-                       <option>Выбрать</option>
-                   </select></div>
-       
-                </div>
-       
-                <div class="advanced__city-area">
-                   <div class="city-area__title">Город</div>
-                   <div class="city-area__select">            
-                   <select class="star">
-                      <option>Выбрать</option>
-                  </select></div>
-       
-               </div>
-       
-       
-               <div class="advanced__home-city">
-                   <div class="advanced__location-ukr">
-                      <input type="radio" id="ukr" name="yachts" checked="checked">
-                      <label for="ukr">Украина</label>
-                   </div>
-          
-                   <div class="advanced__location-abroad hidden">
-                      <input type="radio" id="abrd" name="yachts">
-                      <label for="abrd">Заграница</label>
-                   </div>
-               </div>
-       
-              </div>
-
-
-          </div>
-
-
-
-             <div class="advanced__info advanced__info-padding">
-            <div class="circle__title">
-        <div class="circle__title-number">3</div>
-        <div class="circle__title-text">Параметры обьекта
-        <div class="circle__title-subtext">нужно заполнить детальную информацию</div>
-        </div>
-               </div>
-
-            <div class="advanced__info-inner">
-
-        <div class="advanced__info-left">
-    
-    
-
-            <div class="advanced__info-line">
-                <div class="advanced__line-title main-title">Комнат</div>
-                    <div class="advanced__line-info">
-                          <select class="star">
-                              <option>Выбрать</option>
-                          </select>
-                    </div>
-            </div>
-
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Тип</div>
-                <div class="advanced__line-info">
-                     <div class="room-info">
-                        <input type="radio" id="trade-21" name="home">
-                        <label for="trade-21">Вторичное</label>
-                  </div>
-                  <div class="room-info">
-                    <input type="radio" id="trade-22" name="home">
-                    <label for="trade-22">Первичное</label>
-              </div>
-                </div>
-            </div>
-    
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Тип стен</div>
-                <div class="advanced__line-info">
-                      <select class="star">
-                          <option>Выбрать</option>
-                      </select>
-                </div>
-            </div>
-    
-            
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Площадь, м<sup><small>2</small></sup> </div>
-                <div class="advanced__line-info">
-                    <label class="star"></label>
-                    <input type="number" placeholder="м²">
-                </div>
-            </div>
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Жилая, м<sup><small>2</small></sup> </div>
-                <div class="advanced__line-info">
-                    <label class="star"></label>
-                    <input type="number" placeholder="м²">
-                </div>
-            </div>
-    
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Кухня, м<sup><small>2</small></sup> </div>
-                <div class="advanced__line-info">
-                    <label class="star"></label>
-                    <input type="number" placeholder="м²">
-                </div>
-            </div>
-    
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Участок, м<sup><small>2</small></sup> </div>
-                <div class="advanced__line-info">
-                    <label class="star"></label>
-                    <input type="number" placeholder="м²">
-                </div>
-            </div>
-    
-                <div class="advanced__info-location">
-                    <div class="advanced__info-title">Рядом</div>
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-23" name="home">
-                        <label for="trade-23">магазин</label>
-                        <input type="checkbox" id="trade-24" name="home">
-                        <label for="trade-24">больница</label>
-                    </div>
-                </div>
-    
-                
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-25" name="home">
-                        <label for="trade-25">школа</label>
-                        <input type="checkbox" id="trade-26" name="home">
-                        <label class="width-mini" for="trade-26">торговый центр</label>
-                    </div>
-                </div>
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-27" name="home">
-                        <label for="trade-27">метро</label>
-                        <input type="checkbox" id="trade-28" name="home">
-                        <label class="width-mini" for="trade-28">автобусная остановка</label>
-                    </div>
-                </div>
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-29" name="home">
-                        <label for="trade-29">заправка</label>
-                        <input type="checkbox" id="trade-30" name="home">
-                        <label class="width-mini" for="trade-30">железная дорога</label>
-                    </div>
-                </div>
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-31" name="home">
-                        <label for="trade-31">паркинг</label>
-                        <input type="checkbox" id="trade-32" name="home">
-                        <label class="width-mini" for="trade-32">детская площадка</label>
-                    </div>
-                </div>
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-33" name="home">
-                        <label for="trade-33">метро</label>
-                        <input type="checkbox" id="trade-34" name="home">
-                        <label class="width-mini" for="trade-34">детский садик</label>
-                    </div>
-                </div>
-                <div class="advanced__info-location advanced__info-location--wrap">
-                    <div class="advanced__line-mini">
-                        <input type="checkbox" id="trade-35" name="home">
-                        <label class="width-mini" for="trade-35">университет</label>
-                    </div>
-                </div>
-    
-        </div>
-    
-    
-        <div class="advanced__info-right">
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Этаж</div>
-                    <div class="advanced__line-info">
-                          <select class="star">
-                              <option>Выбрать</option>
-                          </select>
-                    </div>
-            </div>
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Этажность</div>
-                    <div class="advanced__line-info">
-                          <select class="star">
-                              <option>Выбрать</option>
-                          </select>
-                    </div>
-            </div>
-    
-    
-    
-    
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Год постройки</div>
-                <div class="advanced__line-info">
-                      <select>
-                          <option>Выбрать</option>
-                      </select>
-                </div>
-            </div>
-    
-            <div class="advanced__info-location">
-                <div class="advanced__info-title">Отопление</div>
-                <div class="advanced__line-mini mini-wrapper">
-                    <input type="radio" id="trade-47" name="home">
-                    <label class="width-mini" for="trade-47">центролизованное</label>
-                </div>
-            </div>
-            <div class="advanced__info-location--wrap">
-                <div class="advanced__line-mini">
-                    <input type="radio" id="trade-48" name="home">
-                    <label class="width-mini" for="trade-48">индивидуальное</label>
-                </div>
-            </div>
-            <div class="advanced__info-location--wrap">
-                <div class="advanced__line-mini">
-                    <input type="radio" id="trade-49" name="home">
-                    <label class="width-mini" for="trade-49">без отопления</label>
-                </div>
-            </div>
-    
-    
-    
-
-        <div class="advanced__info-location comunication__info">
-            <div class="advanced__info-title">Комуникации<br>(есть)</div>
-            <div class="advanced__line-mini">
-                <input type="checkbox" id="trade-136" name="alls">
-                <label for="trade-136">все</label>
-                <input class="checkbox" type="checkbox" id="trade-137" name="alls">
-                <label for="trade-137">свет</label>
             </div>
         </div>
 
-        
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input class="checkbox" type="checkbox" id="trade-138" name="alls">
-                <label for="trade-138">вода</label>
-                <input class="checkbox"  type="checkbox" id="trade-139" name="alls">
-                <label for="trade-139">газ</label>
-            </div>
-        </div>
-        <div class="advanced__info-location--wrap">
-            <div class="advanced__line-mini">
-                <input class="checkbox" type="checkbox" id="trade-140" name="alls">
-                <label class="width-mini" for="trade-140">подключение газа (возможно)</label>
-            </div>
-        </div>
+    </footer>
 
-    
+    <!-- end footer -->
 
-            <div class="advanced__info-line">
-                <div class="advanced__line-title">Удаленность от города</div>
-                    <div class="advanced__line-info">
-                          <select>
-                              <option>Выбрать</option>
-                          </select>
-                    </div>
-            </div>
-    
-    
-    
-        </div>
-    
-    
-           </div>
 
 
-
-           </div>
-
-            <div class="advanced__value">
-           <div class="circle__title">
-        <div class="circle__title-number">4</div>
-        <div class="circle__title-text">Стоимость
-        <div class="circle__title-subtext">цена, валюта, торг, обмен</div>
-        </div>
-         </div>
-
-
-       <div class="value__top">
-        
-        <div class="value__top-left">
- 
-        <div class="value__title">Цена</div>
-        <div class="value__price">
-
-         <div class="value__inp">
-          <label class="star"></label>
-          <input type="text">
-         </div>
-         <div class="value__sel">
-         <select>
-             <option>$</option>
-         </select>
-         </div>
-        </div>
-
-         </div>
-      
-          <div class="value__right-side">
-
-        <div class="top-right">
-            <div class="top-right__box-title">Комнат</div>
-            
-            <div class="top-right__box">
-
-              <div class="text__radio">
-                  <input type="radio" id="flat1" name="flat">
-                  <label for="flat1">за объект</label>
-              </div>
-
-
-              <div class="text__radio">
-                <input type="radio" id="flat2" name="flat">
-                <label for="flat2">за кв.м</label>
-            </div>
-            </div>
-        </div>
-
-
-
-        <div class="top-right--wrapper">
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid">
-                <label for="bid">Возможен торг</label>
-                <p>Включите эту функцию если хотите договориться о цене с покупателем</p>
-            </div>
-        </div>
-
-
-     </div>
-
-    </div>
-
-
-
-    <div class="value__bottom">
-
-     <div class="value__bottom-left">
-     
-        <div class="bottom-left__title">Возможен обмен</div>
-         <div class="bottom__left-items">
-           <div class="bottom__left-item">
-
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid1">
-                <label for="bid1">на авто</label>
-            </div>
-
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid2">
-                <label for="bid2">на недвижимость</label>
-            </div>
-
-           </div>
-           <div class="bottom__left-item">
-
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid3">
-                <label for="bid3">на яхту</label>
-            </div>
-            
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid4">
-                <label for="bid4">на недвижимость заграницей</label>
-            </div>
-
-           </div>
-         </div>
-     </div>
-
-
-     <div class="value__bottom-right">
-
-        <div class="bottom-right__top">
-            <div class="value__checkbox">
-                <input type="checkbox" id="bid5">
-                <label for="bid5">В кредит</label>
-            </div>
-            <input type="text" placeholder="(%) годовых" >
-        </div>
-
-        <div class="value__checkbox">
-            <input type="checkbox" id="bid6">
-            <label for="bid6">Возможна рассрочка</label>
-        </div>
-
-     </div>
-
-         </div>
-
-
-              <div class="value__type">
- 
-        <div class="value__type-items">
-        
-        <div class="type__item-left">
-          <div class="type__item-title">Тип предложения</div>
-          <div class="type__item">
-            <div class="text__radio">
-                <input type="radio" id="type1" name="type__item">
-                <label for="type1">от посредника</label>
-            </div>
-            <div class="text__radio">
-                <input type="radio" id="type2" name="type__item">
-                <label for="type2">от представителя хозяина (без комиссионых)</label>
-            </div>
-            <div class="text__radio">
-                <input type="radio" id="type3" name="type__item">
-                <label for="type3">от представителя застройщика</label>
-            </div>
-            <div class="text__radio">
-                <input type="radio" id="type4" name="type__item">
-                <label for="type4">от собственника</label>
-            </div>
-          </div>
-        </div>
-
-        <div class="type__item-right">
-            <div class="value__checkbox">
-                <input type="checkbox" id="comment-true">
-                <label for="comment-true">Разрешить комментировать</label>
-                <p>*эта функция позволяет общаться с потенциальными покупателями на странице обьявления</p>
-            </div>
-        </div>
-
-        </div>
-
-
-        <div class="value__checkbox value__document">
-            <input type="checkbox" id="doc1">
-            <label for="doc1">имеются все необходимые документы для ПЕРЕОФОРМЛЕНИЯ</label>
-        </div>
-
-
-    </div>
-
-
-         </div>
-
-
-           <div class="advanced__phone">
-    <div class="circle__title">
-        <div class="circle__title-number">5</div>
-        <div class="circle__title-text">Информация о продавце
-        <div class="circle__title-subtext">добавьте свои данные</div>
-        </div>
-    </div>
- 
-       <div class="phone__box">
-
-           <div class="phone__box-left">
-              <div class="phone__box-title">Телефон</div>
-              <div class="phone__box-inp">
-                  <label class="star"></label>
-                  <input type="number" placeholder="Телефон">
-              </div>
-           </div>
-           <div class="phone__box-right">
-           <div class="phone__box-item">
-            <div class="value__checkbox">
-                <input type="checkbox" id="phone1">
-                <label for="phone1">Имеется Viber</label>
-            </div>
-
-            <div class="value__checkbox">
-                <input type="checkbox" id="phone2">
-                <label for="phone2">Имеется Telegram</label>
-            </div>
-           </div>
-           <div class="phone__box-item">
-            <div class="value__checkbox">
-                <input type="checkbox" id="phone3">
-                <label for="phone3">Имеется Whatsapp</label>
-            </div>
-            </div>
-           </div>
-
-           </div>
-
-
-
-           <div class="phone__box">
-
-            <div class="phone__box-left">
-               <div class="phone__box-title">Телефон 2</div>
-               <div class="phone__box-inp">
-                   <input type="number" placeholder="Телефон">
-               </div>
-            </div>
-            <div class="phone__box-right">
-            <div class="phone__box-item">
-             <div class="value__checkbox">
-                <input type="checkbox" id="phone4">
-                <label for="phone4">Имеется Viber</label>
-             </div>
- 
-             <div class="value__checkbox">
-                <input type="checkbox" id="phone5">
-                <label for="phone5">Имеется Telegram</label>
-             </div>
-            </div>
-            <div class="phone__box-item">
-             <div class="value__checkbox">
-                <input type="checkbox" id="phone6">
-                <label for="phone6">Имеется Whatsapp</label>
-             </div>
-             </div>
-            </div>
- 
-            </div>
-
-
-
-
-            <div class="phone__box">
-
-                <div class="phone__box-left">
-                   <div class="phone__box-title">Телефон 3</div>
-                   <div class="phone__box-inp">
-                       <input type="number" placeholder="Телефон">
-                   </div>
-                </div>
-                <div class="phone__box-right">
-                <div class="phone__box-item">
-                 <div class="value__checkbox">
-                     <input type="checkbox" id="phone7">
-                     <label for="phone7">Имеется Viber</label>
-                 </div>
-     
-                 <div class="value__checkbox">
-                     <input type="checkbox" id="phone8">
-                     <label for="phone8">Имеется Telegram</label>
-                 </div>
-                </div>
-                <div class="phone__box-item">
-                 <div class="value__checkbox">
-                     <input type="checkbox" id="phone9">
-                     <label for="phone9">Имеется Whatsapp</label>
-                 </div>
-                 </div>
-                </div>
-     
-                </div>
-
-
-
-
-
-       </div>
-
-
-       <div class="advanced__descr">
-        <div class="circle__title">
-            <div class="circle__title-number">6</div>
-            <div class="circle__title-text">Описание недвижимости
-            <div class="circle__title-subtext">детальное описание характеристик недвижимости</div>
-            </div>
-        </div>
-
-             <div class="description__wrap">
-                <textarea class="description" placeholder="Описание сдесь"></textarea>
-
-                <p class="symbol__descr">* Доступно 1700 символов</p>
-             </div>
-
-       </div>
-
-
-       <div class="advertising">
-
-        <div class="value__radio">
-            <input type="radio" id="top0" name="advertising">
-            <label class="simple" for="top0">Обычное размещение</label>
-            <p>* Бесплатная услуга на сайте</p>
-        </div>
-
-        <div class="value__radio">
-            <input type="radio" id="top1" name="advertising">
-            <label class="top" for="top1">ТОП = 100грн <span class="sale"> 150грн </span></label>
-            <p>* Платная услуга на сайте, которая  в 3 раза увеличивает вероятность продажи Вашего товара</p>
-        </div>
-
-        <div class="value__radio">
-            <input type="radio" id="top2" name="advertising">
-            <label class="top-top" for="top2">ТОП-ТОП = 250грн <span class="sale"> 280грн </span></label>
-            <p>*Платная услуга на сайте, которая  в 5 раза увеличивает вероятность продажи Вашего товара</p>
-        </div>
-
-       </div>
-
-
-       <div class="payment">
-           <div class="payment__title">Способ оплаты</div>
-           <div class="payment__links">
-               <a href=""><img src="img/icons/privat24.png" alt=""></a>
-               <a href=""><img src="img/icons/visa.png" alt=""></a>
-               <a href=""><img src="img/icons/qiwi.png" alt=""></a>
-           </div>
-           
-        
-       </div>
-
-       <div class="agreement">
-        <div class="agreement__checkbox">
-            <input type="checkbox" id="agreement">
-            <label for="agreement">Я согласен(а) с условиями интернет сайта</label>
-            <p>*Вы разрешаете доступ на обработку Ваших данних</p>
-        </div>
-
-
-          <div class="agreement__box">
-            <div class="agreement-btn">
-                <div class="yes-btn">
-                    <input type="radio" id="yes-btn" name="agreement-btn">
-                    <label for="yes-btn"></label>
-                </div>
-            </div>
-   
-            <div class="agreement-btn">
-               <div class="no-btn">
-                   <input type="radio" id="no-btn" name="agreement-btn">
-                   <label for="no-btn"></label>
-               </div>
-           </div>
-            <div class="agreement__text">Я согласен(а), чтобы<span>видео группа выехала и провела видеосъемку моей недвижимости</span>
-            <p>Вы разрешаете съемку Вашей недвижимость. С Вами свяжутся и договорятся о встрече в любое удобное для Вас время. <span>Эта услуга бессплатная</span></p></div>
-          </div>
-
-
-        <button class="add__announcement-btn" type="submit">Разместить объявление</button>
-       </div>
-
-
-        </form>
-
-       
-
-    </div>
-    </section>
-       
-
-    
-             <!-- start footer -->
-             
-             <footer class="footer">
-                <div class="container">
-                    <div class="footer__title">присоединяйтесь к сообществу G2g.com.ua</div>
-    
-    
-                    <div class="footer__top-inner">
-    
-                        <div class="footer__video">
-                           <iframe width="570" height="322" src="https://www.youtube.com/embed/07pt0d8Sa1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-    
-                        <div class="footer__social-links">
-    
-                            <div class="footer__social-links--top">
-                               <a class="social__link social__link-facebook" href="#" >Facebook <span>G2g</span></a>
-                               <a class="social__link social__link-vkontakte" href="#" >Vkontakte <span>G2g</span></a>
-                               <a class="social__link social__link-twitter" href="#" >Twitter <span>G2g</span></a>
-                               <a class="social__link social__link-instagram" href="#" >instagram <span>G2g</span></a>
-                            </div>
-    
-                            <div class="footer__social-links--down">
-                               <a class="social__link social__link-telegram" href="#" >Написать нам</a>
-                               <a class="social__link social__link-youtube" href="#" >youtube <span>G2g</span></a>
-                               <a class="social__link social__link-viber" href="#" >написать нам</a>
-                               <a class="social__link social__link-wats" href="#" >написать нам</a>
-                            </div>
-                           
-                        </div>
-    
-    
-                    </div>  
-                   </div>
-    
-                    <div class="footer__down-inner">
-                        <div class="container">
-                              
-                           <div class="footer__down-wrap">
-    
-                               <div class="footer__menu">
-                                     
-                                   <nav class="header__menu">
-                                       <h3>МЕНЮ</h3>
-                                       <ul class="header__list">
-                                           <li><a class="header__link" href="">Автомобили</a></li>
-                                           <li><a class="header__link" href="">Недвижимости</a></li>
-                                           <li><a class="header__link" href="">Яхты</a></li>
-                                       </ul>
-                                   </nav>
-                                   <div class="footer__menu-contacts">
-                                       <a class="contact__mail" href="mailto:G2g@gmail.com">G2g@gmail.com</a>
-                                       <a class="contact__phone kyivstar" href="tel:380945912956">+380 (94) 591-29-56</a>
-                                   </div>
-                                    
-                               </div>
-           
-                               <div class="footer__social">
-                                   <div class="footer__social-wrap">
-                                       <a href=""><img src="img/footer-icon/youtube.jpg" alt="" class="footer__social-img"></a>
-                                       <a href=""><img src="img/footer-icon/facebook.jpg" alt="" class="footer__social-img"></a>
-                                   </div>
-                                   
-                                   <div class="footer__social-wrap">
-                                       <a href=""><img src="img/footer-icon/instagram.jpg" alt="" class="footer__social-img"></a>
-                                       <a href=""><img src="img/footer-icon/logotype.jpg" alt="" class="footer__social-img"></a>
-                                   </div>
-    
-                                   <div class="footer__social-wrap">
-                                       <a href=""><img src="img/footer-icon/viber.jpg" alt="" class="footer__social-img"></a>
-                                       <a href=""><img src="img/footer-icon/telegram.jpg" alt="" class="footer__social-img"></a>
-                                   </div>
-    
-                                   <div class="footer__social-wrap">
-                                       <a href=""><img src="img/footer-icon/twitter.jpg" alt="" class="footer__social-img"></a>
-                                       <a href=""><img src="img/footer-icon/wats.jpg" alt="" class="footer__social-img"></a>
-                                   </div>
-                                   
-                                 
-                               </div>
-    
-                           </div>
-    
-                        </div>
-                    </div>
-               
-            </footer>
-    
-            <!-- end footer -->
-    
-    
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
