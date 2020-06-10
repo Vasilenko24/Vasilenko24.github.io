@@ -4,6 +4,7 @@ const suburb = document.querySelector('#loc-7');
 const village = document.querySelector('#loc-10');
 const centrAbr = document.querySelector('#abr-1');
 const centrAll = document.querySelector('#trade-36');
+const centrS = document.querySelector('#trade-136');
 
 
     const disabledCheckbox = e => {
@@ -22,4 +23,23 @@ suburb.addEventListener('click', disabledCheckbox);
 village.addEventListener('click', disabledCheckbox);
 centrAbr.addEventListener('click', disabledCheckbox);
 centrAll.addEventListener('click', disabledCheckbox);
+centrS.addEventListener('click', disabledCheckbox);
 
+
+
+let centrS = document.querySelector('#trade-136');
+
+
+    let disabledCheckbox = e => {
+        let checkbox = document.querySelectorAll('.checkbox');
+        
+        checkbox.forEach(checkbox => {
+            if (checkbox.name === e.target.name) {
+                checkbox.disabled = e.target.checked;
+                checkbox.checked = false;
+            }
+        });
+    };
+
+
+centrS.addEventListener('click', disabledCheckbox);

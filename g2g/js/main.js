@@ -6,6 +6,9 @@ $(function(){
     $('.header__lang').on('click', function(){
       $('.header__lang, .lang__more').toggleClass('active');
       });
+    $('.dump-btn').on('click', function(){
+      $(this).parents('form').reset()
+      });
 
 
       // end language dropw down
