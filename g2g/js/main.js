@@ -6,9 +6,8 @@ $(function(){
     $('.header__lang').on('click', function(){
       $('.header__lang, .lang__more').toggleClass('active');
       });
-    $('.dump-btn').on('click', function(){
-      $(this).parents('form').reset()
-      });
+   
+
 
 
       // end language dropw down
@@ -24,7 +23,23 @@ $(function(){
         // end up btn
 
         
+      $('.dop-info__line-1').on('click', function(){
+        $(this).removeClass('hidden');
+        $('.dop-info__line-2').addClass('hidden');
+        });
+      $('.dop-info__line-2').on('click', function(){
+        $(this).removeClass('hidden');
+        $('.dop-info__line-1').addClass('hidden');
+        });
 
+      $('.dop-info__line-3').on('click', function(){
+        $(this).removeClass('hidden');
+        $('.dop-info__line-4').addClass('hidden');
+        });
+      $('.dop-info__line-4').on('click', function(){
+        $(this).removeClass('hidden');
+        $('.dop-info__line-3').addClass('hidden');
+        });
 
 
     // UKR hidden ABROD hidden

@@ -2872,10 +2872,20 @@ display: none;
 
 
 .add__dop-info{
+	padding-top: 20px;
 	display: flex;
+	@media(max-width:380px){
+		display: block;
+	}
 	.advanced__line-mini{
 		display: flex;
 		flex-direction: column;
+	}
+	.yachts__dop-info{
+		margin-left: 40px;
+		@media(max-width:380px){
+			margin-left: 0;
+		}
 	}
 }
 
@@ -3833,6 +3843,61 @@ background-size: cover;
 	}
 }
 
+.add__inner-padding{
+	padding-top: 10px;
+}
+
+.dop-info__line-1,
+.dop-info__line-2,
+.dop-info__line-3,
+.dop-info__line-4{
+	margin-bottom: 10px;
+	input[type="radio"]{
+		display: none;
+	}
+	label{
+		display: flex;
+		align-items: center;
+	
+	}
+	label::before{
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 5px;
+		border: 1px solid $red;
+		margin-right: 10px;
+	}
+	input[type="radio"]:checked + label::before{
+		content: '✓';
+		text-align: center;
+		padding-top: 2px;
+		color: $red;
+	}
+	input[type="radio"]:checked + label{
+		font-weight: bold;
+	}
+}
+
+.dop-info__line-1,
+.dop-info__line-2,
+.dop-info__line-3,
+.dop-info__line-4
+ {
+	&.hidden{
+		label::before{
+		content: '';
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 5px;
+		border: 1px solid grey;
+		margin-right: 10px;
+		}
+	}
+
+}
 
 
 .value__top{
