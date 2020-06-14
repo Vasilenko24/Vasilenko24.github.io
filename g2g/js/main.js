@@ -122,6 +122,10 @@ $(function(){
    };
   });
  
+  $('.block__title').on('click', function(){
+    $(this).toggleClass('active').next().slideToggle(400);
+    
+    });
   
   
     $('input[type="file"], select').styler();
