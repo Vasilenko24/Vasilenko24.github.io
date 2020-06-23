@@ -155,6 +155,8 @@ $(function(){
     centrUkr4.addEventListener('click', disabledCheckbox);
     centrAbr.addEventListener('click', disabledCheckbox);
 
+    $(selector).mCustomScrollbar();
+
   });
 
   

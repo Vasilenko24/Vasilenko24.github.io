@@ -178,7 +178,6 @@ body{
 	align-items: center;
 	 z-index: 3;
 	 margin-left: auto;
-	 margin-right: 1px;
 	.header__login{
 		display: flex;
 		align-items: center;
@@ -428,11 +427,14 @@ body{
 	width: 28px;
 	height: 28px;
 	z-index: 10;
-	margin-left: auto;
+	margin-left: 10px;
 	margin-right: 10px;
-display: none;
-@media(max-width: 680px){
+     display: none;
+@media(max-width: 760px){
 	display: block;
+}
+@media(max-width: 680px){
+	margin-left: auto;
 }
 }
 
@@ -472,11 +474,12 @@ display: none;
 .header__down-category{
 	.mobile__inner{
 		display: flex;
-		@media(max-width: 1080px){
+		@media(max-width: 1120px){
 			flex-direction: column;
 		}
 	}
 	.mobile__item{
+		position: relative;
 		margin-right: 10px;
 		width: 100%;
 		display: flex;
@@ -489,25 +492,44 @@ display: none;
 		font-size: 18px;
 		font-weight: bold;
 		margin-bottom: 10px;
-		transition: all .5s;
-		@media(max-width: 1080px){
-			padding: 10px;
-		}
+		transition: all .3s;
+		max-height: 41px;
+		height: 100%;
 		&:hover{
 			background-color: $red;
-			transition: all .5s;
+			transition: all .3s;
 				g{
 					path,
 					rect{
-						transition: all .5s;
+						transition: all .1s;
 						fill: $w;
 					}
 				}
 			}
 		span{
-			margin-left: 15px;
-			margin-right: 15px;
+			margin-left: 7px;
+			margin-right: 20px;
 		}
+	}
+}
+
+.mobile__item.mobile__item-account{
+	&::after{
+		content: '+';
+		position: absolute;
+		width: 50px;
+		height: 41px;
+		background-color: #066c06;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: -1px;
+		right: -1px;
+		font-size: 40px;
+		font-weight: 400;
+	}
+	span{
+		margin-right: 45px;
 	}
 }
 
@@ -583,6 +605,9 @@ display: none;
 			@media(max-width: 380px){
 				left: 35%;
 			}
+			@media(max-width: 340px){
+				left: 32%;
+			}
 		}
 	}
 	.header__login{
@@ -598,6 +623,46 @@ display: none;
   }
 }
 
+.header__login.header__login-logged{
+ form{
+	 display: none;
+ }           
+}
+.registration__btn.logged{
+	margin-right: 20px;
+}
+.exit{
+	font-size: 12px;
+	text-align: right;
+	position: relative;
+	display: block;
+	margin-right: 5px;
+	color: $w;
+	border: 1px solid $red;
+	border-radius: 5px;
+	padding: 5px 10px;
+	width: 65px;
+	min-height: 20px;
+	&::before{
+		content: '';
+		position: absolute;
+		background-image: url(../img/icons/logout.png);
+		width: 13px;
+		height: 12px;
+		top: 5px;
+		left: 5px;
+	}
+	@media(max-width: 680px){
+		margin: 0 auto;
+	}
+}
+.header__menu-content.header__menu-content--logged{
+	margin-left: 20px;
+}
+.add__auto.add__auto-logged{
+	display: none;
+}
+
 
 .header__down-mobile{
 	display: none;
@@ -610,6 +675,7 @@ display: none;
 		justify-content: space-around;
 	}
 	.mobile__item{
+		position: relative;
 		text-align: center;
 		transition: all .5s;
 		background-color: #000;
@@ -637,8 +703,47 @@ display: none;
 	}
 }
 
-
-
+.header__down-mobile.header__down-mobile--logged{
+	.mobile__item{
+		&::before{
+			content: '+';
+			color: $w;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			background-color: #066c06;
+			top: 0;
+			right: 0;
+		}
+	}
+}
+.chat-notification{
+	padding-top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	z-index: 10;
+	margin-left: auto;
+	margin-right: 20px;
+	display: block;
+	position: relative;
+	color: $red;
+	@media(max-width: 345px){
+		font-size: 14px;
+		margin-right: 8px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		top: 5px;
+		left: -30px;
+		width: 21px;
+		height: 19px;
+		background-image: url(../img/icons/chat.png);
+		@media(max-width: 345px){
+			left: -25px;
+		}
+	}
+}
 //  start svg
 .page{
 	background-color: #781313;
@@ -5363,6 +5468,565 @@ font-size: 16px;
 }
 
 // end payment
+
+
+// start myaccount
+
+.myaccount{
+	padding-top: 25px;
+}
+
+.myaccount__content{
+	height: 1290px;
+}
+
+.myaccount-item{
+	margin-bottom: 40px;
+}
+
+.myaccount-item__name{
+position: relative;
+z-index: 2;
+margin-bottom: 20px;
+padding-left: 35px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+font-size: 24px;
+font-weight: bold;
+color: $w;
+@media(max-width:380px){
+	font-size: 20px;
+}
+&::before{
+	content: '';
+	position: absolute;
+	max-width: 670px;
+	width: 100%;
+	left: 0;
+	border-bottom: 45px solid $red;
+	border-right: 25px solid transparent;
+	z-index: -1;
+	@media(max-width:380px){
+		border-bottom: 30px solid $red;
+	}
+  } 
+}
+
+
+
+.myaccount-item__box{
+	max-width: 700px;
+	display: flex;
+	width: 100%;
+	min-height: 330px;
+	border-radius: 5px;
+	background-color: #e6e6e6;
+     @media(max-width: 730px){
+		 display: block;
+		 max-width: 420px;
+		 margin: 0 auto;
+	 }
+}
+
+
+.mainphoto{
+	padding-left: 27px;
+	margin-right: 20px;
+	height: 250px;
+	@media(max-width: 730px){
+	text-align: center;
+	padding-left: 0;
+	margin-right: 0;
+	}
+	@media(max-width: 560px){
+		height: 200px;
+		}
+	img{
+		margin-top: 27px;
+		max-width: 244px;
+		width: 100%;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@media(max-width: 730px){
+			margin-top: 10px;
+			}
+			@media(max-width: 560px){
+				max-width: 200px;
+				height: 200px;
+				}
+	}
+}
+
+.myaccount-notification__info{
+	margin-top: 27px;
+	display: flex;
+	margin-right: 5px;
+	@media(max-width: 730px){
+	margin-top: 30px;
+	justify-content: center;
+		}
+		@media(max-width: 380px){
+			margin-left: 5px;
+			font-size: 13px;
+			margin-right: 5px;
+			}
+	a{
+		color: #868585;
+	}
+
+
+}
+
+.message{
+	position: relative;
+	transition: all 0.6s;
+	svg{
+		width: 27px;
+		height: 27px;
+		fill: #868585;
+		transition: all 0.6s;
+	}
+	&:hover{
+		svg{
+			fill: $red;
+		}
+	}
+	span{
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		z-index: 10;
+		color: $w;
+		font-size: bold;
+		font-size: 18px;
+		width: 25px;
+		height: 25px;
+		background-color: $red;
+		border-radius: 50%;
+		text-align: center;
+		padding-top: 1px;
+	}
+}
+.message.new-message{
+	svg{
+		fill: $red;
+	}
+}
+
+.trade.new-trade{
+	color: $red;
+	svg{
+		fill: $red;
+	}
+}
+
+
+.statistic__info{
+	position: absolute;
+	display: none;
+	left: 40%;
+	z-index: 10;
+	transition: all .5s;
+	color: #000;
+	background-color: #fff;
+	font-weight: bold;
+	font-size: 14px;
+	width: 155px;
+	height: 50px;
+	border-radius: 10px;
+	padding-top: 5px;
+	span{
+		margin-left: 5px;
+		font-weight: 400;
+	}
+}
+.statistic{
+	margin-top: -5px;
+	margin-left: 35px;
+	position: relative;
+	transition: all 0.6s;
+	text-align: center;
+	@media(max-width: 380px){
+		margin-left: 20px;
+		}
+	svg{
+		margin-right: 5px;
+		width: 27px;
+		height: 27px;
+		fill: #868585;
+		transition: all 0.6s;
+	}
+	&:hover{
+		.statistic__info{
+			display: block;
+			transition: all .3s;
+			color: #000;
+		}
+		color: $red;
+		svg{
+			fill: $red;
+		}
+	}
+}
+
+.trade{
+	margin-top: -5px;
+	display: flex;
+	align-items: center;
+	margin-left: 35px;
+	position: relative;
+	@media(max-width: 380px){
+		margin-left: 20px;
+		}
+	span{
+		position: absolute;
+		top: -10px;
+		left: 10px;
+		z-index: 10;
+		color: $w;
+		font-size: bold;
+		font-size: 18px;
+		width: 25px;
+		height: 25px;
+		background-color: $red;
+		border-radius: 50%;
+		text-align: center;
+		padding-top: 1px;
+	}
+	svg{
+		margin-right: 5px;
+		width: 27px;
+		height: 27px;
+		fill: #868585;
+		transition: all 0.6s;
+	}
+	&:hover{
+		color: $red;
+		svg{
+			fill: $red;
+		}
+	}
+}
+
+.product__name{
+	padding-top: 25px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	@media(max-width: 730px){
+		padding-top: 10px;
+		text-align: center;
+		}
+		@media(max-width: 380px){
+			font-size: 16px;
+			}
+}
+.product__price{
+   display: flex;
+   align-items: center;
+   @media(max-width: 730px){
+	justify-content: center;
+	}
+}
+
+.product__price-usd{
+color: $red;
+font-weight: bold;
+font-size: 20px;
+@media(max-width: 380px){
+	font-size: 17px;
+	}
+}
+
+.product__price-ua{
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.product__info{
+	padding-top: 25px;
+	display: flex;
+	@media(max-width: 730px){
+		padding-top: 8px;
+		justify-content: center;
+		}
+}
+.product__info-city{
+	position: relative;
+	padding-left: 15px;
+	width: 120px;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		background-image: url(../img/icons/mapmarker.png);
+		width: 12px;
+		height: 17px;
+	}
+}
+.product__info-mileage{
+	position: relative;
+	padding-left: 25px;
+	margin-left: 20px;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		background-image: url(../img/icons/mileage.png);
+		width: 21px;
+		height: 17px;
+	}
+}
+
+.product__complectation{
+	display: flex;
+	padding-top: 25px;
+	margin-bottom: 15px;
+	@media(max-width: 730px){
+		padding-top: 10px;
+		justify-content: center;
+		margin-bottom: 5px;
+		}
+		@media(max-width: 380px){
+			font-size: 13px;
+			margin-left: 5px;
+			}
+}
+.product__complectation-fuel{
+	padding-left: 18px;
+position: relative;
+width: 120px;
+&::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	background-image: url(../img/icons/fuel.png);
+	width: 13px;
+	height: 17px;
+}
+}
+.product__complectation-shifter{
+	padding-left: 25px;
+position: relative;
+margin-left: 20px;
+width: 170px;
+&::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	background-image: url(../img/icons/shifter.png);
+	width: 16px;
+	height: 17px;
+}
+}
+.product__about{
+	font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 15px;
+	@media(max-width: 730px){
+		margin-bottom: 5px;
+		text-align: center;
+		}
+		@media(max-width: 380px){
+			font-size: 14px;
+			}
+	span{
+	  font-weight: bold;
+	  color: $red;
+	  font-size: 30px;
+	}
+}
+.product__time{
+	position: relative;
+	padding-left: 15px;
+	margin-left: 60px;
+	@media(max-width: 730px){
+		margin-bottom: 5px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 0;
+		background-image: url(../img/icons/time.png);
+		width: 13px;
+		height: 13px;
+	}
+}
+
+.myaccount__menu{
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	margin-left: 15px;
+	width: 85px;
+	height: 330px;
+	background-color: #363636;
+	@media(max-width: 730px){
+		display: flex;
+		height: 60px;
+		width: 100%;
+		margin-left: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+}
+.myaccount__menu-delete{
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 60px;
+}
+.myaccount__menu-edit{
+	margin: 0 auto;
+	width: 40px;
+	height: 40px;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	@media(max-width: 730px){
+		margin-top: 10px;
+	}
+	&:hover{
+		svg{
+			fill: $red;
+		}
+	}
+	svg{
+		width: 15px;
+		height: 15px;
+		fill: #868585;
+	}
+}
+
+
+.myaccount__menu-top-top{
+	position: relative;
+	margin: 0 auto 20px;
+	width: 40px;
+	height: 40px;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media(max-width: 730px){
+		margin-top: 10px;
+	}
+	&:hover{
+		.myaccount__dropdown-top-top{
+			display: block;
+		}
+		svg{
+			fill: #066c06;
+		}
+	}
+	svg{
+		width: 15px;
+		height: 15px;
+		fill: #868585;
+	}
+}
+
+.myaccount__menu-top{
+	position: relative;
+	margin: 0 auto;
+	width: 40px;
+	height: 40px;
+	background-color: #e0e0e0;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media(max-width: 730px){
+		margin-top: 10px;
+	}
+	&:hover{
+		.myaccount__dropdown-top{
+			display: block;
+		}
+		svg{
+			fill: $red;
+		}
+	}
+	svg{
+		width: 15px;
+		height: 15px;
+		fill: #868585;
+	}
+}
+
+.myaccount__dropdown-top,
+.myaccount__dropdown-top-top
+{
+	display: none;
+	top: 0;
+	border-radius: 5px;
+	right: -210px;
+	position: absolute;
+	width: 200px;
+	background-color: #fff;
+	height: 100px;
+	z-index: 10;
+	@media(max-width: 930px){
+		right: 0px;
+		top: 50px
+	}
+	@media(max-width: 730px){
+		top: 0;
+		right: 50px;
+		}
+		@media(max-width: 380px){
+			top: -95px;
+			right: -20px;
+			width: 170px;
+			height: 90px;
+			}
+	span{
+		padding: 2px 5px;
+		color: $w;
+		background-color: $red;
+		border-radius: 5px;
+		font-size: 14px;
+		font-weight: bold;
+		display: inline-block;
+		padding-top: 5px;
+		margin-left: 15px;
+		margin-top: 2px;
+
+	}
+	p{
+		padding: 5px 15px 10px;
+		font-size: 14px;
+		color: #4a4949;
+		@media(max-width: 380px){
+			padding: 5px;
+			font-size: 12px;
+			}
+	}
+}
+.myaccount__dropdown-top-top{
+	span{
+		background-color: #066c06;
+	}
+}
+
+
+
+
+
+
+// end myaccount
 
 
 .block{
