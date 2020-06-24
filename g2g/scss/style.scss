@@ -5476,9 +5476,7 @@ font-size: 16px;
 	padding-top: 25px;
 }
 
-.myaccount__content{
-	height: 1290px;
-}
+
 
 .myaccount-item{
 	margin-bottom: 40px;
@@ -5544,7 +5542,7 @@ color: $w;
 		}
 	img{
 		margin-top: 27px;
-		max-width: 244px;
+		min-width: 244px;
 		width: 100%;
 		height: 100%;
 		background-repeat: no-repeat;
@@ -5552,11 +5550,14 @@ color: $w;
 		background-size: cover;
 		@media(max-width: 730px){
 			margin-top: 10px;
+			max-width: 244px;
 			}
 			@media(max-width: 560px){
-				max-width: 200px;
+				max-width: 240px;
 				height: 200px;
+				border-radius: 5px;
 				}
+
 	}
 }
 
@@ -5843,8 +5844,9 @@ width: 170px;
 .product__time{
 	position: relative;
 	padding-left: 15px;
-	margin-left: 60px;
+	
 	@media(max-width: 730px){
+		margin-left: 60px;
 		margin-bottom: 5px;
 	}
 	&::before{
@@ -5883,6 +5885,9 @@ width: 170px;
 	border: none;
 	cursor: pointer;
 	margin-bottom: 60px;
+	@media(max-width: 730px){
+		order: 3;
+	}
 }
 .myaccount__menu-edit{
 	margin: 0 auto;
@@ -5932,8 +5937,8 @@ width: 170px;
 		}
 	}
 	svg{
-		width: 15px;
-		height: 15px;
+		width: 25px;
+		height: 25px;
 		fill: #868585;
 	}
 }
@@ -5960,8 +5965,8 @@ width: 170px;
 		}
 	}
 	svg{
-		width: 15px;
-		height: 15px;
+		width: 20px;
+		height: 20px;
 		fill: #868585;
 	}
 }
@@ -6020,11 +6025,385 @@ width: 170px;
 		background-color: #066c06;
 	}
 }
+.myaccount__inner{
+	display: flex;
+	@media(max-width: 1150px){
+		flex-wrap: wrap;
+	}
+}
+.myaccount__content{
+	@media(max-width: 1150px){
+		order: 2;
+		margin: 0 auto;
+	}
+	@media(max-width: 730px){
+		width: 415px;
+	}
+	@media(max-width: 36px){
+		width: 100%;
+	}
+}
+// start aside
+
+
+.myaccount__aside{
+	margin-right: 20px;
+	margin-left: 25px;
+	max-width: 415px;
+	width: 100%;
+	height: 480px;
+	background-color: #e7e7e7;
+	border-radius: 10px;
+	@media(max-width: 1150px){
+		order: 1;
+		margin: 0 auto 20px;
+	}
+	@media(max-width: 440px){
+		height: 480px;
+	}
+}
+
+
+.myaccount__information{
+	display: flex;
+	padding-top: 20px;
+	margin-left: 40px;
+	margin-right: 5px;
+	@media(max-width: 440px){
+		margin-left: 10px;
+	}
+}
+.user__img{
+	img{
+		width: 103px;
+		height: 103px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		@media(max-width: 420px){
+			width: 50px;
+			height: 50px;
+		}
+	}
+}
+.user__information{
+	margin-left: 25px;
+	@media(max-width: 420px){
+		margin-left: 10px;
+	}
+}
+.user__information-seller{
+	font-size: 18px;
+	margin-bottom: 5px;
+	@media(max-width: 360px){
+		text-align: center;
+	}
+}
+.user__information-city{
+	@media(max-width: 360px){
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	span{
+		@media(max-width: 360px){
+			padding-top: 10px;
+		}
+	}
+}
+.user__information-name{
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	@media(max-width: 420px){
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	@media(max-width: 360px){
+		font-size: 20px;
+		flex-direction: column;
+	}
+	span{
+		margin-left: 30px;
+		@media(max-width: 360px){
+			padding-top: 10px;
+		}
+	}
+}
+.user__information-status{
+	position: relative;
+	margin-top: 15px;
+	margin-left: 18px;
+	p{
+		position: relative;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: -20px;
+			background-image: url(../img/icons/time.png);
+			width: 13px;
+			height: 13px;
+		}
+	}
+}
+
+
+.myaccount__phone1,
+.myaccount__phone2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 45px;
+	margin-right: 20px;
+	padding-top: 25px;
+	position: relative;
+	font-weight: bold;
+	font-size: 24px;
+	max-width: 415px;
+	@media(max-width: 440px){
+		margin-left: 30px;
+		font-size: 15px;
+	}
+	@media(max-width: 350px){
+		font-size: 13px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		background-image: url(../img/icons/phone.png);
+		width: 14px;
+		height: 15px;
+		left: -20px;
+	}
+	p{
+		width: 190px;
+		@media(max-width: 440px){
+			width: 145px;
+		}
+	}
+}
+
+
+.myaccount__social{
+	display: flex;
+	padding-top: 15px;
+	max-width: 310px;
+	width: 100%;
+	margin-left: 45px;
+	@media(max-width: 440px){
+		margin: 0 auto;
+	}
+	input[type="checkbox"]{
+		display: none;
+	}
+	label::after{
+		content: '';
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border: 1px solid grey;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-left: 27px;
+		margin-top: 5px;
+	}
+	input[type="checkbox"]:checked + label::after{
+		content: '✓';
+		background-color: #fff;
+		border: 1px solid $w;
+		color: $red;
+		font-weight: bold;
+		font-size: 20px;
+	}
+}
+
+.myaccount__social-viber{
+	position: relative;
+	margin-left: 25px;
+ label::before{
+	 content: '';
+	 position: absolute;
+	 background-image: url(../img/footer-icon/viber.jpg);
+	 width: 42px;
+	 height: 40px;
+	 left: -20px;
+ }
+}
+.myaccount__social-wats{
+	position: relative;
+	margin-left: 45px;
+	@media(max-width: 440px){
+		margin-left: 30px;
+	}
+ label::before{
+	 content: '';
+	 position: absolute;
+	 background-image: url(../img/footer-icon/wats.jpg);
+	 width: 42px;
+	 height: 40px;
+	 left: -20px;
+ }
+}
+.myaccount__social-telegram{
+	position: relative;
+	margin-left: 45px;
+	@media(max-width: 440px){
+		margin-left: 30px;
+	}
+ label::before{
+	 content: '';
+	 position: absolute;
+	 background-image: url(../img/footer-icon/telegram.jpg);
+	 width: 43px;
+	 height: 41px;
+	 left: -20px;
+ }
+}
 
 
 
 
 
+
+
+
+	.redaction{
+		margin-left: 25px;
+		position: relative;
+		font-size: 16px;
+		font-weight: 500;
+		color: #7e7e7e;
+		text-decoration: underline;
+		@media(max-width: 440px){
+			font-size: 13px;
+			margin-right: 10px;
+		}
+		@media(max-width: 350px){
+			font-size: 12px;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url(../img/icons/edit.png);
+			width: 15px;
+			height: 15px;
+			left: -20px;
+		}
+	}
+
+	.myacccount__mail{
+		margin-left: 45px;
+		display: flex;
+		align-items: center;
+		padding-top: 25px;
+		position: relative;
+		@media(max-width: 440px){
+			margin-left: 30px;
+		}
+		@media(max-width: 380px){
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 0;
+		}
+
+		p{
+			width: 190px;
+			position: relative;
+			font-weight: bold;
+			font-size: 24px;
+			&::before{
+				content: '';
+				position: absolute;
+				background-image: url(../img/icons/mail.png);
+				width: 16px;
+				height: 12px;
+				left: -20px;
+				top: 8px;
+			}
+			@media(max-width: 440px){
+				font-size: 15px;
+			}
+			@media(max-width: 380px){
+				width: 110px;
+				margin-bottom: 10px;
+			}
+		}
+		span{
+			margin-left: 30px;
+		}
+	}
+
+	.myacccount__password{
+		margin-left: 45px;
+		display: flex;
+		align-items: center;
+		padding-top: 25px;
+		position: relative;
+		@media(max-width: 440px){
+			margin-left: 30px;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url(../img/icons/recover-password.png);
+			width: 18px;
+			height: 19px;
+			left: -20px;
+		}
+		p{
+			width: 190px;
+			position: relative;
+			font-weight: bold;
+			font-size: 24px;
+			@media(max-width: 440px){
+				font-size: 15px;
+			}
+		}
+		span{
+			margin-left: 30px;
+			position: relative;
+			font-size: 16px;
+			font-weight: 500;
+			color: #7e7e7e;
+			text-decoration: underline;
+			@media(max-width: 440px){
+				font-size: 13px;
+				margin-right: 10px;
+			}
+			&::before{
+				content: '';
+				position: absolute;
+				background-image: url(../img/icons/edit.png);
+				width: 15px;
+				height: 15px;
+				left: -20px;
+			}
+		}
+	}
+.myacccount__id{
+	margin-left: 25px;
+	display: flex;
+	align-items: center;
+	padding-top: 25px;
+	position: relative;
+	font-size: 24px;
+	font-weight: bold;
+	@media(max-width: 440px){
+		margin-left: 10px;
+		font-size: 18px;
+	}
+	span{
+		margin-left: 10px;
+	}
+}
+// end aside
 
 // end myaccount
 
