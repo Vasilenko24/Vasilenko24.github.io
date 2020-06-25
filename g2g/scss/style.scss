@@ -5501,6 +5501,7 @@ font-size: 16px;
 }
 
 .myaccount-item__name{
+	text-transform: uppercase;
 position: relative;
 z-index: 2;
 margin-bottom: 20px;
@@ -5545,8 +5546,16 @@ color: $w;
 	 }
 }
 
-
+.top{
+	&::before{
+		content: 'топ';
+		width: 140px;
+		height: 45px;
+		position: absolute;
+	}
+}
 .mainphoto{
+	position: relative;
 	padding-left: 27px;
 	margin-right: 20px;
 	height: 250px;
@@ -5559,6 +5568,7 @@ color: $w;
 		height: 200px;
 		}
 	img{
+
 		margin-top: 27px;
 		min-width: 244px;
 		width: 100%;
@@ -5813,6 +5823,86 @@ font-size: 20px;
 			margin-left: 5px;
 			}
 }
+
+
+.product__complectation-square{
+	padding-left: 18px;
+	position: relative;
+	width: 120px;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		background-image: url(../img/icons/square.png);
+		width: 14px;
+		height: 14px;
+	}
+}
+.product__info-room{
+	padding-left: 18px;
+	position: relative;
+	width: 120px;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		background-image: url(../img/icons/room.png);
+		width: 13px;
+		height: 17px;
+	}
+}
+.product__info-width{
+	padding-left: 45px;
+	position: relative;
+	width: 140px;
+	&::before{
+		content: '';
+		position: absolute;
+		left: 15px;
+		top: 3px;
+		background-image: url(../img/icons/width.png);
+		width: 20px;
+		height: 11px;
+	}
+}
+.product__complectation-year{
+	padding-left: 15px;
+	position: relative;
+	width: 140px;
+	@media(max-width: 500px){
+		width: 60px;
+	}
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 3px;
+		background-color: $red;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}
+}
+.product__complectation-material{
+	padding-left: 25px;
+    position: relative;
+	width: 170px;
+	font-size: 18px;
+	font-weight: bold;
+	span{
+		margin-left: 5px;
+		font-weight: 400;
+		font-size: 16px;
+		@media(max-width: 400px){
+			font-size: 14px;
+		}
+	}
+	@media(max-width: 400px){
+		font-size: 15px;
+	}
+}
+
+
 .product__complectation-fuel{
 	padding-left: 18px;
 position: relative;
@@ -6003,25 +6093,26 @@ width: 170px;
 .myaccount__dropdown-top-top
 {
 	display: none;
-	top: 0;
+	top: -30px;
 	border-radius: 5px;
-	right: -210px;
+	left: -210px;
 	position: absolute;
 	width: 200px;
 	background-color: #fff;
 	height: 100px;
 	z-index: 10;
+	z-index: 9999;
 	@media(max-width: 930px){
 		right: 0px;
-		top: 50px
+		top: -30px
 	}
 	@media(max-width: 730px){
-		top: 0;
-		right: 50px;
+		top: -105px;
+		left: -100px;
 		}
 		@media(max-width: 380px){
 			top: -95px;
-			right: -20px;
+			left: -80px;
 			width: 170px;
 			height: 90px;
 			}
@@ -6218,7 +6309,9 @@ width: 170px;
 	}
 }
 
-
+.myaccount__content{
+	height: 900px;
+}
 .myaccount__social{
 	display: flex;
 	padding-top: 15px;
@@ -6516,6 +6609,13 @@ width: 170px;
 	}
 }
 // end aside
+
+// scrollbar
+.mCSB_container{
+	@media(max-width: 380px){
+		margin-right: 10px;
+	}
+}
 
 // end myaccount
 

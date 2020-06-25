@@ -141,6 +141,15 @@ $(function(){
 
     $('input[type="file"], select').styler();
   
+
+    $(window).on("load",function(){
+      $(".myaccount__content").mCustomScrollbar({
+        theme:"light-3",
+        scrollButtons:{
+          enable:true
+        }
+      });
+    });
  
 
     const centrUkr = document.querySelector('#ukr-1');
@@ -166,7 +175,6 @@ $(function(){
     centrUkr4.addEventListener('click', disabledCheckbox);
     centrAbr.addEventListener('click', disabledCheckbox);
 
-    $(selector).mCustomScrollbar();
 
 
 
