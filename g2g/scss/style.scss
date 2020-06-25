@@ -6393,33 +6393,37 @@ width: 170px;
 				font-size: 15px;
 			}
 		}
-		span{
-			margin-left: 30px;
-			position: relative;
-			font-size: 16px;
-			font-weight: 500;
-			color: #7e7e7e;
-			text-decoration: underline;
-			@media(max-width: 440px){
-				font-size: 13px;
-				margin-right: 10px;
-			}
-			&::before{
-				content: '';
-				position: absolute;
-				background-image: url(../img/icons/edit.png);
-				width: 15px;
-				height: 15px;
-				left: -20px;
-			}
-		}
 	}
 	.redaction-btn{
+		margin-left: 30px;
 		position: relative;
-		display: block;
+		font-size: 16px;
+		font-weight: 500;
+		color: #7e7e7e;
+		text-decoration: underline;
+		position: relative;
+		@media(max-width: 440px){
+			font-size: 13px;
+			margin-right: 10px;
+		}
+		&::before{
+			content: '';
+			position: absolute;
+			background-image: url(../img/icons/edit.png);
+			width: 15px;
+			height: 15px;
+			left: -20px;
+		}
 	}
 	.password__recover-drowdown{
 		position: absolute;
+		left: -150px;
+		background-color: #fff;
+		width: 320px;
+		border-radius: 5px;
+		min-height: 100px;
+		height: 100%;
+		z-index: 10;
 	}
 .myacccount__id{
 	margin-left: 25px;
