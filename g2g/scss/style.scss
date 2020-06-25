@@ -641,8 +641,9 @@ body{
 	border: 1px solid $red;
 	border-radius: 5px;
 	padding: 5px 10px;
-	width: 65px;
+	width: 70px;
 	min-height: 20px;
+	background-color: transparent;
 	&::before{
 		content: '';
 		position: absolute;
@@ -5601,7 +5602,6 @@ color: $w;
 		right: -10px;
 		z-index: 10;
 		color: $w;
-		font-size: bold;
 		font-size: 18px;
 		width: 25px;
 		height: 25px;
@@ -5688,7 +5688,6 @@ color: $w;
 		left: 10px;
 		z-index: 10;
 		color: $w;
-		font-size: bold;
 		font-size: 18px;
 		width: 25px;
 		height: 25px;
@@ -5815,6 +5814,10 @@ width: 120px;
 position: relative;
 margin-left: 20px;
 width: 170px;
+@media(max-width: 380px){
+	margin-left: 0;
+	width: 140px;
+}
 &::before{
 	content: '';
 	position: absolute;
@@ -5885,6 +5888,12 @@ width: 170px;
 	border: none;
 	cursor: pointer;
 	margin-bottom: 60px;
+	img{
+		width: 22px;
+		height: 22px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	@media(max-width: 730px){
 		order: 3;
 	}
@@ -6081,7 +6090,7 @@ width: 170px;
 		background-repeat: no-repeat;
 		background-position: center;
 		@media(max-width: 420px){
-			width: 50px;
+			width: 60px;
 			height: 50px;
 		}
 	}
@@ -6095,12 +6104,12 @@ width: 170px;
 .user__information-seller{
 	font-size: 18px;
 	margin-bottom: 5px;
-	@media(max-width: 360px){
+	@media(max-width: 380px){
 		text-align: center;
 	}
 }
 .user__information-city{
-	@media(max-width: 360px){
+	@media(max-width: 380px){
 		display: flex;
 		flex-direction: column;
 		text-align: center;
@@ -6108,7 +6117,7 @@ width: 170px;
 		font-weight: bold;
 	}
 	span{
-		@media(max-width: 360px){
+		@media(max-width: 380px){
 			padding-top: 10px;
 		}
 	}
@@ -6123,13 +6132,13 @@ width: 170px;
 		font-size: 18px;
 		margin-bottom: 10px;
 	}
-	@media(max-width: 360px){
+	@media(max-width: 380px){
 		font-size: 20px;
 		flex-direction: column;
 	}
 	span{
 		margin-left: 30px;
-		@media(max-width: 360px){
+		@media(max-width: 380px){
 			padding-top: 10px;
 		}
 	}
@@ -6165,6 +6174,7 @@ width: 170px;
 	font-weight: bold;
 	font-size: 24px;
 	max-width: 415px;
+	color: #000;
 	@media(max-width: 440px){
 		margin-left: 30px;
 		font-size: 15px;
