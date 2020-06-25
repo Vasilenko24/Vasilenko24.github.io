@@ -5568,10 +5568,10 @@ color: $w;
 		background-size: cover;
 		@media(max-width: 730px){
 			margin-top: 10px;
-			max-width: 244px;
+			max-width: 220px;
 			}
 			@media(max-width: 560px){
-				max-width: 240px;
+				min-width: 220px;
 				height: 200px;
 				border-radius: 5px;
 				}
@@ -5913,6 +5913,8 @@ width: 170px;
 	}
 	@media(max-width: 730px){
 		order: 3;
+		padding-top: 5px;
+		margin-right: 20px;
 	}
 }
 .myaccount__menu-edit{
