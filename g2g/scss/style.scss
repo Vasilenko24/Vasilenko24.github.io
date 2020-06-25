@@ -5899,11 +5899,11 @@ width: 170px;
 }
 .myaccount__menu-delete{
 	display: block;
-	margin: 0 auto;
 	margin-top: 15px;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	text-align: center;
 	margin-bottom: 60px;
 	img{
 		width: 22px;
@@ -6413,6 +6413,13 @@ width: 170px;
 				left: -20px;
 			}
 		}
+	}
+	.redaction-btn{
+		position: relative;
+		display: block;
+	}
+	.password__recover-drowdown{
+		position: absolute;
 	}
 .myacccount__id{
 	margin-left: 25px;
