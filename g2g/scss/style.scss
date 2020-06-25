@@ -5829,6 +5829,10 @@ font-size: 20px;
 	padding-left: 18px;
 	position: relative;
 	width: 120px;
+	@media(max-width: 730px){
+	 width: 60px;
+	 margin-left: 60px;
+	}
 	&::before{
 		content: '';
 		position: absolute;
