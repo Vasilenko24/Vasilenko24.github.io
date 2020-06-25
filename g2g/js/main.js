@@ -127,7 +127,18 @@ $(function(){
     
     });
   
+      // password recover
+
+
+      $('.redaction-btn').on('click', function(){
+        $('.password__recover-drowdown').toggleClass('active');
+        });
+      $('.close-recover').on('click', function(){
+        $('.password__recover-drowdown').removeClass('active');
+        });
   
+      // end password recover
+
     $('input[type="file"], select').styler();
   
  
@@ -156,6 +167,9 @@ $(function(){
     centrAbr.addEventListener('click', disabledCheckbox);
 
     $(selector).mCustomScrollbar();
+
+
+
 
   });
 

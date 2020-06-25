@@ -6402,6 +6402,7 @@ width: 170px;
 		color: #7e7e7e;
 		text-decoration: underline;
 		position: relative;
+		cursor: pointer;
 		@media(max-width: 440px){
 			font-size: 13px;
 			margin-right: 10px;
@@ -6416,15 +6417,84 @@ width: 170px;
 		}
 	}
 	.password__recover-drowdown{
+		display: none;
 		position: absolute;
-		left: -150px;
+		left: -20px;
+		top: 60px;
 		background-color: #fff;
 		width: 320px;
-		border-radius: 5px;
-		min-height: 100px;
+		border-radius: 10px;
+		min-height: 240px;
 		height: 100%;
 		z-index: 10;
+		padding-left: 30px;
+		padding-right: 10px;
+		font-size: 16px;
+		@media(max-width: 400px){
+			min-height: 225px;
+			padding-left: 20px;
+			padding-right: 15px;
+		}
+		input{
+			margin-right: 5px;
+			max-width: 260px;
+			width: 100%;
+			min-height: 40px;
+			border-radius: 10px;
+			border: 1px solid #868585;
+			padding-left: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			&::placeholder{
+				color: #000;
+			}
+		}
 	}
+
+	.password__recover-drowdown.active{
+		display: block;
+		width: 100%;
+	}
+	.recover-dropdown__head-title{
+		margin-bottom: 5px;
+	}
+	.recover-dropdown__head-subtitle{
+		padding-top: 15px;
+		margin-bottom: 5px;
+	}
+
+
+	.recover-dropdown__head{
+		padding-top: 15px;
+		display: flex;
+		justify-content: space-between;
+	}
+.recover-dropdown__head--exit{
+	cursor: pointer;
+}
+.change-password{
+	margin-top: 15px;
+	max-width: 260px;
+	width: 100%;
+	min-height: 55px;
+	background-color: $red;
+	font-size: 18px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $w;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	@media(max-width: 400px){
+		font-size: 16px;
+		min-height: 45px;
+	}
+}
+
+
+
 .myacccount__id{
 	margin-left: 25px;
 	display: flex;
