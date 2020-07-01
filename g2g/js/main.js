@@ -151,6 +151,12 @@ $(function(){
       });
     });
  
+    $(".rate").rateYo({
+      rating: 4.0,
+      starWidth: "24px",
+    });
+
+    
 
     const centrUkr = document.querySelector('#ukr-1');
     const centrUkr2 = document.querySelector('#ukr-10');
