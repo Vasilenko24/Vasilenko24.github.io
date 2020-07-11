@@ -156,6 +156,33 @@ $(function(){
       starWidth: "24px",
     });
 
+
+
+        $('.plaint-info').on("submit", function () {
+
+          $('.popup__content').addClass('hidden');
+          $('.plaint-sent').addClass('active');
+        });
+
+        $('.complaint').on("click", function () {
+          $('.popup').addClass('active');
+          $('.popup__content').removeClass('hidden');
+        });
+
+
+        $('.plaint-sent__close, .popup__close').on("click", function () {
+          $('.plaint-sent').removeClass('active');
+          $('.popup').removeClass('active');
+        });
+        $('.plaint-line__5').on("click", function () {
+          $('.plaint-textarea').addClass('active');
+        });
+
+
+        
+
+        
+
     
 
     const centrUkr = document.querySelector('#ukr-1');
