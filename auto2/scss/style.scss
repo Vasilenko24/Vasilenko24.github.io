@@ -326,7 +326,10 @@ position: relative;
 
 
 .about{
-    padding-bottom: 120px;
+	padding-bottom: 120px;
+	@media(max-width: 600px){
+		padding-bottom: 50px;
+	}
 }
 .about__inner{
     display: flex;
@@ -337,7 +340,10 @@ position: relative;
     height: 637px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+	background-position: center;
+	@media(max-width: 1100px){
+		display: none;
+	}
 }
 
 .about__social-link{
@@ -350,55 +356,102 @@ position: relative;
     width: 620px;
     margin-top: 40px;
     margin-left: 65px;
-    padding-right: 80px;
+	margin-right: 80px;
+	@media(max-width: 1100px){
+		width: 100%;
+	}
+	@media(max-width: 500px){
+		margin-left: 20px;
+		margin-right: 20px;
+	}
 }
 .about__title{
     font-size: 72px;
     padding-bottom: 50px;
     text-align: right;
-    font-weight: 600;
+	font-weight: 600;
+	@media(max-width: 760px){
+		font-size: 50px;
+	}
+	@media(max-width: 460px){
+		padding-bottom: 25px;
+		font-size: 40px;
+	}
 }
 .about__text{
     width: 620px;
     font-size: 16px;
-    font-weight: 400;
+	font-weight: 400;
+	@media(max-width: 1100px){
+		width: 100%;
+	}
+	@media(max-width: 460px){
+		font-size: 14px;
+	}
 }
 .about__social{
     margin-top: 100px;
-    text-align: center;
+	text-align: center;
+	@media(max-width: 760px){
+		margin-top: 60px;
+	}
 }
 .about__social-title{
     font-size: 25px;
     font-weight: 600;
-padding-bottom: 35px;
+    padding-bottom: 35px;
+@media(max-width: 760px){
+	font-size: 18px;
+}
+@media(max-width: 460px){
+	font-size: 15px;
+}
 }
 .about__social-link{
     img{
         width: 73px;
-        height: 73px;
+		height: 73px;
+		@media(max-width: 760px){
+			width: 50px;
+			height: 50px;
+		}
     }
 }
 
 .vacansion{
 	padding-bottom: 80px;
+	@media(max-width: 860px){
+		overflow-x: scroll;
+		padding-bottom: 30px;
+	}
 }
 .vacansion__title{
 	font-size: 60px;
 	font-weight: bold;
 	padding-bottom: 50px;
+	@media(max-width: 730px){
+		font-size: 50px;
+	}
+	@media(max-width: 460px){
+		font-size: 40px;
+	}
 }
 
 .vacansion__top{
 	display: flex;
 	.send__resume-link{
 		font-size: 16px;
-		width: 260px;
+		width: 90%;
 		height: 55px;
 		background-color: #1f1f1f;
 		line-height: 55px;
 		position: relative;
 		color: #fff;
 		padding-bottom: 10px;
+		font-size: 12px;
+		@media(max-width: 960px){
+			padding-left: 40px;
+		}
 		&::before{
 			content: '';
 			position: absolute;
@@ -407,6 +460,12 @@ padding-bottom: 35px;
 			height: 35px;
 			top: 8px;
 			left: 15px;
+			@media(max-width: 960px){
+				width: 20px;
+				height: 24px;
+				left: 10px;
+				top: 15px;
+			}
 		}
 		}
 }
@@ -489,7 +548,11 @@ padding-bottom: 35px;
 
 .vacansion__inner{
 	border: 1px solid #acacac;
-	width: 1170px;
+	max-width: 1170px;
+	width: 100%;
+	@media(max-width: 860px){
+		width: 860px;
+	}
 }
 
 .vacansion__item{
@@ -563,9 +626,15 @@ padding-bottom: 35px;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 450px;
+    max-width: 450px;
 	z-index: 99999;
 	height: auto;
+	@media(max-width: 460px){
+		margin: 15% 5px;
+	}
+	@media(max-width: 400px){
+		padding: 20px 10px;
+	}
 }
 .close_modal_window {
 	color: #aaa;
@@ -594,8 +663,15 @@ padding-bottom: 35px;
 .modal__send-file{
 	display: flex;
 	justify-content: center;
+	@media(max-width: 400px){
+		display: block;
+	}
 	label{
 		font-size: 12px;
+		@media(max-width: 400px){
+			padding-bottom: 10px;
+			display: inline-block;
+		}
 	}
 	input{
 		font-size: 10px;
@@ -657,7 +733,13 @@ padding-bottom: 35px;
 
 .contacts__title{
     font-size: 72px;
-    font-weight: 600;
+	font-weight: 600;
+	@media(max-width: 730px){
+		font-size: 50px;
+	}
+	@media(max-width: 460px){
+		font-size: 40px;
+	}
 }
 .contacts__items{
     display: flex;
@@ -665,14 +747,33 @@ padding-bottom: 35px;
     margin-top: 70px;
     padding-bottom: 110px;
    text-align: center;
+   @media(max-width: 730px){
+	display: block;
+	padding-bottom: 40px;
+}
 }
 .contacts__item{
     font-size: 18px;
     font-weight: 600;
 	width: 260px;
+	@media(max-width:830px){
+		font-size: 14px;
+	}
+	@media(max-width: 730px){
+		margin: 20px auto;
+		width: 100%;
+	}
 }
 .contacts__item-img{
-    padding-bottom: 30px;
+	padding-bottom: 30px;
+	img{
+		@media(max-width:830px){
+			width: 30px;
+		}
+		@media(max-width: 730px){
+			width: 40px;
+		}
+	}
 }
 .contacts__item-phone--subtext{
     font-size: 16px;
@@ -689,9 +790,15 @@ padding-bottom: 35px;
         height: 438px;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
-        @media(max-width: 600px){
+		background-position: center;
+		@media(max-width: 730px){
             height: 320px;
+          }
+        @media(max-width: 600px){
+            height: 200px;
+		  }
+		  @media(max-width: 360px){
+            height: 150px;
           }
     }
 }
