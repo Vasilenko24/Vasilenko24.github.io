@@ -13,7 +13,7 @@ body{
 	height: 670px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 
 	@media(max-width: 680px) {
 		height: 600px;
@@ -308,66 +308,6 @@ body{
 		}
 	}
 
-	.ger {
-		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-image: url(../images/germany.svg);
-			top: 50%;
-			left: 50%;
-			width: 20px;
-			height: 20px;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	.ita {
-		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-image: url(../images/italy.svg);
-			top: 50%;
-			left: 50%;
-			width: 20px;
-			height: 20px;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	.fra {
-		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-image: url(../images/france.svg);
-			top: 50%;
-			left: 50%;
-			width: 20px;
-			height: 20px;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	.spa {
-		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-image: url(../images/spain.svg);
-			top: 50%;
-			left: 50%;
-			width: 20px;
-			height: 20px;
-			transform: translate(-50%, -50%);
-		}
-	}
-
 	.usa {
 		position: relative;
 
@@ -375,21 +315,6 @@ body{
 			content: '';
 			position: absolute;
 			background-image: url(../images/usa.svg);
-			top: 50%;
-			left: 50%;
-			width: 20px;
-			height: 20px;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	.net {
-		position: relative;
-
-		&:before {
-			content: '';
-			position: absolute;
-			background-image: url(../images/netherlands.svg);
 			top: 50%;
 			left: 50%;
 			width: 20px;
