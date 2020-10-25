@@ -735,9 +735,14 @@ body{
 	width: 100%;
 
 	@media(max-width: 860px) {
-		width: 860px;
 		overflow-x: scroll;
 	}
+}
+.vacansion__items{
+	@media(max-width: 860px) {
+		min-width: 860px;
+	}
+	
 }
 
 .vacansion__item {
