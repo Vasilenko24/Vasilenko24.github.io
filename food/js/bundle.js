@@ -713,7 +713,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
      (0,_modules_tabs__WEBPACK_IMPORTED_MODULE_1__.default)('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
      (0,_modules_modal__WEBPACK_IMPORTED_MODULE_2__.default)('[data-modal]', '.modal', modalTimerId);
-     (0,_modules_timer__WEBPACK_IMPORTED_MODULE_3__.default)('.timer', '2020-12-23');
+     (0,_modules_timer__WEBPACK_IMPORTED_MODULE_3__.default)('.timer', '2021-03-30');
      (0,_modules_cards__WEBPACK_IMPORTED_MODULE_4__.default)();
      (0,_modules_forms__WEBPACK_IMPORTED_MODULE_5__.default)('form', modalTimerId);
      (0,_modules_calc__WEBPACK_IMPORTED_MODULE_6__.default)();

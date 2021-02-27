@@ -1,14 +1,14 @@
 require('es6-promise').polyfill();
 import 'nodelist-foreach-polyfill';
      
-     import tabs    from './js/modules/tabs';
-     import modal   from './js/modules/modal';
-     import timer   from './js/modules/timer';
-     import cards   from  './js/modules/cards';
-     import forms   from './js/modules/forms';
-     import calc    from  './js/modules/calc';
-     import slider from './js/modules/slider';
-     import {openModal} from './js/modules/modal';
+     import tabs    from './modules/tabs';
+     import modal   from './modules/modal';
+     import timer   from './modules/timer';
+     import cards   from  './modules/cards';
+     import forms   from './modules/forms';
+     import calc    from  './modules/calc';
+     import slider from './modules/slider';
+     import {openModal} from './modules/modal';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
      tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
      modal('[data-modal]', '.modal', modalTimerId);
-     timer('.timer', '2020-12-23');
+     timer('.timer', '2021-03-30');
      cards();
      forms('form', modalTimerId);
      calc();
