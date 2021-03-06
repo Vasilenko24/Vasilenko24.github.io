@@ -1,0 +1,26 @@
+
+@media (max-width: 992px) {
+    .modal--mobilenav.show ~ .sections {
+        transform: translate(0%) ;
+    }
+
+    .header {
+        z-index: 99999;
+    }
+    .navbar__top {
+        display: none;
+    }
+    .navbar-nav--right {
+        width: auto !important;
+    }
+    .navbar-nav--left {
+        width: auto !important;
+    }
+    .navbar__mobile {
+        margin-top: 46px ;
+    }
+    .navbar-expand .navbar-nav--right {
+        margin-left: 10px;
+    }
+}
+
