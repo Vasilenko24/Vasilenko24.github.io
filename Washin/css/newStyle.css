@@ -41,7 +41,7 @@
     top: 63px;
     border-radius: 2px;
     background-color: #222;
-    height: fit-content;
+    height: 100%;
 }
 .sidebar-content.active-bar{
     left: 0;
@@ -123,18 +123,11 @@
     display: block;
 }
 .sidebar-dropdown{
-    /* display: none; */
-    max-height: 0;
-    opacity: 0;
-    transition: all .3s;
-    overflow: hidden;
+   display: none;
 }
 .sidebar-dropdown.active-content {
-    overflow: visible;
-    opacity: 1;
-    max-height: fit-content;
+    display: block;
 }
-
 
 
 
@@ -166,7 +159,7 @@
         max-width: 304px;
     }
     .header {
-        z-index: 99999;
+        z-index: 999999;
     }
     .navbar__top {
         display: none;

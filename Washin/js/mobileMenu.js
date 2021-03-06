@@ -6,6 +6,7 @@ const modals = () => {
               content = document.querySelector(modalContent),
               accordion = document.querySelectorAll('.data-drop');
        trigger.forEach(item => {
+         
          item.addEventListener('click', (e) =>{
              if(e.target) {
                e.preventDefault();
@@ -16,6 +17,7 @@ const modals = () => {
                     accord.nextElementSibling.classList.remove('active-content')
             } 
              })
+
              item.classList.toggle('active')
              windows.forEach(item => {
                item.style.display = 'none';
@@ -27,8 +29,19 @@ const modals = () => {
  
          })
        });
- 
- 
+
+       windows.forEach(item => {
+         trigger.forEach(trig => {
+           trig.addEventListener('click', () => {
+             if(!trig.classList.contains('active')) {
+               item.style.display = 'none'
+             } 
+           })
+         })
+       })
+
+       
+
        modal.addEventListener('click', (e) => {
          if(e.target === modal) {
            windows.forEach(item => {
