@@ -36,7 +36,7 @@
 .sidebar-content {
     position: absolute;
     text-align: center;
-    max-width: 320px;
+    width: 320px;
     left: -100%;
     top: 63px;
     border-radius: 2px;
@@ -49,18 +49,22 @@
 }
 .sidebar-top{
     margin-top: 25px;
-    border-bottom: 1px solid #f3f3f32b;
+    margin-right: 15px;
     list-style: none;
-    margin: 0;
-    padding: 15px 15px 5px 15px;
 }
 .search-form-control {
     padding: 15px;
 }
 .sidebar-link__menu{
+    
     margin-bottom: 20px;
     text-align: left;
+    transition: all .1s;
 }
+
+/* .sidebar-link__menu >a:hover {
+  
+} */
 .sidebar-link__pay {
     display: inline-block;
     transition: all .5s;
@@ -79,10 +83,19 @@
     color: #fff;
 }
 .sidebar-link__site{
+    display: block;
+    margin-top: 10px;
     color: #fff;
+    padding: 15px 15px 15px 15px;
+    text-align: left;
 }
+
 .sidebar-link__site:hover {
-    color: #fff;
+    color: #aaa;
+    text-decoration: underline;
+    
+    background: #000;
+    
 }
 .sidebar-dropdown{
     list-style: none;
