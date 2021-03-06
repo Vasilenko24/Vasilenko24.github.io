@@ -34,7 +34,25 @@
 .bg-dark{
     background-color: #000 !important;
 }
+.logo-down__text{
+    font-size: .75rem;
+    text-align: center;
+    display: block;
+    color: #d5d5d5;
+    font-style: italic;
+}
+.navbar-expand .navbar-collapse{
+    align-items: center !important;
+}
 @media (max-width: 992px) {
+    .logo-sm {
+        display: flex !important;
+        flex-direction: column !important;
+        order: 1;
+    }
+    .logo-lg{
+        display: none !important;
+    }
     .navbar-divider{
         display: none;
     }
@@ -48,7 +66,7 @@
         padding: 0 10px;
     }
     .modal-content{
-        max-width: 400px;
+        max-width: 304px;
     }
     .header {
         z-index: 99999;
@@ -63,16 +81,22 @@
         width: auto !important;
     }
     .navbar__mobile {
-        margin-top: 46px ;
+        margin-top: 60px ;
         padding: 0px !important;
     }
     .navbar-expand .navbar-nav--right {
         margin-left: 10px;
+        order: 2;
     }
+
+
 }
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     #bookmark{
         display: none !important;
+    }
+    .navbar-nav--right{
+        order: 2 !important;
     }
 }
 
