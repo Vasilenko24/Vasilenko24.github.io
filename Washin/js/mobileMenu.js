@@ -5,12 +5,27 @@ const modals = () => {
               windows = document.querySelectorAll('[data-side]'),
               content = document.querySelector(modalContent),
               accordion = document.querySelectorAll('.data-drop');
+
+
+              window.addEventListener('resize', (e) => {
+                if(window.screen.width >= 993 ) {
+                 windows.forEach(item => {
+                   item.style.display = 'none'
+                 })
+                 trigger.forEach(trig => {
+                  if(trig.classList.contains('active')) {
+                    trig.classList.remove('active')
+                  }
+                 })
+                }
+            });
+
        trigger.forEach(item => {
          
          item.addEventListener('click', (e) =>{
-             if(e.target) {
-               e.preventDefault();
-             }
+             e.preventDefault()
+             item.classList.toggle('active')
+
              accordion.forEach(accord => {
                   if(accord.classList.contains('active-style')) {
                     accord.classList.remove('active-style')
@@ -18,9 +33,12 @@ const modals = () => {
             } 
              })
 
-             item.classList.toggle('active')
+             
              windows.forEach(item => {
-               item.style.display = 'none';
+               if(item.style.display = 'none') {
+                item.style.display = 'none'
+                modal.style.display = 'none'
+               }
              });
              
              modal.style.display = 'block';
@@ -52,11 +70,11 @@ const modals = () => {
             })
              modal.style.display = 'none';
              document.body.style.overflow = '';
-         }
+          }
        })
     }
  
-
+      
 
     
  
