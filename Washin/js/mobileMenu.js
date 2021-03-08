@@ -11,6 +11,8 @@ const modals = () => {
                 if(window.screen.width >= 993 ) {
                  windows.forEach(item => {
                    item.style.display = 'none'
+                   document.body.style.overflow = '';
+                   
                  })
                  trigger.forEach(trig => {
                   if(trig.classList.contains('active')) {
