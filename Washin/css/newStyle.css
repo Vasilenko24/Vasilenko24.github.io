@@ -2,6 +2,9 @@
 .mb-3 {
     margin-top: 10px;
 }
+::-webkit-scrollbar {
+   display: none;
+}
 .bg-dark{
     background-color: #000 !important;
 }
@@ -18,7 +21,7 @@
 /* sidebar */
 .sidebar{
     display: none;
-    z-index: 99999;
+    z-index: 97;
     position: fixed;
     display: none;
     top: 0;
@@ -132,11 +135,6 @@
     color: #fff;
     background-color: #000;
 }
-.sidebar-item {
-}
-.sidebar-item:hover {
-    
-}
 .data-drop.active {
     color: #fff;
 }
@@ -180,7 +178,7 @@
         max-width: 304px;
     }
     .header {
-        z-index: 999999;
+        z-index: 99;
     }
     .navbar__top {
         display: none;

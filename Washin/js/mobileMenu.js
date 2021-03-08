@@ -52,7 +52,8 @@ const modals = () => {
          trigger.forEach(trig => {
            trig.addEventListener('click', () => {
              if(!trig.classList.contains('active')) {
-               item.style.display = 'none'
+               item.style.display = 'none';
+               document.body.style.overflow = '';
              } 
            })
          })
