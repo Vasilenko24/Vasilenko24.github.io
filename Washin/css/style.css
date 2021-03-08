@@ -350,7 +350,7 @@ template {
 }
 
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 blockquote p {
@@ -7185,7 +7185,7 @@ a.close.disabled {
 }
 
 .modal-open .modal {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   overflow-y: auto;
 }
 
@@ -15893,7 +15893,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .overflowx-hidden {
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
 }
 
 .overflowy-hidden {
