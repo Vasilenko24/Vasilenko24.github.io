@@ -1,3 +1,33 @@
 /* #page {
     display: none;
 } */
+#layout{
+    max-width: 1000px !important;
+    min-width: 10px !important;
+}
+#layout-content {
+    width: 100% !important;
+}
+#layout-header {
+    max-width: 1000px;
+    width: 100% !important;
+}
+#layout-footer {
+    width: 100% !important;
+    max-width: 1000px;
+}
+#watermark {
+    width: 100% !important;
+}
+.widget-columns-column {
+    display: block;
+    width: 100% !important;
+
+    /* ЗАФИКСИТЬ ПРИ @MEDIA */ 
+}
+.widget-content img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
