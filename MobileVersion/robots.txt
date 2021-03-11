@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /comments/
+Allow: /app/download/
+Sitemap: https://pozdravulya.ru/sitemap.xml
+
+Host: https://pozdravulya.ru/

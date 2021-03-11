@@ -1,0 +1,380 @@
+.audio-hidden {
+      width: 0;
+      height: 0;
+      visibility: hidden;
+}
+
+/* Блок содержащий кнопки */
+
+.player-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 5px;
+      
+}
+
+/* Кнопка */
+.player-control {
+      position: relative;
+      display: block;
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      margin: 0 1px;
+      
+}
+
+/* Иконка кнопки */
+.player-control i {
+      background: #00000000;
+      display: block;
+      width: 2px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+}
+
+/* Вывод соответствующих иконок на кнопки */
+.play-stop-icon,
+.playing .play-stop-icon {
+      -webkit-mask-image: url('play.svg');
+      mask-image: url('play.svg');
+}
+
+.playing .play-stop-icon {
+      -webkit-mask-image: url('stop.svg');
+      mask-image: url('stop.svg');
+}
+
+.prev-icon,
+.next-icon {
+      -webkit-mask-image: url('forward.svg');
+      mask-image: url('forward.svg');
+}
+
+/* Отражение кнопки forward (перемотки), чтобы смотрела влево */
+.player-control i.prev-icon {
+      transform: scaleX(-1)
+                 translate(50%,-50%);
+}
+
+/* Стили текста для времени */
+
+
+/* Настройки для плеера и панели и их дочерних элементов */
+.gj-audio-player,
+.gj-audio-player *,
+.gj-audio-panel,
+.gj-audio-panel * {
+      outline: none;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+}
+
+/* ------------------ СТИЛИ ПЛЕЕРА------------------------ */
+
+/* Стиль плеера */
+.gj-audio-player {
+      position: relative;
+      overflow: hidden;
+      height: auto;
+      background: radial-gradient(white, #FFFFF5);
+      padding: 10px 0 15px;
+      border-radius: 5px; 
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      transition-duration: 0.6s;
+      flex-wrap: wrap;
+}
+
+/* Стиль плеера при проигрывании*/
+.gj-audio-player.playing {
+      position: relative;
+      overflow: hidden;
+      height: auto;
+      background: linear-gradient(45deg, #DEFFDC, #FFFDD2, #DEFFDC);
+      padding: 10px 0 15px;
+      border-radius: 9px; 
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      transition-duration: 0.5s;
+      flex-wrap: wrap;
+}
+
+/* Стиль аудиоэлемента (не для изменений) */
+.gj-audio-player audio {
+      position: absolute;
+      vertical-align: baseline;
+}
+
+/* Стиль заголовка */
+.gj-audio-player .player-title {
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+}
+
+/* Стиль разделителя */
+.gj-audio-player .player-separator {
+   position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.15em;
+    background: linear-gradient(70deg, #FFE898, #52CD6D, #FFE898);
+    width: 93%;
+    margin: 0 auto;
+}
+
+/* Стиль блока с заголовком и ссылкой */
+.gj-audio-player .player-content {
+      flex: 1;
+      margin-left: 12px;
+      
+}
+
+/* Стиль плеера, имеющего ссылку */
+.gj-audio-player.has-link {
+      align-items: flex-end;
+      
+}
+
+/* Стиль контейнера для ссылки и названия у плеера, содержащего ссылку */
+.gj-audio-player.has-link .player-content  {
+      min-height: 55px;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      
+      
+}
+
+
+/* Стиль заголовка у плеера */
+.gj-audio-player.has-link .player-title {
+      color: #003300;
+      font-family: Verdana;
+      font-weight: 400;
+      min-height: 0;
+      align-items: flex-end;
+      position: relative;
+      top: 0px;
+      font-size: 15px;
+      margin-left: 5px;
+      line-height: 18px;
+      transition-duration: 0.5s;
+}
+
+/* Стиль заголовка у плеера  при проигрывании*/
+.gj-audio-player.has-link.playing .player-title {
+      color: #336633;
+      font-family: Verdana;
+      font-weight: 400;
+      min-height: 0;
+      align-items: flex-end;
+      position: relative;
+      top: 0px;
+      font-size: 15px;
+      margin-left: 5px;
+      line-height: 18px;
+      transition-duration: 0.8s;
+}
+
+/* Стиль ссылки */
+.gj-audio-player .player-link {
+      color: #FF00FF;
+      text-decoration: none; 
+      font-size: 19px;
+      margin-left: 15px;
+      line-height: 25px;
+      margin-top: 15px;
+      display: block;
+      top: -4px;
+      transition-duration: 2.4s;
+      position: relative;
+      
+}
+
+/* Стиль ссылки при проигрывании */
+.gj-audio-player.playing .player-link {
+      color: #FF00AB;
+      text-decoration: none;
+      font-size: 19px;
+      margin-left: 15px;
+      line-height: 25px;
+      margin-top: 15px;
+      display: block;
+      top: -4px;
+      transition-duration: 0.8s;
+      position: relative;
+           
+}
+
+/* Стиль ссылки в активном и фокусном состоянии */
+.gj-audio-player .player-link:active {
+      color: #FF99CC;
+      font-size: 19px;
+      margin-left: 15px;
+      top: -4px;
+ }
+.gj-audio-player .player-link:focus {
+      color: #FF99CC;
+      font-size: 19px;
+      margin-left: 15px;
+      top: -4px;
+ }
+
+.gj-audio-player .player-link:hover {
+      color: #FF99CC;
+      font-size: 19px;
+      margin-left: 15px;
+      top: -4px;
+ }
+.gj-audio-player .player-link:visited /* посещенная */ {
+      background: transparent;
+      outline: none;
+}
+
+/* Текст под кнопкой */
+.gj-audio-player  .player-btn-text {
+      color: #A2B83D;
+      font-size: 12px;
+      text-align: center;
+      margin-top: -5px;
+      transition-duration: 0.5s;
+}
+
+/* Текст под кнопкой при проигрывании*/
+.gj-audio-player.playing  .player-btn-text {
+      color: #00000000;
+      font-size: 12px;
+      text-align: center;
+      margin-top: -5px;
+      transition-duration: 0.5s;
+      background-image: url(https://pozdravulya.ru/loader/1.gif);
+      background-position:  10px -2px;
+      background-size: 55px 20px;
+      background-repeat: no-repeat;
+      transition-property: none;
+}
+
+/* Сама кнопка play/stop */
+.gj-audio-player .player-control {
+      display: block;
+      width: 62px;
+      height: 62px;
+      background: #DF7070;
+      padding: 4px;
+      border-radius: 38px;
+      overflow: hidden;
+      transition: .0.2s;
+      margin: 5px;
+}
+
+/* Стиль кнопки при проигрывании */
+.gj-audio-player.playing .player-control {
+      background: #7C4F15;
+      padding: 2;
+      
+}
+
+/* Иконка на кнопке */
+.gj-audio-player .player-control i {
+      width: 26px;
+      height: 26px;
+      background: #F5F5F5;
+      margin-left: 2px;
+}
+
+/* Иконка при проигрывании */
+.gj-audio-player.playing .player-control i {
+      width: 22px;
+      height: 22px;
+      background: #F5F5F5;
+      margin-left: auto;
+      
+}
+
+/* Стиль внутренней части кнопки (кружка) */
+.gj-audio-player .player-control .player-control-inner {
+      height: 100%; 
+      background: #339933;
+      border-radius: 100%;
+      transition: .0.2s;
+}
+
+/* Стиль внутренней части кнопки (кружка) при проигрывании */
+.gj-audio-player.playing .player-control .player-control-inner {
+      background: #339933;
+      border-radius: 2;
+       transition: .0.2s;
+}
+
+/* Стиль кнопки прослушанной записи */
+.gj-audio-player.player-listened .player-control {
+      opacity: .9;
+}
+
+/* Стиль кнопки прослушанной записи при наведении */
+.gj-audio-player.player-listened .player-control:hover {
+      opacity: 1;
+}
+
+/* ------------------ КОНЕЦ СТИЛЕЙ ПЛЕЕРА ------------------------ */
+
+/* ------------------ СТИЛИ ПАНЕЛИ ------------------------ */
+
+
+
+/* ------------------ КОНЕЦ СТИЛЕЙ ПАНЕЛИ ------------------------ */
+
+
+/* Под мобильные разрешения */
+@media screen and (max-width: 575px) {
+      /* Нижняя часть панели */
+      .player-bottom {
+            flex-direction: column;
+      }
+
+      /* Плеер */
+      .gj-audio-player {
+            padding-left: 0;
+            padding-right: 0;
+      }
+
+      /* Заголовок панели */
+      .gj-player-panel .player-title {
+            display: none;
+      }
+}
+
+/* Настройки контейнера, содержащего плееры для сайта */
+#player {
+      display: flex;
+      flex-wrap: wrap;
+}
+
+/* Настройки расположения плееров для сайта */
+#player .gj-audio-player {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+/* Под мобильные разрешения и меньшие планшетные разрешения */
+@media screen and (max-width: 767px) {
+      #player .gj-audio-player {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin: 0;
+      }     
+}
