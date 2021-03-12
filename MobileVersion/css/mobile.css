@@ -1,6 +1,6 @@
-/* #page {
-    display: none;
-} */
+body {
+    overflow-x: hidden;
+}
 #layout{
     max-width: 1000px !important;
     min-width: 10px !important;
