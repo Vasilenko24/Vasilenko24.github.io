@@ -19,12 +19,27 @@
 #watermark {
     width: 100% !important;
 }
-.widget-columns-column {
-    display: block;
-    width: 100% !important;
+@media(max-width: 780px) {
 
-    /* ЗАФИКСИТЬ ПРИ @MEDIA */ 
+    
+ .classnamer {
+     font-size: 14px ;
+     width: 180px;
+ }
+ 
 }
+
+@media(max-width: 620px) {
+    .widget-columns-column {
+        display: block;
+        width: 100% !important;
+    }
+    .classnamer {
+        font-size: 15px;
+        width: 70%;
+    }
+}
+
 .widget-content img{
     background-size: cover;
     background-position: center;
