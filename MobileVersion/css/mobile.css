@@ -19,6 +19,9 @@ body {
 #watermark {
     width: 100% !important;
 }
+.mobile-view .widget-text img {
+    width: auto !important;
+}
 @media(max-width: 780px) {
  .classnamer {
      font-size: 14px ;
@@ -32,9 +35,9 @@ body {
         display: block;
         width: 100% !important;
     }
-    .classnamer {
-        font-size: 15px;
+    .footer a.link {
         width: 70% !important;
+        font-size: 15px;
     }
 }
 
