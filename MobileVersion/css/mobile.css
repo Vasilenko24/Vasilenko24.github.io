@@ -36,7 +36,7 @@ body {
     }
     .classnamer {
         font-size: 15px;
-        width: 70%;
+        width: 70% !important;
     }
 }
 
