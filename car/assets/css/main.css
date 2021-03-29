@@ -67,7 +67,7 @@ body,html {
   justify-content: space-between;
 }
 .footer__info {
-  margin-left: 50px;
+  margin-left: 150px;
   transition: all .2s;
 }
 .info-title {
@@ -121,7 +121,7 @@ body,html {
 }
 .map__loc {
   margin-top: 25px;
-  margin-right: 50px;
+  margin-right: 150px;
 }
 iframe {
   border-radius: 5px;
