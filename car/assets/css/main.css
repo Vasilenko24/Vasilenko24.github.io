@@ -1,33 +1,128 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700i&subset=cyrillic');
-@font-face {
-  font-family: 'Circe Light';
-  src: url('../fonts/Circe-Light.eot');
-  src: url('../fonts/Circe-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Light.woff') format('woff'), url('../fonts/Circe-Light.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Circe Regular';
-  src: url('../fonts/Circe-Regular.eot');
-  src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Regular.woff') format('woff'), url('../fonts/Circe-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Circe Bold';
-  src: url('../fonts/Circe-Bold.eot');
-  src: url('../fonts/Circe-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-Bold.woff') format('woff'), url('../fonts/Circe-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Circe Extra Bold';
-  src: url('../fonts/Circe-ExtraBold.eot');
-  src: url('../fonts/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Circe-ExtraBold.woff') format('woff'), url('../fonts/Circe-ExtraBold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 * {
   box-sizing: border-box;
   outline: none;
+}
+
+h1,h2,h3,h4,h5,h6,li,ol,p,ul{
+  margin:0;
+  padding:0
+}
+
+li,ul{
+  list-style:none
+}
+a{
+  text-decoration:none
+}
+button:focus,input:focus{
+  outline:transparent
+}
+
+body,html {
+  position: relative;
+  height: 100%;
+  font-family:Roboto,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu li {
+  padding: 20px 30px;
+}
+.header__menu a {
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+.active__menu {
+  color: #1f84ff !important;
+  position: relative;
+}
+.active__menu:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  height: 3px;
+  width: 120px;
+  display: block;
+  background-color: #1f84ff;
+}
+
+.footer {
+	height: 200px;
+	background-color: #14161a;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  margin-left: 50px;
+  transition: all .2s;
+}
+.info-title {
+  padding-top: 15px;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 25px;
+  color: #fff;
+}
+.info__box {
+  font-size: 16px;
+}
+.info__tel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #1f84ff;
+  transition: all .2s;
+}
+.info__tel span {
+  margin-right: 5px;
+  font-size: 17px;
+}
+.info__tel:hover {
+  color: #fff;
+}
+
+.info__address{
+  color: #fff;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.info__address span {
+  font-size: 17px;
+}
+
+.info__email {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  position: relative;
+  color: #1f84ff;
+  transition: all .2s;
+}
+.info__email span {
+  margin-right: 5px;
+  font-size: 17px;
+}
+.info__email:hover {
+  color: #fff;
+}
+.map__loc {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+iframe {
+  border-radius: 5px;
 }

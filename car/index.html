@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<html lang=ru>
+<html lang=en>
 <head>
 	<meta charset=UTF-8>
 	<meta name=viewport content="width=device-width, initial-scale=1">
-    <title>Картины.art - портрет на холсте</title>
-    <link rel=stylesheet href=assets/css/bootstrap.css>
+	<title>Детейлинг студия «Yezhov Car Beauty” l Spa-салон для вашего автомобиля</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.css">
 	<link rel=stylesheet href=assets/css/main.css>
+	<meta name="description" content="Детейлинг студия «Yezhov Car Beauty” Полировка, Химчистка, Керамика, Жидкое стекло, Детейлинг, антигравийная защита, пленка, винил, Профессиональная полировка, Yezhov, антихром, уход за авто, автодетейлинг, детейлинг мойка">
 </head>
 <body>
 	<header class=header>
 		<div class=container>
 			<div class="header-inner">
-				<ul class=header-menu>
+				<ul class=header__menu>
 					<li>
-						<a href="">Главная</a>
+						<a class="active__menu" href="">Главная</a>
 					</li>
 					<li>
-						<a href="#">РЕГУЛЯРНОЕ ОБСЛУЖИВАНИЕ</a>
+						<a href="#">Регулярное обслуживание</a>
 					</li>
 					<li>
 						<a href="#">Авто без пробега</a>
@@ -582,106 +584,39 @@
 			</div>
 		</div>
 	</section>
-	<footer class=footer id=footer>
-		<div class=container>
-			<div class="col-md-8 hidden-sm hidden-xs">
-				<table>
-					<tr>
-						<th colspan=2>Портрет на холсте</th>
-						<th>Идеи подарков</th>
-						<th>Покупателям</th>
-					</tr>
-					<tr>
-						<td>Поп-арт</td>
-						<td>Фотомозаика</td>
-						<td>Готовые картины</td>
-						<td>Срочное изготовление</td>
-					</tr>
-					<tr>
-						<td>Живопись</td>
-						<td>Портрет маслом</td>
-						<td>Интерьерные постеры</td>
-						<td>Доставка и оплата</td>
-					</tr>
-					<tr>
-						<td>Коллаж</td>
-						<td>Шарж по фото</td>
-						<td></td>
-						<td>Схема работы</td>
-					</tr>
-					<tr>
-						<td>Портрет в образе</td>
-						<td>Love is...</td>
-						<td></td>
-						<td>Контакты</td>
-					</tr>
-				</table>
+
+	<footer class="footer">
+		<div class="container">
+		  <div class="footer__inner">
+			<div class="footer__info">
+			 <div class="info-title">Контакты</div>
+			 <div class="info__box">
+				<a class="info__tel" href="tel:+380676125721">
+					<span class="material-icons">phone</span>
+						+380 67 612 57 21
+				  </a>
+			  <div class="info__address">
+				<span class="material-icons">location_on</span>
+				Украина, г. Запорожье, ул. Крепостная, 1г</div>
+			  <a href="mailto:yezhovcb@gmail.com" class="info__email">
+				<span class="material-icons">mail_outline</span>
+					yezhovcb@gmail.com
+				</a>
 			</div>
-			<div class="col-md-3 col-md-offset-1 col-sm-12">
-				<div class="col-md-12 col-sm-4 col-xs-12">
-					<p class=phone>8 800 234-23-34</p>
-				</div>
-				<div class="col-md-12 col-sm-4 col-xs-12">
-					<p class=phone-whatsapp>+7 495 234-23-34</p>
-				</div>
-				<div class="col-md-12 col-sm-4 col-xs-12">
-					<p>Круглосуточно, без выходных</p>
-				</div>
-				<div class=col-md-12>
-					<p>E-mail: <a href=mailto:info@kartiny.art>info@kartiny.art</a></p>
-				</div>
+		  </div>
+
+		  <div class="map-inner">
+			<div class="map__loc">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10716.730514218109!2d35.1600212!3d47.8166783!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xebeb1534941a80d2!2z0KHRgtGD0LTQuNGPINCU0LXRgtC10LnQu9C40L3Qs9CwICJZZXpob3YgQ2FyIEJlYXV0eSI!5e0!3m2!1sru!2sua!4v1617051662581!5m2!1sru!2sua" width="340" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
+		  </div>
+
+		  </div>
 		</div>
-	</footer>
-	<div class=popup-consultation data-modal>
-		<div class=popup-dialog>
-			<div class=popup-content>
-				<button class=popup-close>&times;</button>
-				<h4>Остались вопросы? Закажите обратный звонок</h4>
-				<div class=main-form>
-					<form class=form action=# method=POST>
-						<input type=text name=name placeholder="Ваше имя" required>
-						<input type=text name=phone placeholder="Ваш телефон" required>
-						<button class="button button-order">Получить консультацию</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="popup-gift" data-modal>
-		<div class=popup-dialog>
-			<div class=popup-content>
-				<button class=popup-close>&times;</button>
-				<h2>У нас для вас есть подарок!</h2>
-				<img src="assets/img/gift.png" alt="">
-				<p>Введите промо-код IWANTPOPART и получите скидку 30% на портрет любого размера в стиле pop-art!</p>
-			</div>
-		</div>
-	</div>
-	<div class=popup-design data-modal>
-		<div class=popup-dialog>
-			<div class=popup-content>
-				<button class=popup-close>&times;</button>
-				<form action=# enctype=multipart/form-data>
-					<h4>Заказать дизайн портрета</h4>
-					<div class=file_upload>
-						<button type=button>Загрузить фотографию</button>
-						<div>Файл не выбран</div>
-						<input type=file name=upload>
-					</div>
-					<div class=main-form>
-						<div class=form>
-							<input type=text name=name placeholder="Ваше имя" required>
-							<input type=text name=phone placeholder="Ваш телефон" required>
-							<input type=text name=email placeholder="Ваш e-mail">
-							<textarea name=message placeholder=Комментарий rows=2></textarea>
-							<button class="button button-order">Отправить дизайнеру</button>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+	 </footer>
+
+
+	
 	<script src="script.js"></script>
 </body>
 </html>
