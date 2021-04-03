@@ -422,3 +422,19 @@ iframe {
 @keyframes glow {
   50% {
     box-shadow: rgba(218, 218, 218, 0.4) 0 0 2px 2px; } }
+
+@media (max-width: 650px) {
+  .header__contacts-tel--link {
+    display: none; } }
+
+@media (max-width: 400px) {
+  .header {
+    height: 60px; }
+  .header-logo img {
+    width: 70px;
+    height: 50px; }
+  .line {
+    width: 30px; }
+    .line::after {
+      width: 80%;
+      height: 2px; } }
