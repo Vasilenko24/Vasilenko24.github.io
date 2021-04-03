@@ -274,6 +274,79 @@ button:focus, input:focus {
 .services__img-first img {
   height: 300px; }
 
+.insta {
+  position: relative;
+  width: 100%;
+  background: 50% 0 no-repeat #1a1a1d;
+  height: 1000px; }
+  .insta::before {
+    content: "";
+    width: 100%;
+    min-height: 1000px;
+    position: absolute;
+    top: 0px;
+    background: url(assets/img/bg_bottom.png);
+    background-position: center center;
+    background-size: cover; }
+
+.instagram_text_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  transform: skewY(-5deg);
+  color: #d79922;
+  padding-top: 70px; }
+  .instagram_text_wrap span {
+    padding: 20px;
+    background: #222629;
+    max-width: 500px; }
+
+.insta__block a {
+  color: #fff;
+  position: relative;
+  left: 80px;
+  top: 25px; }
+  .insta__block a span {
+    left: 100px;
+    background: radial-gradient(circle at 30% 107%, #f0bd44 2%, #d3564d 45%, #8d589d 60%);
+    top: 25px; }
+
+.instagram-bg {
+  margin-top: 100px;
+  position: relative; }
+  .instagram-bg::before {
+    content: '';
+    position: absolute;
+    border: 4px solid;
+    padding: -20px;
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 70px; }
+  .instagram-bg::after {
+    content: '';
+    position: absolute;
+    background: url(assets/img/icons/insta-like.png);
+    right: -100px;
+    top: -40px;
+    height: 120px;
+    width: 150px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+.phone-bg img {
+  height: 600px;
+  border-radius: 10px;
+  transform: skewY(5deg);
+  margin-left: 100px; }
+
 .footer {
   min-height: 250px;
   background-color: #14161a; }
@@ -353,30 +426,6 @@ iframe {
   justify-content: space-between;
   align-items: center; }
 
-@media (max-width: 1300px) {
-  .footer__info {
-    margin-left: 25px; }
-  .map__loc {
-    margin-right: 25px; } }
-
-@media (max-width: 900px) {
-  .footer__inner {
-    display: block; }
-  .map__loc {
-    margin-right: 0; }
-  iframe {
-    width: 100%; }
-  .footer__info {
-    text-align: center;
-    margin-left: 0; }
-  .footer__follow {
-    display: flex;
-    justify-content: center; }
-  .info__tel {
-    justify-content: center; }
-  .info__email {
-    justify-content: center; } }
-
 @keyframes line-1 {
   10% {
     transform: translateZ(0) rotate(0); }
@@ -423,11 +472,64 @@ iframe {
   50% {
     box-shadow: rgba(218, 218, 218, 0.4) 0 0 2px 2px; } }
 
-@media (max-width: 650px) {
+@media (max-width: 1300px) {
+  .footer__info {
+    margin-left: 25px; }
+  .map__loc {
+    margin-right: 25px; } }
+
+@media (max-width: 900px) {
+  .footer__inner {
+    display: block; }
+  .map__loc {
+    margin-right: 0; }
+  iframe {
+    width: 100%; }
+  .footer__info {
+    text-align: center;
+    margin-left: 0; }
+  .footer__follow {
+    display: flex;
+    justify-content: center; }
+  .info__tel {
+    justify-content: center; }
+  .info__email {
+    justify-content: center; } }
+
+@media (max-width: 680px) {
+  .instagram_text_wrap {
+    font-size: 26px; }
+  .insta__block a {
+    left: -20px; }
+  .insta {
+    height: fit-content; }
+  .instagram_text_wrap {
+    padding-bottom: 30px; }
+  .phone-bg img {
+    margin-left: 0px; }
+  .instagram-bg::before {
+    width: 105%;
+    left: -14px; }
+  .instagram-bg::after {
+    height: 70px;
+    width: 90px;
+    right: -43px;
+    top: -23px; }
   .header__contacts-tel--link {
     display: none; } }
 
 @media (max-width: 400px) {
+  .instagram_text_wrap {
+    font-size: 20px;
+    padding-top: 40px; }
+  .instagram-bg::before {
+    width: 105%;
+    height: 100%;
+    top: 0;
+    left: -12px; }
+  .instagram-bg::after {
+    right: 0px;
+    top: 10px; }
   .header {
     height: 60px; }
   .header-logo img {
