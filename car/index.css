@@ -513,6 +513,7 @@ button:focus, input:focus {
     background-color: #f3d250; }
 
 .insta {
+  display: none;
   position: relative;
   width: 100%;
   background: 50% 0 no-repeat #1a1a1d;
@@ -691,6 +692,7 @@ iframe {
   font-weight: 300; }
 
 .works {
+  display: none;
   padding-bottom: 30px;
   background-color: rgba(62, 69, 81, 0.3); }
 
