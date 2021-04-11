@@ -31,6 +31,7 @@ button:focus, input:focus {
   margin: 0 auto; }
 
 .header {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -198,6 +199,7 @@ button:focus, input:focus {
   background-color: #f3d250; }
 
 .preview {
+  display: none;
   position: relative; }
 
 .preview__intro {
@@ -366,6 +368,9 @@ button:focus, input:focus {
   bottom: 15px;
   left: 15px;
   color: #fff; }
+
+.car {
+  display: none; }
 
 .car__inner {
   background-color: #1b1b1b;
@@ -811,6 +816,33 @@ iframe {
 @keyframes glow {
   50% {
     box-shadow: rgba(218, 218, 218, 0.4) 0 0 2px 2px; } }
+
+.new {
+  margin-top: 20px;
+  padding-bottom: 30px; }
+  .new h3 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: 500; }
+  .new .new__inner {
+    display: flex;
+    justify-content: center; }
+  .new img {
+    max-width: 500px;
+    height: 100%; }
+  .new .newCar__text {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 150%; }
+
+.protection {
+  padding: 0 15px; }
+
+.protection__img {
+  display: flex; }
 
 @media (max-width: 1300px) {
   .footer__info {
