@@ -505,17 +505,18 @@ button:focus, input:focus {
     background-color: #f3d250; }
 
 .insta {
-  display: none;
   position: relative;
   width: 100%;
-  background: 50% 0 no-repeat #1a1a1d;
-  height: 1000px; }
+  background: #1a1a1d;
+  height: 1000px;
+  overflow-x: hidden; }
   .insta::before {
     content: "";
     width: 100%;
     min-height: 1000px;
     position: absolute;
     top: 0px;
+    left: 0;
     background: url(assets/img/bg_bottom.png);
     background-position: center center;
     background-size: cover; }
