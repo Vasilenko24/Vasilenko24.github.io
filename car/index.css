@@ -256,6 +256,9 @@ button:focus, input:focus {
   color: #000;
   background-color: #d79922; }
 
+.about {
+  display: none; }
+
 .about__inner {
   display: flex;
   background: #14161a; }
@@ -582,6 +585,7 @@ button:focus, input:focus {
   transform: skewY(5deg); }
 
 .footer {
+  display: none;
   min-height: 250px;
   background-color: #000; }
 
