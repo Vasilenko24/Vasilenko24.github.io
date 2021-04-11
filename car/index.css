@@ -31,7 +31,6 @@ button:focus, input:focus {
   margin: 0 auto; }
 
 .header {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -199,7 +198,6 @@ button:focus, input:focus {
   background-color: #f3d250; }
 
 .preview {
-  display: none;
   position: relative; }
 
 .preview__intro {
@@ -255,9 +253,6 @@ button:focus, input:focus {
   padding: 14px 26px 10px;
   color: #000;
   background-color: #d79922; }
-
-.about {
-  display: none; }
 
 .about__inner {
   display: flex;
@@ -371,9 +366,6 @@ button:focus, input:focus {
   bottom: 15px;
   left: 15px;
   color: #fff; }
-
-.car {
-  display: none; }
 
 .car__inner {
   background-color: #1b1b1b;
@@ -586,7 +578,6 @@ button:focus, input:focus {
   transform: skewY(5deg); }
 
 .footer {
-  display: none;
   min-height: 250px;
   background-color: #000; }
 
@@ -692,7 +683,6 @@ iframe {
   font-weight: 300; }
 
 .works {
-  display: none;
   padding-bottom: 30px;
   background-color: rgba(62, 69, 81, 0.3); }
 
