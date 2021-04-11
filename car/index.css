@@ -13,7 +13,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-x: hidden; }
 
 li, ul {
   list-style: none; }
