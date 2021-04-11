@@ -93,6 +93,11 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+$('.carslider__inner').slick({
+  pauseOnHover: true,
+  focusOnSelect: false,
+  dots: true
+});
 const btn = document.getElementById("menu-toggle");
 const lines = btn.querySelectorAll(".line");
 const cls = {
@@ -111,6 +116,16 @@ btn.addEventListener("click", () => {
 
   void btn.offsetWidth;
   btn.classList.add(btnClass);
+});
+const burger = document.querySelector('.mobile__menu');
+btn.addEventListener('click', () => {
+  burger.classList.toggle('active');
+
+  if (burger.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 });
 
 /***/ })

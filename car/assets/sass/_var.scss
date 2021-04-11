@@ -1,11 +1,17 @@
 $bg: #c0c0c0;
 $grey: #1a1a1d;
-$grey2: #272727;
-$grey3: #222629;
-$grey4: #19181a;
+$grey2: #222629;
+$grey3: #19181a;
 $yellow: #d79922;
 $yellow2: #ffe400;
 $yellow3: #fccd04;
 $yellow4: #faed26;
 $yellow5: #f3d250;
 $grey-light: #6b6e70;
+
+$toggle-size: 32px;
+$toggle-line-color: #c0c0c0;
+$toggle-line-focus-color: #fff;
+$toggle-line-size: $toggle-size/8;
+$toggle-line-angle: 405deg;
+$toggle-anim-speed: 1s;
