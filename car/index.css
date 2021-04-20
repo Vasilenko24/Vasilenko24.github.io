@@ -509,7 +509,8 @@ button:focus, input:focus {
   position: relative;
   width: 100%;
   background: #1a1a1d;
-  height: 1000px; }
+  height: 1000px;
+  overflow-x: hidden; }
   .insta::before {
     content: "";
     width: 100%;
