@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 .gr-rainbow {
   background: -moz-linear-gradient(left, #171c00 0%, #7fa20a 25%, #142eda 50%, #ba530e 75%, #1f0800 100%);
@@ -13,8 +14,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  overflow-x: hidden; }
+  font-size: 14px; }
 
 li, ul {
   list-style: none; }
@@ -508,8 +508,7 @@ button:focus, input:focus {
   position: relative;
   width: 100%;
   background: #1a1a1d;
-  height: 1000px;
-  overflow-x: hidden; }
+  height: 1000px; }
   .insta::before {
     content: "";
     width: 100%;
@@ -761,12 +760,16 @@ iframe {
   font-size: 17px;
   text-align: center;
   padding-bottom: 10px; }
+  .works__content-title span {
+    color: red; }
 
 .works__content-text {
   text-align: center;
   padding: 0 5px;
   font-size: 14px;
   font-weight: 500; }
+  .works__content-text span {
+    color: red; }
 
 @keyframes line-1 {
   10% {
@@ -827,19 +830,97 @@ iframe {
     justify-content: center; }
   .new img {
     max-width: 500px;
-    height: 100%; }
-  .new .newCar__text {
-    max-width: 500px;
     width: 100%;
-    margin-left: 20px;
-    font-size: 18px;
-    line-height: 150%; }
+    background-size: cover;
+    height: 100%; }
+
+.newCar__text {
+  max-width: 500px;
+  width: 100%;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 150%; }
 
 .protection {
-  padding: 0 15px; }
+  padding: 20px 15px;
+  background: #14161a; }
+  .protection h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500; }
+
+.protection__info {
+  margin-top: 20px;
+  border-bottom: 2px solid #f3d250;
+  display: flex;
+  flex-direction: column;
+  transition: all .5s; }
+  .protection__info a {
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 18px; }
+    .protection__info a:hover {
+      color: #f3d250; }
 
 .protection__img {
-  display: flex; }
+  display: flex;
+  margin-top: 20px;
+  transition: all .5s; }
+
+.protection__img-item {
+  margin-right: 5px;
+  transition: all .5s;
+  display: inline-block;
+  /* Строчно-блочный элемент */
+  overflow: hidden; }
+  .protection__img-item:last-child {
+    margin-right: 0; }
+  .protection__img-item img {
+    transition: 1s;
+    /* Время эффекта */
+    display: block;
+    /* Убираем небольшой отступ снизу */
+    transition: all .5s;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%; }
+    .protection__img-item img:hover {
+      transform: scale(1.2); }
+
+.protection__table {
+  display: flex;
+  color: #fff;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff; }
+  .protection__table:last-child {
+    border-bottom: none; }
+
+.protection__left {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300; }
+
+.protection__right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+
+.protection__right-item {
+  max-width: 220px;
+  text-align: center;
+  width: 100%; }
+  .protection__right-item img {
+    width: 60px;
+    height: 40px; }
+
+.red {
+  color: red; }
 
 @media (max-width: 1300px) {
   .footer__info {
@@ -878,6 +959,18 @@ iframe {
       padding: 0 20px; } }
 
 @media (max-width: 900px) {
+  .new h3 {
+    font-size: 30px; }
+  .new__inner {
+    flex-direction: column; }
+    .new__inner img {
+      margin: 0 auto; }
+  .newCar__text {
+    text-align: center;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 16px; }
   .works__item-title {
     margin-top: 10px;
     margin-left: 30px;
@@ -951,6 +1044,13 @@ iframe {
     display: none; } }
 
 @media (max-width: 600px) {
+  .protection h3 {
+    font-size: 30px; }
+  .protection__left {
+    font-size: 14px; }
+  .protection__right-item img {
+    width: 40px;
+    height: 30px; }
   .about__img img {
     max-width: 100%; }
   .preview__call {
@@ -965,6 +1065,17 @@ iframe {
     width: 100%; } }
 
 @media (max-width: 400px) {
+  .protection h3 {
+    font-size: 26px; }
+  .protection__info a {
+    font-size: 15px; }
+  .protection__left {
+    font-size: 11px; }
+  .protection__right-item {
+    font-size: 14px; }
+    .protection__right-item img {
+      width: 30px;
+      height: 20px; }
   .about__info-title {
     font-size: 30px; }
   .about__info-text {

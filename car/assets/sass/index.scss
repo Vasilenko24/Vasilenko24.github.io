@@ -611,7 +611,7 @@ body {
       outline: none !important;
     }
     img {
-      max-width: 900px;
+      max-width: 860px;
       width: 100%;
       height: 600px;
       background-position: center center;
@@ -622,27 +622,83 @@ body {
     }
   }
  
-  .slick-next{
+
+
+
+  .slick-slider .slick-arrow{
     position: absolute;
-    left: 0;
+    top: 50%; 
+    margin: -15px 0 0 0; 
+    z-index: 2; 
+    font-size: 0;
+    width: 40px;
+    height: 42px;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 0px 4px 4px 0px;
+    transition: color 0.15s ease 0s,border-color 0.15s ease 0s,background-color 0.15s ease 0s;
+    cursor: pointer;
+}
+  
+
+  .slick-next{
+    right: 0;
     border: none;
-    background-color: transparent;
+    position: relative;
+    &:before {
+      content: " ";
+      width: 5px;
+      background: $yellow;
+      height: 25px;
+      position: absolute;
+      top: 0px;
+      transform: rotate(-45deg);
+      border-radius: 4px;
+      right: 15px;
+    }
+    &:after {
+      content: " ";
+      width: 5px;
+      background: $yellow;
+      height: 25px;
+      position: absolute;
+      top: 15px;
+      transform: rotate(45deg);
+      border-radius: 4px;
+      right: 15px;
+    }
   }
 
 
-  .prev,
-.next {
-  position: absolute;
-  top: 40%;
-  height: 60px;
-  width: 60px;
-  z-index: 1;
-  cursor: pointer;
-}
 
-.next {
-  right: 0;
-}
+  .slick-prev{
+    left: 0;
+    border: none;
+    position: relative;
+    &:before {
+      content: " ";
+      width: 5px;
+      background: $yellow;
+      height: 25px;
+      position: absolute;
+      top: 0px;
+      transform: rotate(45deg);
+      border-radius: 4px;
+      right: 20px;
+    }
+    &:after {
+      content: " ";
+      width: 5px;
+      background: $yellow;
+      height: 25px;
+      position: absolute;
+      top: 15px;
+      transform: rotate(-45deg);
+      border-radius: 4px;
+      right: 20px;
+    }
+  }
+
 
 .slick-dots {
   display: flex;
@@ -677,7 +733,7 @@ body {
   .insta {
     position: relative;
     width: 100%;
-    background: 50% 0 no-repeat $grey;
+    background: $grey;
     height: 1000px;
     &::before {
       content: "";
@@ -685,6 +741,7 @@ body {
       min-height: 1000px;
       position: absolute;
       top: 0px;
+      left: 0;
       background: url(assets/img/bg_bottom.png);
       background-position: center center;
       background-size: cover;
@@ -881,7 +938,6 @@ body {
    // works
 
    .works {
-     margin-top: 30px;
      padding-bottom: 30px;
      background-color: rgba(62,69,81, 0.3);
    }
@@ -893,13 +949,14 @@ body {
    }
    .works__item {
      width: 33%;
+     height: 100%;
      margin-top: 10px;
      position: relative;
      transition: all .5s;
      &::before {
       content: '';
       position: absolute;
-      top: 0;
+      top: -3px;
       left: 0;
       width: 100%;
       height: 100%;
@@ -921,7 +978,7 @@ body {
 
    .works__item-info {
      position: relative;
-     padding: 20px;
+     padding: 10px;
      &::before {
        background-color: transparent;
      }
@@ -948,7 +1005,7 @@ body {
    }
    .works__img {
      width: 100%;
-      height: 350px;
+      height: 100%;
       position: relative;
       background-size: cover;
       background-repeat: no-repeat;
@@ -965,16 +1022,18 @@ body {
    }
 
    .works__content-title {
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
+    padding-bottom: 10px;
+    span {
+      color: red
+    }
    }
    .works__content-text {
      text-align: center;
-    margin: 20px auto 0;
-    width: 300px;
-    padding: 0 20px;
-    font-size: 15px;
-    font-weight: 500;
+      padding: 0 5px;
+      font-size: 14px;
+      font-weight: 500;
    }
    //works
 
@@ -1016,6 +1075,114 @@ body {
       box-shadow: rgba(lighten($toggle-line-color, 10%), 0.4) 0 0 2px 2px;
     }
   }
+
+
+  .new {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    h3{
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 30px;
+      font-weight: 500;
+    }
+    .new__inner {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      max-width: 500px;
+      width: 100%;
+      background-size: cover;
+      height: 100%;
+    }
+  }
+
+  .newCar__text {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  
+  .protection {
+    padding: 20px 15px;
+    background: #14161a;
+    h3{
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+  .protection__info {
+    margin-top: 20px;
+    border-bottom: 2px solid $yellow5;
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+    a {
+      padding-bottom: 10px;
+      color: #fff;
+      font-size: 18px;
+      &:hover {
+        color: $yellow5;
+      }
+    }
+  }
+  .protection__img {
+    display: flex;
+    margin-top: 20px;
+  }
+  .protection__img-item {
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .protection__table {
+    display: flex;
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .protection__left {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .protection__right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .protection__right-item {
+    max-width: 220px;
+    text-align: center;
+    width: 100%;
+    img {
+      width: 60px;
+      height: 40px;
+    }
+  }
+  .red {
+    color: red;
+  }
+ 
 
   @media (max-width: 1300px) {
     .footer__info {
@@ -1072,6 +1239,32 @@ body {
   }
  
   @media (max-width: 900px) {
+    .new {
+      h3 {
+        font-size: 30px;
+      }
+    }
+    .new__inner {
+      flex-direction: column;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .newCar__text {
+      text-align: center;
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .works__item-title {
+      margin-top: 10px;
+      margin-left: 30px;
+      font-size: 20px;
+    }
+    .works__content {
+      top: 15%;
+    }
     .preview__logo {
       display: none;
     }
@@ -1106,6 +1299,13 @@ body {
   }
 
   @media (max-width: 680px) {
+    .works__content {
+      top: 40%;
+      max-width: 350px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
     .services__inner {
       flex-direction: column;
     }
@@ -1173,6 +1373,15 @@ body {
   }
 
   @media (max-width: 600px) {
+    .protection__left {
+      font-size: 14px;
+    }
+    .protection__right-item {
+      img {
+        width: 40px;
+        height: 30px;
+      }
+    }
     .about__img {
       img {
         max-width: 100%;
@@ -1195,6 +1404,26 @@ body {
   }
 
   @media (max-width: 400px) {
+    .protection {
+      h3 {
+        font-size: 30px;
+      }
+    }
+    .protection__info {
+      a {
+        font-size: 15px;
+      }
+    }
+    .protection__left {
+      font-size: 11px;
+    }
+    .protection__right-item {
+      font-size: 14px;
+      img {
+        width: 30px;
+        height: 20px;
+      }
+    }
     .about__info-title {
       font-size: 30px;
     }
