@@ -509,8 +509,7 @@ button:focus, input:focus {
   position: relative;
   width: 100%;
   background: #1a1a1d;
-  height: 1000px;
-  overflow-x: hidden; }
+  height: 1000px; }
   .insta::before {
     content: "";
     width: 100%;
@@ -565,7 +564,7 @@ button:focus, input:focus {
   .instagram-bg::after {
     content: '';
     position: absolute;
-    background: url(assets/img/icons/insta-like.png);
+    background: url(assets/img/icons/insta-like.webp);
     right: -100px;
     top: -40px;
     height: 120px;
@@ -961,6 +960,8 @@ iframe {
       padding: 0 20px; } }
 
 @media (max-width: 900px) {
+  .insta {
+    overflow-x: hidden; }
   .new h3 {
     font-size: 30px; }
   .new__inner {
