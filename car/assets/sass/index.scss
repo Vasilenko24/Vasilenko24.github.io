@@ -737,7 +737,6 @@ body {
     width: 100%;
     background: $grey;
     height: 1000px;
-    overflow-x: hidden;
     &::before {
       content: "";
       width: 100%;
@@ -800,7 +799,7 @@ body {
     &::after {
       content: '';
       position: absolute;
-      background: url(assets/img/icons/insta-like.png);
+      background: url(assets/img/icons/insta-like.webp);
       right: -100px;
       top: -40px;
       height: 120px;
@@ -1255,6 +1254,9 @@ body {
   }
  
   @media (max-width: 900px) {
+    .insta {
+      overflow-x: hidden;
+    }
     .new {
       h3 {
         font-size: 30px;
@@ -1315,6 +1317,7 @@ body {
   }
 
   @media (max-width: 680px) {
+
     .works__content {
       top: 40%;
       max-width: 350px;
